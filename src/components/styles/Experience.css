@@ -1,0 +1,20 @@
+.experience {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience h2 {
+  margin-top: 0;
+}
+
+.daily-routine li {
+  display: block; /* Change display to block to center the text */
+  margin: 0 auto; /* Center the list item horizontally */
+}
+
+li {
+  list-style-type: none;
+}
