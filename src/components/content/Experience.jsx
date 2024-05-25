@@ -1,9 +1,9 @@
 import React from "react";
 import Job from "./Job";
-import "./styles/Experience.css";
+import "../styles/Content.css";
 
 const Experience = () => (
-  <section>
+  <div className="main-content">
     <h2>Experience</h2>
     <Job
       title="Software Developer"
@@ -22,7 +22,7 @@ const Experience = () => (
         "Rolling up/down if needed",
       ]}
     />
-  </section>
+  </div>
 );
 
 export default Experience;

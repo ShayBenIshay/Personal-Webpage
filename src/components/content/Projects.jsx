@@ -1,12 +1,12 @@
 import React from "react";
-import "./styles/Projects.css";
+import "../styles/Content.css";
 
 const Projects = ({ projects }) => (
-  <section className="projects">
+  <div className="main-content">
     <h2>Projects</h2>
     <ul>
       {projects.map((project, index) => (
-        <li key={index}>
+        <div key={index} className="horizontal-content">
           <h3>{project.title}</h3>
           <p>{project.description}</p>
           <p>{project.elaboration}</p>
@@ -19,10 +19,10 @@ const Projects = ({ projects }) => (
           >
             GitHub🔗: {project.title}
           </a>
-        </li>
+        </div>
       ))}
     </ul>
-  </section>
+  </div>
 );
 
 export default Projects;
