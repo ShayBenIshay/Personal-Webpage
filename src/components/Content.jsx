@@ -6,9 +6,63 @@ import { useState } from "react";
 import "./styles/Content.css";
 
 export default function Content({ list = [] }) {
-  const [displayContent, setDisplayContent] = useState("Experience");
+  const [displayContent, setDisplayContent] = useState("experience");
   const [fadeIn, setFadeIn] = useState(true);
 
+  const menuList = {
+    projects: "Projects",
+    experience: "Experience",
+    education: "Education",
+    skills: "Skills",
+  };
+  const skills = {
+    ProgrammingLanguages: ["Java", "JavaScript", "Python"],
+    WebDevelopment: ["React", "HTML", "CSS"],
+    VersionControl: ["Git"],
+  };
+
+  const content = {
+    projects: (
+      <Projects
+        projects={[
+          {
+            title: "Smart Investor",
+            description:
+              "SmartInvestor: Intelligent Investment Management Platform.",
+            elaboration:
+              "Trade History tracking. Porfolio managing. Connected to Polygon API with last day closing rates",
+            code: "the code was written in plain Javascript + HTML + CSS",
+            githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
+          },
+          {
+            title: "CV Website",
+            description: "Interactive way to show my CV",
+            // elaboration: "",
+            code: "The project was developed using React.js along with JavaScript and CSS.",
+            githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
+          },
+        ]}
+      />
+    ),
+    experience: <Experience />,
+    education: (
+      <Education
+        degree="Bachelor of Science in Computer Science"
+        school="Technion - Israel Institute of Technology"
+        location="Haifa, Israel"
+        graduated="April 2021"
+      />
+    ),
+    // "React", "git", "CSS", "HTML"]} />
+    skills: (
+      <Skills
+        skills={skills}
+        // programmingLanguages={["Java", "JavaScript", "Python"]}
+        // webDevelopment={["React", "HTML", "CSS"]}
+        // versionControl={["git"]}
+      />
+    ),
+  };
   function handleChangeContent(content) {
     if (displayContent === content) return;
     setFadeIn(false);
@@ -16,64 +70,28 @@ export default function Content({ list = [] }) {
       setDisplayContent(content);
       setFadeIn(true);
     }, 300); // Time for the fade-out effect to complete
-
-    // setDisplayContent(content);
   }
 
   return (
     <section className="content-container">
       <div className="menu-list-container">
-        <ul className="menu-list">
-          <li onClick={() => handleChangeContent("Experience")}>Experience</li>
-          <li onClick={() => handleChangeContent("Education")}>Education</li>
-          <li onClick={() => handleChangeContent("Skills")}>Skills</li>
-          <li onClick={() => handleChangeContent("Projects")}>Projects</li>
-        </ul>
+        <div className="menu-list">
+          {Object.keys(menuList).map((contentTitle) => (
+            <p
+              key={contentTitle}
+              onClick={() => handleChangeContent(contentTitle)}
+            >
+              {menuList[contentTitle]}
+            </p>
+          ))}
+        </div>
       </div>
       <div
         className={`main-content-container ${
           fadeIn ? "slide-in" : "slide-out"
         }`}
       >
-        {displayContent === "Experience" && <Experience />}
-        {displayContent === "Education" && (
-          <Education
-            degrees={[
-              {
-                degree: "BSc Computer Science",
-                school: "Technion - Israel Institute of Technology",
-                year: "2021",
-              },
-            ]}
-          />
-        )}
-        {displayContent === "Skills" && (
-          <Skills
-            skills={["Java", "JavaScript", "React", "git", "CSS", "HTML"]}
-          />
-        )}
-        {displayContent === "Projects" && (
-          <Projects
-            projects={[
-              {
-                title: "Smart Investor",
-                description:
-                  "SmartInvestor: Intelligent Investment Management Platform.",
-                elaboration:
-                  "Trade History tracking. Porfolio managing. Connected to Polygon API with last day closing rates",
-                code: "the code was written in plain Javascript + HTML + CSS",
-                githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
-              },
-              {
-                title: "CV Website",
-                description: "Interactive way to show my CV",
-                // elaboration: "",
-                code: "The project was developed using React.js along with JavaScript and CSS.",
-                githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
-              },
-            ]}
-          />
-        )}
+        {displayContent in content && content[displayContent]}
       </div>
     </section>
   );

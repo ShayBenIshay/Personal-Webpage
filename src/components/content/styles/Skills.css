@@ -1,4 +1,38 @@
-.skills h2 {
+.main-content {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap if they exceed the container's width */
+  gap: 20px; /* Add space between categories */
+  justify-content: space-around; /* Distribute space around items */
+}
+
+.skills-category {
+  flex: 1 1 200px;
+  /* background-color: #ffffff; */
+  padding: 15px;
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.skills-category h3 {
+  margin-top: 0;
+}
+
+.skills-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-category li {
+  margin-bottom: 5px;
+}
+
+/* .skills h2 {
   margin-top: 0;
   font-size: 1.5em;
   color: #4caf50;

@@ -1,8 +1,8 @@
 .job {
   margin-bottom: 20px;
   padding: 15px;
-  border-left: 4px solid #4caf50;
-  background-color: #e8f5e9;
+  /* border-left: 4px solid #4caf50; */
+  /* background-color: #e8f5e9; */
   border-radius: 5px;
   display: flex;
 }
@@ -25,4 +25,7 @@
 .job ul {
   list-style-type: disc;
   margin-left: 20px;
+}
+.job li {
+  text-align: left;
 }
