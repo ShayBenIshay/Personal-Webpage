@@ -1,0 +1,29 @@
+.projects {
+  flex: 1;
+  padding: 20px;
+  margin: 20px 20px 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+  margin-top: 0;
+}
+
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects li {
+  margin-bottom: 15px;
+}
+
+.projects h3 {
+  margin: 0;
+}
+
+.projects p {
+  margin: 5px 0 0;
+}
