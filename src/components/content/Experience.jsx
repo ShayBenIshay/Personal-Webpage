@@ -13,11 +13,11 @@ const Experience = () => (
       responsibilities="Investigating issues with business flows."
       routine={[
         "Running the flow",
-        "Fetching and checking logs",
-        "Analyzing the issue",
-        "Debugging services as needed",
-        "Fixing issues",
-        "Running fixes through CI/CD pipeline (Jenkins)",
+        "Fetching and investigating logs",
+        "Comparing to expected behavior",
+        "Analyzing the issue. Debugging services if necessary",
+        "Fixing the issue/s",
+        "Running the fixes through CI/CD pipeline (Jenkins)",
         "Merging changes to the main branch",
         "Rolling up/down if needed",
       ]}
