@@ -1,12 +1,11 @@
 .job {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 20px;
 }
 
 .job-info {
   flex: 1;
+  max-width: 30%;
 }
 
 .job-info h3 {
@@ -27,6 +26,7 @@
 
 .routine {
   margin-bottom: 0;
+  margin-left: 10px;
 }
 
 .routine h4 {
