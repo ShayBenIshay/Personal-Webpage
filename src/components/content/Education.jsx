@@ -1,11 +1,8 @@
 import React from "react";
-// import "./styles/index.css";
 import "../styles/Content.css";
-// import "./styles/Education.css";
-// import "./styles/Cube.css";
 
 const Education = ({ degree, school, location, graduated }) => (
-  <div className="main-content">
+  <div>
     <h2>Education</h2>
     <br />
     <div>

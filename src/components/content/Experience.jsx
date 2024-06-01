@@ -3,7 +3,7 @@ import Job from "./Job";
 import "../styles/Content.css";
 
 const Experience = () => (
-  <div className="main-content">
+  <div>
     <h2>Experience</h2>
     <Job
       title="Software Developer"

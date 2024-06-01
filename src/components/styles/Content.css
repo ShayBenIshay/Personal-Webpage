@@ -1,158 +1,122 @@
-/* Ensure to reset any default browser styles if needed */
-* {
+body {
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f4f4f9;
+}
+
+footer {
+  background-color: hsl(210, 100%, 26%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 4px solid hsl(210, 100%, 15%);
 }
 
 .content-container {
   display: flex;
-  flex-direction: column;
-  /* height: 100%; */
-  height: 60vh;
-  /* Ensure the container takes full viewport height */
-}
-
-.main-content-container {
-  font-family: Arial, sans-serif;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   padding: 20px;
-  width: auto;
-  margin-left: 20px;
-  flex-grow: 1; /* Allow this container to take the remaining space */
-  overflow: hidden; /* Ensure content does not overflow during transition */
-  position: relative; /* Required for positioning the sliding effect */
-  transition: transform 0.2s ease;
-}
-
-.menu-list p {
-  margin-left: 10px;
-}
-.main-content:hover {
-  transform: translateY(-5px);
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 1200px;
+  margin-bottom: 60px;
 }
 
 .menu-list-container {
-  /* d-color: red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  padding: 20px;
-  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
-  overflow-y: auto;
-  flex-grow: 0;
-  /* Do not allow container to grow horizontally */
-  flex-shrink: 0;
-  height: auto;
-  /* Do not allow container to shrink horizontally */
-  /* width: auto; Allow the width to adjust based on content */
-  /* height: 100%; Stretch to fill the parent container */
-  /* left: 0; */
-  /* float: left; */
+  width: 20%;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 20px;
 }
 
 .menu-list {
-  display: flex; /* Enable flexbox layout */
-  flex-direction: row; /* Align children in a row */
-  justify-content: space-around; /* Distribute space around the items */
-  gap: 20px; /* Space between items */
-  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .menu-list p {
-  margin: 0; /* Remove default margins */
-  padding: 10px 20px; /* Add padding for spacing */
-  font-size: 20px; /* Adjust font size */
-  font-weight: bold; /* Make text bold */
-  color: #333; /* Change text color */
-  font-family: Arial, sans-serif; /* Change font family */
-  border: 2px solid #ddd; /* Add border */
-  border-radius: 8px; /* Rounded corners */
-  background-color: #f9f9f9; /* Light background color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  font-size: 18px;
+  color: #0073e6;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+  margin-left: 10px;
 }
 
-/* Hover effect */
 .menu-list p:hover {
-  background-color: #e0e0e0; /* Darker background on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  color: #005bb5;
+}
+
+.menu-list p.active {
+  font-weight: bold;
+  color: #005bb5;
+}
+
+.main-content-container {
+  width: 80%;
+  padding-left: 20px;
 }
 
 .main-content {
-  height: auto;
-  width: 100%;
-  flex: 1;
-  padding: 20px;
-  margin: 20px;
-  background-color: white;
-  border-left: 4px solid #4caf50;
-
+  border-left: 4px solid hsla(210, 100%, 45%, 0.9);
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
 
-  /* transition: opacity 0.3s ease; */
-  position: absolute; /* Position content absolutely for the slide effect */
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
-.main-content ul {
-  align-content: baseline;
-}
-
-.horizontal-content {
-  flex-direction: row;
-}
-
 .main-content h2 {
-  color: green;
+  color: hsla(210, 100%, 25%, 0.9);
 }
 
+.main-content h3 {
+  color: hsla(210, 100%, 35%, 0.9);
+}
+
+.main-content h4 {
+  color: hsla(210, 100%, 45%, 0.9);
+}
 .slide-in {
-  animation: slideIn 0.5s forwards;
+  opacity: 1;
 }
 
 .slide-out {
-  animation: slideOut 0.5s forwards;
+  opacity: 0;
 }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
   }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
-@keyframes slideOut {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
+  .menu-list-container {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-right: 0;
+    padding-bottom: 20px;
   }
-  100% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-}
 
-@media (max-width: 600px) {
   .menu-list {
     display: flex;
-    flex-direction: row; /* Change to column layout */
-    align-items: center; /* Center items horizontally */
-    gap: 10px; /* Reduce space between items */
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 
+  .main-content-container {
+    width: 100%;
+    padding-left: 0;
+  }
   .menu-list p {
-    width: 80%; /* Adjust width of items */
-    text-align: center; /* Center text */
-    font-size: 10px; /* Adjust font size */
-    padding: px 8px; /* Adjust padding */
+    text-align: center;
+    font-size: 14px;
+    padding: px 8px;
   }
 }

@@ -1,76 +1,91 @@
-.header {
-  background-color: #4caf50;
-  /* color: #fff; */
-  padding: 20px;
-  text-align: center;
-  padding: 20px;
-  border-bottom: 4px solid #388e3c;
-}
-
-.header h1 {
+body {
+  font-family: "Arial", sans-serif;
   margin: 0;
-  font-size: 2.5em;
-  color: #fff;
+  padding: 0;
+  background-color: #f4f4f9;
 }
 
-.header p {
-  margin: 5px 0;
-  font-size: 1.2em;
-  color: #eee;
+.header {
+  background-color: hsl(210, 100%, 26%);
+  color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info {
-  margin-top: 10px;
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.github-link {
-  display: inline-block;
-  margin: 10px 0;
-  font-size: 1.2em;
-  color: #ddd;
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  margin: 5px 0 0;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-link {
+  color: #ffffff;
   text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
   transition: color 0.3s ease;
 }
 
-.github-link:hover {
-  color: #0366d6;
+.contact-link:hover {
+  color: #ffdd57;
 }
 
-.email-phone {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.contact-item {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 10px;
 }
 
-.email-phone p {
-  margin: 0;
-  font-size: 1em;
-  color: #ccc;
-  display: flex;
-  align-items: center;
-}
-
-.email-phone p svg {
+.contact-link .fa-icon,
+.contact-item .fa-icon {
   margin-right: 8px;
-  color: #ccc;
 }
 
-/*
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
 
+  .header-right {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
-header p {
-  margin: 5px 0 0;
-  font-size: 1.2rem;
+  .contact-link {
+    margin: 10px 0;
+  }
+
+  .contact-item {
+    margin: 10px 0;
+  }
 }
-
-.github-link {
-  color: #61dafb;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.github-link:hover {
-  color: #21a1f1;
-} */

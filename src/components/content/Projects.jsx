@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Content.css";
 
 const Projects = ({ projects }) => (
-  <div className="main-content">
+  <div>
     <h2>Projects</h2>
     <ul>
       {projects.map((project, index) => (

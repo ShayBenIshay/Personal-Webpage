@@ -4,7 +4,7 @@ import "./styles/Profile.css";
 const Profile = () => (
   <section className="profile">
     <h2>Profile</h2>
-    <div>
+    <div className="description">
       <div>
         Computer Science Graduate proficient in backend development with
         full-stack capabilities.

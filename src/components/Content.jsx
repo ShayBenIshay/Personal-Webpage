@@ -30,14 +30,13 @@ export default function Content({ list = [] }) {
             description:
               "SmartInvestor: Intelligent Investment Management Platform.",
             elaboration:
-              "Trade History tracking. Porfolio managing. Connected to Polygon API with last day closing rates",
+              "Trade History tracking. Portfolio managing. Connected to Polygon API with last day closing rates",
             code: "the code was written in plain Javascript + HTML + CSS",
             githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
           },
           {
             title: "CV Website",
             description: "Interactive way to show my CV",
-            // elaboration: "",
             code: "The project was developed using React.js along with JavaScript and CSS.",
             githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
           },
@@ -53,16 +52,9 @@ export default function Content({ list = [] }) {
         graduated="April 2021"
       />
     ),
-    // "React", "git", "CSS", "HTML"]} />
-    skills: (
-      <Skills
-        skills={skills}
-        // programmingLanguages={["Java", "JavaScript", "Python"]}
-        // webDevelopment={["React", "HTML", "CSS"]}
-        // versionControl={["git"]}
-      />
-    ),
+    skills: <Skills skills={skills} />,
   };
+
   function handleChangeContent(content) {
     if (displayContent === content) return;
     setFadeIn(false);
@@ -79,6 +71,7 @@ export default function Content({ list = [] }) {
           {Object.keys(menuList).map((contentTitle) => (
             <p
               key={contentTitle}
+              className={displayContent === contentTitle ? "active" : ""}
               onClick={() => handleChangeContent(contentTitle)}
             >
               {menuList[contentTitle]}
@@ -91,7 +84,9 @@ export default function Content({ list = [] }) {
           fadeIn ? "slide-in" : "slide-out"
         }`}
       >
-        {displayContent in content && content[displayContent]}
+        <div className="main-content">
+          {displayContent in content && content[displayContent]}
+        </div>
       </div>
     </section>
   );
