@@ -2,12 +2,12 @@ import Experience from "./content/Experience";
 import Skills from "./content/Skills";
 import Projects from "./content/Projects";
 import Education from "./content/Education";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles/Content.css";
 
 export default function Content({ list = [] }) {
-  const [displayContent, setDisplayContent] = useState("experience");
-  const [fadeIn, setFadeIn] = useState(true);
+  const [displayContent, setDisplayContent] = useState("projects");
+  const [fadeClass, setFadeClass] = useState("fade-in");
 
   const menuList = {
     projects: "Projects",
@@ -15,10 +15,11 @@ export default function Content({ list = [] }) {
     education: "Education",
     skills: "Skills",
   };
+
   const skills = {
-    ProgrammingLanguages: ["Java", "JavaScript", "Python"],
-    WebDevelopment: ["React", "HTML", "CSS"],
-    VersionControl: ["Git"],
+    BackEndDevelopment: ["Java", "JavaScript", "Python"],
+    FrontEndDevelopment: ["React", "HTML", "CSS"],
+    VersionControl: ["Git (CLI)", "Bitbucket"],
   };
 
   const content = {
@@ -37,7 +38,7 @@ export default function Content({ list = [] }) {
           {
             title: "CV Website",
             description: "Interactive way to show my CV",
-            code: "The project was developed using React.js along with JavaScript and CSS.",
+            code: "The project was developed using React, JavaScript, and CSS.",
             githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
           },
         ]}
@@ -55,13 +56,17 @@ export default function Content({ list = [] }) {
     skills: <Skills skills={skills} />,
   };
 
+  useEffect(() => {
+    setFadeClass("fade-in");
+  }, [displayContent]);
+
   function handleChangeContent(content) {
     if (displayContent === content) return;
-    setFadeIn(false);
+    setFadeClass("fade-out");
     setTimeout(() => {
       setDisplayContent(content);
-      setFadeIn(true);
-    }, 300); // Time for the fade-out effect to complete
+      setFadeClass("fade-in");
+    }, 200); // Time for the fade-out effect to complete
   }
 
   return (
@@ -79,12 +84,8 @@ export default function Content({ list = [] }) {
           ))}
         </div>
       </div>
-      <div
-        className={`main-content-container ${
-          fadeIn ? "slide-in" : "slide-out"
-        }`}
-      >
-        <div className="main-content">
+      <div className="main-content-container">
+        <div className={`main-content ${fadeClass}`}>
           {displayContent in content && content[displayContent]}
         </div>
       </div>

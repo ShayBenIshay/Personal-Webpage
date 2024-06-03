@@ -29,7 +29,14 @@ const Header = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faWhatsapp} /> +972-54-7573914
+          <FontAwesomeIcon
+            icon={faWhatsapp}
+            style={{
+              background: "green",
+              borderRadius: "50%",
+            }}
+          />{" "}
+          +972-54-7573914
         </a>
       </div>
     </div>

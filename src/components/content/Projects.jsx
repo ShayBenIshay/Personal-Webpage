@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "../styles/Content.css";
 
 const Projects = ({ projects }) => (
@@ -17,7 +19,7 @@ const Projects = ({ projects }) => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub🔗: {project.title}
+            <FontAwesomeIcon icon={faGithub} /> {project.title}
           </a>
         </div>
       ))}

@@ -59,8 +59,11 @@ footer {
 .main-content {
   border-left: 4px solid hsla(210, 100%, 45%, 0.9);
   border-radius: 10px;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  /* 
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; */
 }
 .main-content h2 {
   color: hsla(210, 100%, 25%, 0.9);
@@ -78,6 +81,14 @@ footer {
 }
 
 .slide-out {
+  opacity: 0;
+}
+
+.main-content.fade-in {
+  opacity: 1;
+}
+
+.main-content.fade-out {
   opacity: 0;
 }
 
