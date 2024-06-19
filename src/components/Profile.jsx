@@ -1,24 +1,10 @@
-import React from "react";
 import "./styles/Profile.css";
+import { profileData } from "../data/profileData";
 
 const Profile = () => (
   <section className="profile">
-    <h2>Profile</h2>
-    <div className="description">
-      <div>
-        Computer Science Graduate proficient in backend development with
-        full-stack capabilities.
-      </div>
-      <div>Passionate about developing components/apps from scratch </div>
-      <div>
-        Skilled software developer. great algorithms and data structures
-        knowledge.
-      </div>
-      <div>
-        Quick to learn and adapt to multiple programming languages, including
-        Python, Java, and JavaScript
-      </div>
-    </div>
+    <h2>{profileData.title}</h2>
+    <div className="description">{profileData.description}</div>
   </section>
 );
 

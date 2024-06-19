@@ -4,56 +4,31 @@ import Projects from "./content/Projects";
 import Education from "./content/Education";
 import { useState, useEffect } from "react";
 import "./styles/Content.css";
+import { projectsData } from "../data/projectsData";
+import { educationData } from "../data/educationData";
+import { skillsData } from "../data/skillsData";
+import { menuList } from "../data/contentData";
 
 export default function Content({ list = [] }) {
   const [displayContent, setDisplayContent] = useState("projects");
   const [fadeClass, setFadeClass] = useState("fade-in");
 
-  const menuList = {
-    projects: "Projects",
-    experience: "Experience",
-    education: "Education",
-    skills: "Skills",
-  };
-
-  const skills = {
-    BackEndDevelopment: ["Java", "JavaScript", "Python"],
-    FrontEndDevelopment: ["React", "HTML", "CSS"],
-    VersionControl: ["Git (CLI)", "Bitbucket"],
-  };
-
   const content = {
-    projects: (
-      <Projects
-        projects={[
-          {
-            title: "Smart Investor",
-            description:
-              "SmartInvestor: Intelligent Investment Management Platform.",
-            elaboration:
-              "Trade History tracking. Portfolio managing. Connected to Polygon API with last day closing rates",
-            code: "the code was written in plain Javascript + HTML + CSS",
-            githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
-          },
-          {
-            title: "CV Website",
-            description: "Interactive way to show my CV",
-            code: "The project was developed using React, JavaScript, and CSS.",
-            githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
-          },
-        ]}
-      />
-    ),
+    projects: <Projects projects={projectsData.projects} />,
     experience: <Experience />,
     education: (
       <Education
-        degree="Bachelor of Science in Computer Science"
-        school="Technion - Israel Institute of Technology"
-        location="Haifa, Israel"
-        graduated="April 2021"
+        degree={educationData.degree}
+        school={educationData.school}
+        location={educationData.location}
+        graduated={educationData.graduated}
+        description={educationData.description}
+        notes={educationData.notes}
+        finalProjectName={educationData.finalProjectName}
+        finalProjectUrl={educationData.finalProjectUrl}
       />
     ),
-    skills: <Skills skills={skills} />,
+    skills: <Skills skills={skillsData.skills} />,
   };
 
   useEffect(() => {
@@ -66,7 +41,7 @@ export default function Content({ list = [] }) {
     setTimeout(() => {
       setDisplayContent(content);
       setFadeClass("fade-in");
-    }, 200); // Time for the fade-out effect to complete
+    }, 200);
   }
 
   return (

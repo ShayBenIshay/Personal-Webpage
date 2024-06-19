@@ -1,26 +1,20 @@
 import React from "react";
 import Job from "./Job";
 import "../styles/Content.css";
+import { experienceData } from "../../data/experienceData";
 
 const Experience = () => (
-  <div>
-    <h2>Experience</h2>
+  <div className="content">
+    <h2>{experienceData.title}</h2>
     <Job
-      title="Software Developer"
-      company="Amdocs"
-      date="12/2021 - 09/2023"
-      type="Full-time"
-      responsibilities="Investigating issues with business flows."
-      routine={[
-        "Running the flow",
-        "Fetching and investigating logs",
-        "Comparing to expected behavior",
-        "Analyzing the issue. Debugging services if necessary",
-        "Fixing the issue/s",
-        "Running the fixes through CI/CD pipeline (Jenkins)",
-        "Merging changes to the main branch",
-        "Rolling up/down if needed",
-      ]}
+      title={experienceData.jobs[0].title}
+      company={experienceData.jobs[0].company}
+      date={experienceData.jobs[0].date}
+      type={experienceData.jobs[0].type}
+      responsibilities={experienceData.jobs[0].responsibilities}
+      description={experienceData.jobs[0].description}
+      routine={experienceData.jobs[0].routine}
+      notes={experienceData.jobs[0].notes}
     />
   </div>
 );

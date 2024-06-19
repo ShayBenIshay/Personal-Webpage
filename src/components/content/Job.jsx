@@ -1,7 +1,17 @@
 import React from "react";
 import "./styles/Job.css";
+import { experienceData } from "../../data/experienceData";
 
-const Job = ({ title, company, date, type, responsibilities, routine }) => (
+const Job = ({
+  title,
+  company,
+  date,
+  type,
+  responsibilities,
+  description,
+  routine,
+  notes,
+}) => (
   <div className="job">
     <div className="job-info">
       <h3>
@@ -14,8 +24,11 @@ const Job = ({ title, company, date, type, responsibilities, routine }) => (
         <h4>Responsibilities:</h4>
         <p>{responsibilities}</p>
       </div>
+      <p>{notes}</p>
     </div>
     <div className="routine">
+      <h4>Description</h4>
+      <p>{description}</p>
       <h4>Daily Routine:</h4>
       <ul>
         {routine.map((task, index) => (

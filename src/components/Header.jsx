@@ -1,31 +1,31 @@
-import React from "react";
 import "./styles/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import headerData from "../data/headerData";
 
 const Header = () => (
   <header className="header">
     <div className="header-content">
       <div className="header-left">
-        <h1 className="header-title">Shay Ben Ishay</h1>
-        <p className="header-subtitle">Software Engineer</p>
+        <h1 className="header-title">{headerData.name}</h1>
+        <p className="header-subtitle">{headerData.title}</p>
       </div>
       <div className="header-right">
         <a
           className="contact-link"
-          href="https://github.com/ShayBenIshay"
+          href={headerData.gitHub.href}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} /> My GitHub
+          <FontAwesomeIcon icon={faGithub} /> {headerData.gitHub.label}
         </a>
-        <a className="contact-link" href="mailto:shaybishay@gmail.com">
-          <FontAwesomeIcon icon={faEnvelope} /> shaybishay@gmail.com
+        <a className="contact-link" href={headerData.email.href}>
+          <FontAwesomeIcon icon={faEnvelope} /> {headerData.email.emailAddress}
         </a>
         <a
           className="contact-link"
-          href="https://wa.me/972547573914"
+          href={headerData.phone.href}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,7 +36,7 @@ const Header = () => (
               borderRadius: "50%",
             }}
           />{" "}
-          +972-54-7573914
+          {headerData.phone.phoneNumber}
         </a>
       </div>
     </div>
