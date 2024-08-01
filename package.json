@@ -2,7 +2,7 @@
   "name": "cv-website",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://ShayBenIshay.github.io/CV-Webpage",
+  "homepage": "https://shay-full-stack-developer-cv.onrender.com/",
   "type": "module",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
@@ -13,6 +13,9 @@
     "react-refresh": "^0.14.2",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "scripts": {
     "start": "react-scripts start",
