@@ -93,8 +93,7 @@ nav ul li {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(8, 43, 92, 0.72), rgba(8, 43, 92, 0.722)),
-    url("../../assets/hero.png");
+  background: linear-gradient(rgba(8, 43, 92, 0.72), rgba(8, 43, 92, 0.722));
   background-size: cover;
   background-position: center;
   color: whitesmoke;

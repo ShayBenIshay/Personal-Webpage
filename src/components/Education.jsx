@@ -1,4 +1,3 @@
-import React from "react";
 import { educationData } from "../data/educationData";
 
 const Education = () => {
