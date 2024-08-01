@@ -1,5 +1,4 @@
 export const experienceData = {
-  title: "Experience",
   jobs: [
     {
       title: "Back End Software Developer",

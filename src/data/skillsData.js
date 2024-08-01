@@ -1,8 +1,5 @@
 export const skillsData = {
-  title: "Skills",
-  skills: {
-    BackEndDevelopment: ["Java", "JavaScript", "Python"],
-    FrontEndDevelopment: ["React", "HTML", "CSS"],
-    VersionControl: ["Git (CLI)", "Bitbucket"],
-  },
+  BackEndDevelopment: ["Node JS", "Express framework"],
+  FrontEndDevelopment: ["React", "Redux"],
+  VersionControl: ["Git"],
 };

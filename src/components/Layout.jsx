@@ -1,19 +1,16 @@
-import Header from "./Header";
-import Profile from "./Profile";
-import Content from "./Content";
-import Footer from "./Footer";
+// import { Outlet } from "react-router-dom";
+// import Header from "./Hero";
+// import Footer from "./Footer";
 
-const Layout = () => {
-  return (
-    <>
-      <div className="page">
-        <Header />
-        <Profile />
-        <Content />
-        <Footer />
-      </div>
-    </>
-  );
-};
-
-export default Layout;
+// const Layout = () => {
+//   return (
+//     <>
+//       <Header />
+//       <div className="container">
+//         <Outlet />
+//       </div>
+//       <Footer />
+//     </>
+//   );
+// };
+// export default Layout;
