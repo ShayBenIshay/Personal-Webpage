@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import menu_icon from "../assets/menu-icon.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import contactsData from "../data/contactsData";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -17,6 +21,7 @@ const Navbar = () => {
 
   return (
     <nav className={`container navbar ${sticky ? "dark-nav" : ""}`}>
+      <img src={logo} alt="" className="logo" />
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500}>
@@ -43,7 +48,28 @@ const Navbar = () => {
             Skills
           </Link>
         </li>
+        <li>
+          <Link
+            to="contact"
+            smooth={true}
+            offset={-260}
+            duration={500}
+            className="btn"
+          >
+            Contact me
+          </Link>
+        </li>
       </ul>
+      <div>
+        <p>More works:</p>
+        <a
+          href={contactsData.gitHub.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} /> {contactsData.gitHub.label}
+        </a>
+      </div>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>
   );

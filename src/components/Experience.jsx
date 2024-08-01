@@ -35,7 +35,7 @@ const Experience = () => {
                 <p>{description}</p>
               </div>
               <div className="routine">
-                <h4>Daily Routine:</h4>
+                <h4>Work Routine:</h4>
                 <ul>
                   {routine.map((task, index) => (
                     <li key={index}>{task}</li>

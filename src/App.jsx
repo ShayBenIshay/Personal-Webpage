@@ -5,6 +5,8 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 const App = () => {
   useTitle("Shay's CV Webpage");
@@ -18,6 +20,8 @@ const App = () => {
         <Projects />
         <Education />
         <Skills />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

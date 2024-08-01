@@ -27,15 +27,12 @@ body {
 .title {
   text-align: center;
   color: rgb(33, 46, 160);
-  /* font-size: 15px; */
   font-weight: 600;
-  /* text-transform: uppercase; */
-  margin: 70px 0 30px;
+  /* margin: 70px 0 30px; */
 }
 
 .subtitle {
-  /* font-size: 32px; */
-  color: rgb(0, 15, 56);
+  color: rgb(15, 0, 82);
   margin-top: 5px;
   text-transform: none;
 }
@@ -74,6 +71,10 @@ section {
   z-index: 10;
 }
 
+.logo {
+  width: 110px;
+}
+
 .menu-icon {
   display: none;
 }
@@ -93,7 +94,7 @@ nav ul li {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(8, 43, 92, 0.72), rgba(8, 43, 92, 0.722));
+  background: linear-gradient(rgba(62, 68, 75, 0.72), rgba(8, 43, 92, 0.722));
   background-size: cover;
   background-position: center;
   color: whitesmoke;
@@ -124,7 +125,7 @@ nav ul li {
 }
 
 .experience {
-  margin: 80px auto;
+  margin: 40px auto;
   width: 90%;
   display: flex;
   align-items: center;
@@ -133,9 +134,10 @@ nav ul li {
 }
 
 .projects {
-  margin: 100px auto;
+  margin: 60px auto;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-between;
   width: 90%;
 }
@@ -153,6 +155,8 @@ nav ul li {
 }
 
 .container {
+  padding-left: 5%;
+  padding-right: 5%;
   padding: 0.75em 0.5em 0.5em;
   flex-grow: 1;
 }
@@ -162,13 +166,113 @@ nav ul li {
   margin-top: 10px;
 }
 
+.contact {
+  margin: 80px auto;
+  max-width: 90%;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  color: #676767;
+}
+
+.contact-col h3 {
+  color: #000f38;
+  font-weight: 500;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-col h3 img {
+  width: 35px;
+  margin-left: 10px;
+}
+
+.contact-col p {
+  max-width: 450px;
+  list-style: 1.3;
+}
+
+.contact-col ul li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-col ul li img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  display: block;
+  width: 100%;
+  background: #ebecfe;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  resize: none;
+}
+
+.contact-col span {
+  display: block;
+  margin: 20px 0;
+}
+
+.btn {
+  background: white;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.btn.dark-btn {
+  background-color: #212ea0;
+  color: white;
+}
+
 footer {
-  position: relative;
-  bottom: 0;
-  background-color: purple;
-  padding: 0 0.5em;
-  border-top: 1px solid var(--BORDER-COLOR);
-  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #797979;
+  padding: 15px 0;
+  color: black;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+
+footer div p {
+  margin-right: 20px;
+}
+
+footer div a {
+  display: inline-block;
+  margin-right: 20px;
+  color: black;
 }
 
 /* -------- media query ----------- */

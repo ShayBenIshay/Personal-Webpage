@@ -1,6 +1,6 @@
 {
   "name": "cv-website",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "homepage": "https://shay-full-stack-developer-cv.onrender.com/",
   "type": "module",

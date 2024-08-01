@@ -17,7 +17,7 @@ export const projectsData = [
     subtitle: "Live CV. keeps getting updated.",
     description: `a live and inline way to share my CV and at the same time present my frontend skills in React.`,
     notes: "The project was developed using React.",
-    webpageUrl: "https://shaybenishay.github.io/CV-Webpage/",
+    webpageUrl: "https://shay-full-stack-developer-cv.onrender.com/",
     webpageTitle: "Webpage!",
     githubTitle: "CV Webpage Source Code",
     githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",

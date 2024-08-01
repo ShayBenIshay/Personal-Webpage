@@ -22,7 +22,7 @@ const Welcome = () => {
         <p>Owner: Shay Ben Ishay</p>
 
         <p>
-          <Link to="/aboutme">About me</Link>
+          <Link to="/aboutme">About myselft</Link>
         </p>
         <p>
           <Link to="/experience">experience</Link>

@@ -1,5 +1,5 @@
 export const aboutmeData = {
-  description: `Computer Science Graduate proficient with vast coding capabilities, currently focused on MERN stack programming. 
-    Passionate about developing apps from scratch. Skilled software developer. 
-    Great algorithms and data structures knowledge. Quick to learn and adapt to new topics and loves a challenge.`,
+  description: `Full Stack developer working with MERN stack, B.Sc graduate from the Computer Science faculty at the Technion institute. 
+    Passionate about developing awesome apps from scratch. Loves a challenge and Quick to adapt to new topics.
+    Skilled software developer with great algorithms and data structures knowledge and excellent problems solving abilities.`,
 };
