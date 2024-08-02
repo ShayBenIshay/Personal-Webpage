@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import contactsData from "../data/contactsData";
 import logo from "../assets/logo.png";
+import ExportPdf from "../features/PDF/ExportPdf";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -58,6 +59,9 @@ const Navbar = () => {
           >
             Contact me
           </Link>
+        </li>
+        <li>
+          <ExportPdf />
         </li>
       </ul>
       <div>
