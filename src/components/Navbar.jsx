@@ -30,22 +30,22 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="experience" smooth={true} offset={-260} duration={500}>
+          <Link to="experience" smooth={true} offset={-160} duration={500}>
             Experience
           </Link>
         </li>
         <li>
-          <Link to="projects" smooth={true} offset={-150} duration={500}>
+          <Link to="projects" smooth={true} offset={-180} duration={500}>
             Projects
           </Link>
         </li>
         <li>
-          <Link to="education" smooth={true} offset={-260} duration={500}>
+          <Link to="education" smooth={true} offset={-160} duration={500}>
             Education
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} offset={-260} duration={500}>
+          <Link to="skills" smooth={true} offset={-180} duration={500}>
             Skills
           </Link>
         </li>
@@ -64,7 +64,7 @@ const Navbar = () => {
           <ExportPdf />
         </li>
       </ul>
-      <div>
+      <div className="github">
         <p>More works:</p>
         <a
           href={contactsData.gitHub.href}

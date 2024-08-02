@@ -1,6 +1,6 @@
 const headerData = {
   name: "Shay Ben Ishay",
-  title: "Software Engineer",
+  title: "Full Stack Engineer",
   gitHub: {
     href: "https://github.com/ShayBenIshay",
     label: "My GitHub",
