@@ -87,8 +87,12 @@ nav ul li {
 }
 
 .dark-nav {
-  background: rgb(5, 29, 63);
+  background: rgb(8, 44, 95);
   transition: 0.5s;
+}
+
+.github {
+  margin-right: 20px;
 }
 
 .hero {
@@ -159,7 +163,6 @@ nav ul li {
 
 .skills {
   margin: 80px auto;
-  padding: 0 80px;
   position: relative;
 }
 
@@ -318,16 +321,16 @@ footer div a {
     top: 0;
     right: 0px;
     bottom: 0;
-    background: #212ea0;
+    background: #1d2570;
     z-index: -1;
-    width: 200px;
+    width: 120px;
     padding-top: 70px;
     transition: 0.5s;
   }
 
   nav ul li {
     display: block;
-    margin: 25px 40px;
+    margin: 20px 15px;
   }
 
   .menu-icon {
@@ -358,5 +361,9 @@ footer div a {
   .hero-text p {
     font-size: 14px;
     margin: 15px auto 30px;
+  }
+  .btn {
+    max-width: 100px;
+    max-height: 50px;
   }
 }

@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import { useState } from "react";
 
 const App = () => {
   useTitle("Shay's CV Webpage");
