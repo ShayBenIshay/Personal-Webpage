@@ -179,7 +179,7 @@ nav ul li {
 }
 
 .contact {
-  margin: 80px auto;
+  margin: 70px auto;
   max-width: 90%;
   display: flex;
   align-content: center;
@@ -330,7 +330,7 @@ footer div a {
 
   nav ul li {
     display: block;
-    margin: 20px 15px;
+    margin: 20px 10px;
   }
 
   .menu-icon {
@@ -342,6 +342,20 @@ footer div a {
     right: -200px;
   }
 }
+
+@media (max-width: 700px) {
+  .contact {
+    display: block;
+  }
+  .contact-col {
+    padding: 20px;
+  }
+  footer {
+    display: block;
+    text-align: center;
+  }
+}
+
 @media (max-width: 650px) {
   .hero-text h1 {
     font-size: 30px;
