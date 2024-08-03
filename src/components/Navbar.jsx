@@ -6,6 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import contactsData from "../data/contactsData";
 import logo from "../assets/logo.png";
 import ExportPdf from "../features/PDF/ExportPdf";
+import useScreenSize from "../hooks/screenSize";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
