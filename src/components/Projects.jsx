@@ -5,20 +5,34 @@ import { projectsData } from "../data/projectsData";
 const Projects = () => {
   return (
     <div className="projects">
-      <h2 className="title">Projects</h2>
+      <h1>Projects</h1>
       <ul>
         {projectsData.map(
           (
-            { title, subtitle, description, notes, webpageUrl, webpageTitle },
+            {
+              title,
+              subtitle,
+              description,
+              notes,
+              githubTitle,
+              githubUrl,
+              webpageUrl,
+            },
             index
           ) => (
             <article key={index}>
-              <h3 className="subtitle">{title}</h3>
+              <a href={webpageUrl} target="_blank" rel="noopener noreferrer">
+                <h3 className="subtitle">{title}</h3>
+              </a>
               <p>{subtitle}</p>
               <p>{description}</p>
               <p>{notes}</p>
-              <a href={webpageUrl} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} /> {webpageTitle}
+
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                <h3 className="subtitle">
+                  <FontAwesomeIcon icon={faGithub} />
+                  {githubTitle}
+                </h3>
               </a>
             </article>
           )

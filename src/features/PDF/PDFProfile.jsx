@@ -3,12 +3,12 @@ import { aboutmeData } from "../../data/aboutmeData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 20,
+    fontSize: 18,
     marginBottom: 5,
     color: "rgba(0, 20, 50, 0.9)",
   },
   description: {
-    fontSize: 12,
+    fontSize: 10,
     marginTop: 5,
     paddingHorizontal: 20,
     alignItems: "baseline",

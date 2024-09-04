@@ -2,24 +2,25 @@ export const projectsData = [
   {
     title: "Smart Investor",
     subtitle: "Intelligent Investment Management Platform.",
-    description: `It is a full-Stack project implementing MERN stack(MongoDB,Express,React,Nodejs). 
-    this app is connected to Polygon finance API fetching stock prices. 
+    description: `Full-Stack project, implementing MERN stack(MongoDB,Express,React,Nodejs). 
+    this app is connected to Polygon finance API, fetching stock prices by date, to Create/Update a transaction.
+    It has Portfolio to show statistics about your transaction, compared to real time price. 
     This is an Easy way to track your Trade History and Manage your Portfolio.`,
-    notes: `The frontend code was written with React using Redux and Express,
-      the Backend service code was written with Node js connected to MongoDB.
-      i deployed th Static Web and the Webservice `,
+    notes: `The frontend code was written with React using Redux and Express js,
+      the Backend service is connected to MongoDB and written with Node js.`,
+    githubTitle: "Smart Investor Source Code",
     githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
     webpageUrl: "https://smart-investor.onrender.com/",
     webpageTitle: "Smart Investor app",
   },
   {
-    title: "My CV Webpage",
-    subtitle: "Live CV. keeps getting updated.",
-    description: `a live and inline way to share my CV and at the same time present my frontend skills in React.`,
-    notes: "The project was developed using React.",
+    title: "My Personal Webpage",
+    subtitle: "Interactive way to tell about myself and show my works",
+    description: `a live and inline way to present my portfolio and share my CV.`,
+    notes: "This portfolio page was developed using React.",
+    githubTitle: "Personal Webpage Source Code",
+    githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
     webpageUrl: "https://shay-full-stack-developer-cv.onrender.com/",
     webpageTitle: "Webpage!",
-    githubTitle: "CV Webpage Source Code",
-    githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
   },
 ];

@@ -5,7 +5,7 @@ const Experience = () => {
 
   return (
     <div className="experience">
-      <h2 className="title">Experience</h2>
+      <h1>Experience</h1>
       <article>
         {jobsArr.map(
           ({
@@ -26,11 +26,12 @@ const Experience = () => {
                 <p>
                   {date}, {type}
                 </p>
+                <p>{notes}</p>
+
                 <div className="responsibilities">
                   <h4>Responsibilities:</h4>
                   <p>{responsibilities}</p>
                 </div>
-                <p>{notes}</p>
                 <h4>Description</h4>
                 <p>{description}</p>
               </div>

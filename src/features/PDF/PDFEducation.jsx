@@ -3,30 +3,31 @@ import { educationData } from "../../data/educationData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 18,
+    fontSize: 16,
     marginTop: 10,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
   title: {
-    fontSize: 16,
+    fontSize: 14,
     marginBottom: 5,
     marginLeft: 10,
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: 12,
     marginBottom: 5,
     marginLeft: 20,
-    color: "#888888",
+    fontWeight: "bold",
   },
   description: {
-    fontSize: 12,
+    fontSize: 10,
     marginBottom: 5,
     marginLeft: 20,
   },
   notes: {
-    fontSize: 10,
+    fontSize: 8,
     marginBottom: 10,
+    color: "#888888",
   },
 });
 
@@ -40,11 +41,11 @@ const PDFEducation = () => {
       </Text>
       <Text style={styles.description}>{educationData.description}</Text>
       <Text style={styles.notes}>
-        <Link href={educationData.finalProjectUrl}>
+        {/* <Link href={educationData.finalProjectUrl}>
           {educationData.finalProjectName}
         </Link>
-        {": "}
-        {educationData.notes}
+        {": "} */}
+        {/* {educationData.notes} */}
       </Text>
     </div>
   );

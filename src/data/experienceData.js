@@ -8,11 +8,12 @@ export const experienceData = {
       description: `Investigating defects on several Micro-services Subdomains, 
         Working with Java, Spring Boot, Micro-Services Architecture, 
         using Red Hat OpenShift Container Platform. and Bitbucket for Version Control`,
-      responsibilities: "Investigating core issues with business flows.",
-      routineTest:
-        "Run the failed API (on customer env), Fetch the logs from the services, Investigate the logs compare to the expected behavior, Analyzie the issue or Debug the services if more information is necessary, Fix the bug. Then Run the fixes through CI/CD Jenkins Pipeline, Create PR and Merge changes to the main branch, Rolling the fixes to higher/lower versions if needed.",
+      responsibilities:
+        "Investigating and fixing core issues with business flows.",
+      routinePdf:
+        "Run the failed API, Fetch the logs from the services, Investigate the logs compare to the expected behavior, Analyzie the issue or Debug the services if more information is necessary, Fix the bug. Then Run the fixes through CI/CD Jenkins Pipeline, Create PR and Merge changes to the main branch, Rolling the fixes to higher/lower versions if needed.",
       routine: [
-        "Run the failed API (on customer env)",
+        "Run the failed API",
         "Fetch the logs from the services",
         "Investigate the logs compare to the expected behavior",
         "Analyzie the issue or Debug the services if more information is necessary",
@@ -20,8 +21,7 @@ export const experienceData = {
         "Create PR and Merge changes to the main branch",
         "Rolling the fixes to higher/lower versions if needed.",
       ],
-      notes:
-        "Code was written in Java using Spring Framework and Micro Services Architecture .",
+      notes: "Micro Services Architecture using Java Spring Framework.",
     },
   ],
 };

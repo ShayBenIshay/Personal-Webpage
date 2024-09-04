@@ -3,54 +3,74 @@ import { projectsData } from "../../data/projectsData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 18,
+    fontSize: 16,
     marginTop: 15,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
   projectTitle: {
-    fontSize: 16,
+    fontSize: 14,
     marginBottom: 5,
     marginLeft: 10,
     textDecoration: "underline",
   },
   projectSubtitle: {
-    fontSize: 14,
+    fontSize: 12,
     marginBottom: 5,
     marginLeft: 20,
-    color: "#888888",
+    // color: "#888888",
+    fontWeight: "bold",
   },
   description: {
-    fontSize: 12,
+    fontSize: 10,
     marginBottom: 5,
     marginLeft: 20,
   },
   notes: {
-    fontSize: 10,
+    fontSize: 8,
     marginBottom: 10,
+    color: "#888888",
   },
 });
 
 const PDFProjects = () => {
   return (
     <View>
-      <Text style={styles.heading}>{projectsData.title}</Text>
-      {projectsData.map((project) => (
-        <View key={project.title}>
-          <Text style={styles.projectTitle}>{project.title}</Text>
-          <Text style={styles.projectSubtitle}>
-            {project.subtitle} Check it out here:{" "}
+      <Text style={styles.heading}>Projects</Text>
+      <View key={projectsData[0].title}>
+        <Text style={styles.projectTitle}>{projectsData[0].title}</Text>
+        <Text style={styles.projectSubtitle}>
+          {projectsData[0].subtitle} Check it out here:{" "}
+          <Link href={projectsData[0].webpageUrl}>
+            {projectsData[0].webpageTitle}
+          </Link>
+        </Text>
+        <Text style={styles.description}>{projectsData[0].description}</Text>
+        <Text style={styles.notes}>
+          {/* <Link href={projectsData[0].githubUrl}>{projectsData[0].githubTitle}</Link> */}
+          {projectsData[0].notes}
+        </Text>
+        <View key={projectsData[1].title}>
+          <Text style={styles.projectTitle}>
+            {projectsData[1].title} Check it out here:{" "}
             <Link href={projectsData[1].webpageUrl}>
               {projectsData[1].webpageTitle}
             </Link>
           </Text>
-          <Text style={styles.description}>{project.description}</Text>
+          {/* <Text style={styles.projectSubtitle}>
+            {projectsData[1].subtitle} 
+          </Text> */}
+          <Text style={styles.description}>{projectsData[1].description}</Text>
           <Text style={styles.notes}>
-            <Link href={project.githubUrl}>{project.githubTitle}</Link>
-            {project.notes}
+            {/* <Link href={projectsData[1].githubUrl}>{projectsData[1].githubTitle}</Link> */}
+            {projectsData[1].notes}
           </Text>
         </View>
-      ))}
+
+        {/* {projectsData.map((project) => (
+        
+      ))} */}
+      </View>
     </View>
   );
 };

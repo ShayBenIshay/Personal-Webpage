@@ -5,8 +5,8 @@ const Hero = () => (
   <>
     <div className="hero container">
       <div className="hero-text">
-        <h1>{headerData.name}</h1>
         <h3>{headerData.title}</h3>
+        <h1 className="hero-title">{headerData.name}</h1>
         <About />
       </div>
     </div>

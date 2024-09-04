@@ -9,13 +9,13 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontWeight: "bold",
-    fontSize: 35,
+    fontSize: 32,
     marginBottom: 5,
     color: "rgba(0, 20, 50, 0.9)",
   },
   subHeading: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 18,
   },
   contact: {
     flexDirection: "row",
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   link: {
-    fontSize: 12,
+    fontSize: 10,
     marginRight: 10,
     textDecoration: "none",
     color: "blue",

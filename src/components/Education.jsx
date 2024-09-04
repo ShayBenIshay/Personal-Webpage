@@ -13,12 +13,12 @@ const Education = () => {
   } = educationData;
   return (
     <div className="education">
-      <h2 className="title">Education</h2>
+      <h1>Education</h1>
       <article>
         <div>
+          <p>{school}</p>
           <h3 className="subtitle">{degree}</h3>
           <div>
-            <p>{school}</p>
             <p>{location}</p>
             <p>{graduated}</p>
           </div>

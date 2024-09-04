@@ -1,10 +1,10 @@
 export const educationData = {
-  degree: "B.Sc in Computer Science.",
+  degree: "Bachelor of Science in Computer Science.",
   school: "Technion - Israel Institute of Technology",
   location: "Haifa, Israel",
   graduated: "April 2021",
-  description:
-    "Focused on Object Oriented Programming, AI and Machine Learning Concepts. Final Project: Detection of Anomaly Behaviour in Security Camera.",
+  description: `Studying Computer Engineering concepts, 4 years of learning Algorithms, Data Structures, Different Programming Languages, how to write, maintain and optimize code, and more. 
+    Object Oriented Programming, Distributes Systems programming, AI and Machine Learning.`,
   notes:
     "The code was written in Python using libraries such as Numpy and Torch.",
   finalProjectName: "Kindergarten Violence Detector",

@@ -16,7 +16,7 @@
 /* My css */
 html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: white;
+  background-color: rgb(78, 96, 81);
   color: #000;
 }
 
@@ -24,11 +24,17 @@ body {
   background: #f5f5f5;
 }
 
-.title {
+h1 {
   text-align: center;
   color: rgb(33, 46, 160);
-  font-weight: 600;
-  /* margin: 70px 0 30px; */
+  font-weight: 400;
+  font-size: 80px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .subtitle {
@@ -112,10 +118,10 @@ nav ul li {
   max-width: 800px;
 }
 
-.hero-text h1 {
+/* .hero-text h1 {
   font-size: 60px;
   font-weight: 600;
-}
+} */
 .hero-text h2 {
   font-size: 40px;
   font-weight: 600;
@@ -132,7 +138,7 @@ nav ul li {
 }
 
 .about {
-  margin-top: 40px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -161,9 +167,21 @@ nav ul li {
   text-align: center;
 }
 
-.skills {
+.skills-container {
   margin: 80px auto;
+  width: 90%;
   position: relative;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skills-category {
+  width: 25%;
 }
 
 .container {
@@ -176,6 +194,14 @@ nav ul li {
 .routine ul {
   margin-left: 50px;
   margin-top: 10px;
+}
+
+.contact-title {
+  text-align: center;
+  color: rgb(33, 46, 160);
+  font-weight: 200;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .contact {
@@ -321,9 +347,9 @@ footer div a {
     top: 0;
     right: 0px;
     bottom: 0;
-    background: #1d2570;
+    background: #1826a9;
     z-index: -1;
-    width: 120px;
+    width: 150px;
     padding-top: 70px;
     transition: 0.5s;
   }
@@ -375,9 +401,5 @@ footer div a {
   .hero-text p {
     font-size: 14px;
     margin: 15px auto 30px;
-  }
-  .btn {
-    max-width: 100px;
-    max-height: 50px;
   }
 }

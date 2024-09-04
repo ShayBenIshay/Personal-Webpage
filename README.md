@@ -1,3 +1,3 @@
-# Personal Webpage
+# CV-Webpage
 
-Interactive way to tell about myself and show my works
+Interactive way to show my CV

@@ -35,7 +35,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="title">
+      <div className="contact-title">
         <p>CONTACT ME</p>
         <h2>Get in Touch</h2>
       </div>
@@ -49,28 +49,6 @@ const Contact = () => {
             information below. collabarations, feedbacks and job opportunities
             are more then welcome.
           </p>
-
-          {/* <div>
-      <p>contacts:</p>
-      <a
-        href={contactsData.gitHub.href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faGithub} /> {contactsData.gitHub.label}
-      </a>
-      <a href={contactsData.email.href}>
-        <FontAwesomeIcon icon={faEnvelope} /> {contactsData.email.emailAddress}
-      </a>
-      <a
-        href={contactsData.phone.href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon icon={faWhatsapp} />
-        {contactsData.phone.phoneNumber}
-      </a>
-    </div> */}
 
           <ul>
             <li>
