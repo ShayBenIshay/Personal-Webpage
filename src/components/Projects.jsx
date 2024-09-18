@@ -22,13 +22,18 @@ const Projects = () => {
           ) => (
             <article key={index}>
               <a href={webpageUrl} target="_blank" rel="noopener noreferrer">
-                <h3 className="subtitle">{title}</h3>
+                <p className="title">{title}</p>
               </a>
               <p>{subtitle}</p>
               <p>{description}</p>
               <p>{notes}</p>
 
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <a
+                className="sourcecode"
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h3 className="subtitle">
                   <FontAwesomeIcon icon={faGithub} />
                   {githubTitle}

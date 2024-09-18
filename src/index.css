@@ -78,13 +78,21 @@ h1 {
   text-transform: none;
 }
 
+.title {
+  font-weight: 400;
+  color: rgb(15, 0, 82);
+  font-size: 30px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
   line-height: 1;
   cursor: pointer;
 }
-
+.sourcecode {
+  background-color: red;
+}
 article {
   /* margin: 0.5em; */
   border: 1px solid #000;
@@ -212,7 +220,7 @@ nav ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .skills-category {
