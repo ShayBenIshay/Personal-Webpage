@@ -12,11 +12,11 @@ const Education = () => {
     finalProjectUrl,
   } = educationData;
   return (
-    <div className="education">
+    <div className="education fourth-element">
       <h1>Education</h1>
       <article>
         <div>
-          <p>{school}</p>
+          <p className="subtitle">{school}</p>
           <h3 className="subtitle">{degree}</h3>
           <div>
             <p>{location}</p>

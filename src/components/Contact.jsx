@@ -14,8 +14,8 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    console.log(process.env.WEB3FORMS_KEY);
-    formData.append("access_key", process.env.WEB3FORMS_KEY);
+    console.log(import.meta.env.VITE_WEB3FORMS_KEY);
+    formData.append("access_key", process.env.VITE_WEB3FORMS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -34,9 +34,9 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div className="seventh-element">
       <div className="contact-title">
-        <p>CONTACT ME</p>
+        {/* <h3>CONTACT ME</h3> */}
         <h2>Get in Touch</h2>
       </div>
       <div className="contact">
@@ -76,6 +76,7 @@ const Contact = () => {
           <form onSubmit={onSubmit}>
             <label>Your name</label>
             <input
+              className="formInput"
               type="text"
               name="name"
               placeholder="Enter your name"
@@ -83,12 +84,14 @@ const Contact = () => {
             />
             <label>Phone Number (optional)</label>
             <input
+              className="formInput"
               type="tel"
               name="phone"
               placeholder="Enter your mobile number"
             />
             <label>Write your messages here</label>
             <textarea
+              className="formInput"
               name="message"
               rows="6"
               placeholder="Enter your message"
@@ -101,7 +104,7 @@ const Contact = () => {
           <span>{result}</span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

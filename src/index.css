@@ -5,6 +5,41 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+/* 
+BACKGROUND
+*/
+
+.first-element {
+  background: linear-gradient(rgba(4, 28, 56, 0.72), rgba(23, 52, 85, 0.72));
+  /* background: linear-gradient(rgba(62, 68, 75, 0.72), rgba(8, 43, 92, 0.722)); */
+}
+.second-element {
+  background: linear-gradient(rgba(23, 52, 85, 0.72), rgba(33, 63, 97, 0.72));
+}
+.third-element {
+  background: linear-gradient(rgba(33, 63, 97, 0.72), rgba(43, 72, 106, 0.72));
+}
+.fourth-element {
+  background: linear-gradient(rgba(43, 72, 106, 0.72), rgba(54, 82, 114, 0.72));
+}
+.fifth-element {
+  background: linear-gradient(rgba(54, 82, 114, 0.72), rgba(62, 90, 122, 0.72));
+}
+.sixth-element {
+  background: linear-gradient(
+    rgba(62, 90, 122, 0.72),
+    rgba(71, 100, 134, 0.72)
+  );
+}
+.seventh-element {
+  background: linear-gradient(
+    rgba(71, 100, 134, 0.72),
+    rgba(80, 104, 131, 0.72)
+  );
 }
 
 /* || UTILITY CLASSES */
@@ -51,7 +86,7 @@ a {
 }
 
 article {
-  margin: 0.5em;
+  /* margin: 0.5em; */
   border: 1px solid #000;
   border-radius: 10px;
   padding: 2em;
@@ -103,8 +138,8 @@ nav ul li {
 
 .hero {
   width: 100%;
+  padding-left: 10px;
   min-height: 100vh;
-  background: linear-gradient(rgba(62, 68, 75, 0.72), rgba(8, 43, 92, 0.722));
   background-size: cover;
   background-position: center;
   color: whitesmoke;
@@ -144,8 +179,7 @@ nav ul li {
 }
 
 .experience {
-  margin: 40px auto;
-  width: 90%;
+  padding-left: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -153,23 +187,24 @@ nav ul li {
 }
 
 .projects {
-  margin: 60px auto;
+  /* margin: 60px auto; */
+  padding-left: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  width: 90%;
+  /* width: 90%; */
 }
 
 .education {
-  margin: 80px auto;
-  width: 90%;
+  /* margin: 80px auto; */
+  /* width: 90%; */
+  padding-left: 15px;
   text-align: center;
 }
 
 .skills-container {
-  margin: 80px auto;
-  width: 90%;
+  padding-left: 15px;
   position: relative;
 }
 
@@ -197,15 +232,26 @@ nav ul li {
 }
 
 .contact-title {
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 80px;
+    font-size: 45px;
+    color: rgb(33, 46, 160);
+  }
+  h3 {
+    color: rgb(33, 46, 160);
+    font-size: 25px;
+  }
+  padding-top: 30px;
   text-align: center;
-  color: rgb(33, 46, 160);
   font-weight: 200;
   font-size: 30px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .contact {
-  margin: 70px auto;
+  /* margin: 70px auto; */
+  padding-left: 25px;
   max-width: 90%;
   display: flex;
   align-content: center;
@@ -251,14 +297,22 @@ nav ul li {
 .contact form textarea {
   display: block;
   width: 100%;
-  background: #ebecfe;
+  background-color: rgba(234, 234, 234, 0.72);
   padding: 15px;
   border: 0;
   outline: 0;
   margin-bottom: 15px;
   margin-top: 5px;
   resize: none;
+  /* border: rgb(78, 96, 81); */
+  border-radius: 10px;
+  border: 2px line 10px;
+  color: gray;
 }
+
+/* .formInput {
+  background-color: rgba(239, 2, 2, 0.059);
+} */
 
 .contact-col span {
   display: block;
@@ -290,6 +344,10 @@ nav ul li {
 }
 
 footer {
+  p {
+    color: black;
+    font-size: 14px;
+  }
   display: flex;
   align-items: center;
   justify-content: space-between;

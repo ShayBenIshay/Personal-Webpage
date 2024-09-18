@@ -4,7 +4,7 @@ const Experience = () => {
   const jobsArr = experienceData.jobs;
 
   return (
-    <div className="experience">
+    <div className="experience second-element">
       <h1>Experience</h1>
       <article>
         {jobsArr.map(

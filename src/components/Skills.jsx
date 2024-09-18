@@ -5,7 +5,7 @@ const formatCategoryName = (category) => {
 };
 
 const Skills = () => (
-  <div className="skills-container">
+  <div className="skills-container fifth-element">
     <h1>Skills</h1>
     <article className="skills">
       {Object.keys(skillsData).map((category) => (
