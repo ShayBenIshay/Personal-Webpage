@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="seventh-element">
+    <div className="sixth-element">
       <div className="contact-title">
         {/* <h3>CONTACT ME</h3> */}
         <h2>Get in Touch</h2>

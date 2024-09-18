@@ -21,15 +21,15 @@ const Navbar = () => {
     experience: -140,
     projects: -140,
     education: -140,
-    skills: -250,
-    contact: -320,
+    skills: -230,
+    contact: -280,
   };
   const phoneOffset = {
-    experience: -110,
-    projects: -90,
+    experience: -80,
+    projects: -70,
     education: -80,
-    skills: -80,
-    contact: -240,
+    skills: -140,
+    contact: -220,
   };
 
   const { experience, projects, education, skills, contact } = isMobile
