@@ -1,11 +1,6 @@
 export const skillsData = {
-  BackEndDevelopment: [
-    "Node.js",
-    "Express.js",
-    "Java (Spring Framework)",
-    "NextJS",
-  ],
-  FrontEndDevelopment: ["React.js", "Redux.js", "NextJS"],
+  BackEnd: ["Node.js", "Express.js", "Java (Spring Framework)", "NextJS"],
+  FrontEnd: ["React.js", "Redux.js", "NextJS"],
   CodeManagement: ["Git", "Bitbucket"],
   DataBase: ["MongoDB"],
   // Tools: ["Jenkins", "OpenShift Container Platform (OCP)"],
