@@ -4,7 +4,7 @@ const Experience = () => {
   const jobsArr = experienceData.jobs;
 
   return (
-    <div className="experience second-element">
+    <div className="container experience">
       <h1>Experience</h1>
       <article>
         {jobsArr.map(
@@ -20,20 +20,20 @@ const Experience = () => {
           }) => (
             <div key={title + "-" + company} className="job">
               <div className="job-info">
-                <h3 className="subtitle">
+                <h2>
                   {title} at {company}
-                </h3>
-                <p>
+                </h2>
+                <h3>
                   {date}, {type}
-                </p>
+                </h3>
                 <p>{notes}</p>
 
                 <div className="responsibilities">
                   <h4>Responsibilities:</h4>
                   <p>{responsibilities}</p>
+                  <h4>Description</h4>
+                  <p>{description}</p>
                 </div>
-                <h4>Description</h4>
-                <p>{description}</p>
               </div>
               <div className="routine">
                 <h4>Work Routine:</h4>

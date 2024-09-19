@@ -5,12 +5,12 @@ const formatCategoryName = (category) => {
 };
 
 const Skills = () => (
-  <div className="skills-container fifth-element">
+  <div className="container skills-container">
     <h1>Skills</h1>
     <article className="skills">
       {Object.keys(skillsData).map((category) => (
         <div className="skills-category" key={category}>
-          <h3 className="subtitle">{formatCategoryName(category)}</h3>
+          <h2>{formatCategoryName(category)}</h2>
           <ul>
             {skillsData[category].map((skill, index) => (
               <li key={index}>{skill}</li>

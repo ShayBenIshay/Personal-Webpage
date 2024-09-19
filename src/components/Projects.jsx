@@ -4,7 +4,7 @@ import { projectsData } from "../data/projectsData";
 
 const Projects = () => {
   return (
-    <div className="projects third-element">
+    <div className="container projects">
       <h1>Projects</h1>
       <ul>
         {projectsData.map(
@@ -21,24 +21,28 @@ const Projects = () => {
             index
           ) => (
             <article key={index}>
-              <a href={webpageUrl} target="_blank" rel="noopener noreferrer">
-                <p className="title">{title}</p>
-              </a>
-              <p>{subtitle}</p>
+              <h2>
+                {title + " ("}
+                <a href={webpageUrl} target="_blank" rel="noopener noreferrer">
+                  app url
+                  {/* <p className="title">{title}</p> */}
+                </a>
+                {")"}
+              </h2>
+              <h3>{subtitle}</h3>
               <p>{description}</p>
               <p>{notes}</p>
-
-              <a
-                className="sourcecode"
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h3 className="subtitle">
+              <h4>
+                <a
+                  className="sourcecode"
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={faGithub} />
-                  {githubTitle}
-                </h3>
-              </a>
+                  {" " + githubTitle}
+                </a>
+              </h4>
             </article>
           )
         )}

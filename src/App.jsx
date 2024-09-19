@@ -7,23 +7,21 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import { useState } from "react";
 
 const App = () => {
   useTitle("Shay's CV Webpage");
+  console.log(process.env.REACT_APP_WEB3FORMS_KEY);
 
   return (
-    <div>
+    <div className="page">
       <Navbar />
       <Hero />
-      {/* <div className="container"> */}
       <Experience />
       <Projects />
       <Education />
       <Skills />
       <Contact />
       <Footer />
-      {/* </div> */}
     </div>
   );
 };

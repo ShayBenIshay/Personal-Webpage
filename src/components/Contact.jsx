@@ -14,8 +14,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    console.log(import.meta.env.VITE_WEB3FORMS_KEY);
-    formData.append("access_key", process.env.VITE_WEB3FORMS_KEY);
+    formData.append("access_key", process.env.REACT_APP_WEB3FORMS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -34,16 +33,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="sixth-element">
+    <div className="container contact">
       <div className="contact-title">
         {/* <h3>CONTACT ME</h3> */}
-        <h2>Get in Touch</h2>
+        <h1>Get in Touch</h1>
       </div>
-      <div className="contact">
+      <div className="contact-container">
         <div className="contact-col">
-          <h3>
+          <h2>
             Send me a message <img src={msg_icon} alt="" />
-          </h3>
+          </h2>
           <p>
             Feel free to reach out throught contact form or any of the contact
             information below. collabarations, feedbacks and job opportunities

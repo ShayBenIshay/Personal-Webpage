@@ -18,18 +18,18 @@ const Navbar = () => {
 
   const isMobile = useScreenSize();
   const pcOffset = {
-    experience: -140,
-    projects: -140,
-    education: -140,
-    skills: -230,
-    contact: -280,
+    experience: -120,
+    projects: -75,
+    education: -75,
+    skills: -240,
+    contact: -45,
   };
   const phoneOffset = {
-    experience: -80,
-    projects: -70,
-    education: -80,
-    skills: -140,
-    contact: -220,
+    experience: -50,
+    projects: -10,
+    education: -15,
+    skills: -150,
+    contact: +15,
   };
 
   const { experience, projects, education, skills, contact } = isMobile

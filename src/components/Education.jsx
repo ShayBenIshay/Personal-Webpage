@@ -12,27 +12,28 @@ const Education = () => {
     finalProjectUrl,
   } = educationData;
   return (
-    <div className="education fourth-element">
+    <div className="container education">
       <h1>Education</h1>
       <article>
         <div>
-          <p className="subtitle">{school}</p>
-          <h3 className="subtitle">{degree}</h3>
+          <h3>{school}</h3>
+          <h2>{degree}</h2>
           <div>
             <p>{location}</p>
             <p>{graduated}</p>
           </div>
         </div>
         <div>
-          <h4>Description</h4>
+          <h3>Description</h3>
           <p>{description}</p>
-          <p>
-            <a href={finalProjectUrl} target="_blank" rel="noopener noreferrer">
-              {finalProjectName}
-            </a>
+          <h4>
+            {finalProjectName}
             {": "}
-            {notes}
-          </p>
+          </h4>
+          <p>{notes}</p>
+          <a href={finalProjectUrl} target="_blank" rel="noopener noreferrer">
+            Source code
+          </a>
         </div>
       </article>
     </div>
