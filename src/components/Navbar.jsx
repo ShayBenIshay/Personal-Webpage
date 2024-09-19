@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
-import { Link } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 import menu_icon from "../assets/menu-icon.png";
+import up_icon from "../assets/up-icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import contactsData from "../data/contactsData";
@@ -39,6 +40,13 @@ const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const toggleMenu = () => {
     setMobileMenu(!mobileMenu);
+  };
+  const scrollUp = () => {
+    scroller.scrollTo("hero", {
+      smooth: true,
+      duration: 500,
+      offset: 0,
+    });
   };
 
   const handleClickOutside = (event) => {
@@ -119,6 +127,14 @@ const Navbar = () => {
         </a>
       </div>
       <img src={menu_icon} alt="" className="menu-icon" onClick={toggleMenu} />
+      {sticky && (
+        <img
+          src={up_icon}
+          alt="Scroll Up"
+          className="scroll-up"
+          onClick={scrollUp}
+        />
+      )}
     </nav>
   );
 };
