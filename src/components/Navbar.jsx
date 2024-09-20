@@ -22,7 +22,7 @@ const Navbar = () => {
     experience: -120,
     projects: -75,
     education: -75,
-    skills: -240,
+    skills: -70,
     contact: -45,
   };
   const phoneOffset = {
