@@ -5,12 +5,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
-  color: whitesmoke;
+  color: #2c2c2c;
   font-size: 20px;
 }
 
 .page {
-  background: linear-gradient(rgba(1, 36, 78, 0.72), rgba(73, 134, 204, 0.72));
+  background: linear-gradient(#e5e5e5, #d6d6d6);
+}
+
+.dark-nav {
+  background: #f1f1f1;
+  transition: 0.5s;
 }
 
 /* My css */
@@ -27,7 +32,7 @@ body {
 h1 {
   padding-top: 40px;
   padding-bottom: 20px;
-  color: #d7c9aa;
+  color: #343a40;
   font-weight: 400;
   font-size: 80px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -35,24 +40,39 @@ h1 {
 h2 {
   padding-top: 20px;
   padding-bottom: 10px;
-  color: #d0b0b6;
+  color: #495057;
   font-weight: 300;
   font-size: 30px;
 }
 h3 {
   padding-top: 15px;
   padding-bottom: 10px;
-  color: rgb(192, 192, 192);
+  color: #6c757d;
 }
 h4 {
   padding-top: 10px;
   padding-bottom: 5px;
-  color: gainsboro;
+  color: #4b6584;
 }
 
 .hero-title {
-  color: white;
+  color: #a17f74;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: #007bff;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  padding: 15px;
 }
 
 a {
@@ -92,26 +112,6 @@ nav ul li {
   list-style: none;
   margin: 5px 20px;
   font-size: 16px;
-}
-
-.dark-nav {
-  background: rgb(8, 44, 95);
-  transition: 0.5s;
-}
-
-.scroll-up {
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 1000;
-  background-color: #007bff;
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  padding: 15px;
 }
 
 .github {
@@ -173,17 +173,20 @@ nav ul li {
   ul article {
     margin-bottom: 10px;
   }
+  ul article p {
+    word-wrap: break-word;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.skills-container {
+.skills {
   padding-left: 15px;
   position: relative;
 }
 
-.skills {
+.skills-container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -192,9 +195,12 @@ nav ul li {
 }
 
 .skills-category {
+  /* flex-basis: 100%; */
+  flex: 1 1 200px;
   width: 25%;
   margin: 5%;
   margin-right: 10px;
+  display: inline-block;
   word-wrap: break-word;
 }
 
