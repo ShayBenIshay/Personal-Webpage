@@ -1,16 +1,17 @@
 import headerData from "../data/headerData";
-import About from "./About";
+import { aboutmeData } from "../data/aboutmeData";
 
 const Hero = () => (
-  <>
-    <div className="hero container">
-      <div className="hero-text">
-        <h3>{headerData.title}</h3>
-        <h1 className="hero-title">{headerData.name}</h1>
-        <About />
-      </div>
+  <div className="hero container">
+    <div className="hero-text">
+      <h3>{headerData.title}</h3>
+      <h1>{headerData.name}</h1>
+      <section className="about">
+        <h2>About myself</h2>
+        <p>{aboutmeData.description}</p>
+      </section>
     </div>
-  </>
+  </div>
 );
 
 export default Hero;

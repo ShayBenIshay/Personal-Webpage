@@ -29,7 +29,7 @@ const Navbar = () => {
     experience: -50,
     projects: -10,
     education: -15,
-    skills: -150,
+    skills: -15,
     contact: +15,
   };
 
