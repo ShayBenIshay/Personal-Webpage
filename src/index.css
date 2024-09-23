@@ -16,7 +16,7 @@
 }
 
 .dark-nav {
-  background: #a9a9a9;
+  background: #a17f74;
   /* background: rgb(123, 148, 159); */
   /* background: #f97e63; */
   transition: 0.5s;
@@ -48,6 +48,7 @@ h1 {
   /* padding-top: 40px;
   padding-bottom: 20px; */
   color: #343a40;
+  /* color: whitesmoke; */
   font-weight: 400;
   font-size: 80px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -107,6 +108,8 @@ a:focus {
     cursor: pointer;
     display: block;
     a img {
+      min-height: 40px;
+      min-width: 40px;
       width: 80%;
     }
   }
@@ -148,8 +151,13 @@ header {
   width: 100%;
   position: sticky;
   top: 98px;
-  background-color: #d6d6d6;
+  background-color: #495057;
   z-index: 1;
+  h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: whitesmoke;
+  }
 }
 
 .github {
@@ -246,9 +254,9 @@ header {
 
 .skills-container {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   max-width: 100%;
 }
 
@@ -265,6 +273,7 @@ header {
 .container {
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
   flex-grow: 1;
 }
 
@@ -319,7 +328,6 @@ header {
 
 .contact-col p {
   max-width: 450px;
-  list-style: 1.3;
 }
 
 .contact-col ul li {

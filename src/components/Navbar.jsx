@@ -66,7 +66,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`container navbar ${sticky ? "dark-nav" : ""}`}
+      // className={`container navbar ${sticky ? "dark-nav" : ""}`}
+      className={"navbar dark-nav"}
       ref={navbar}
     >
       <img src={logo} alt="" className="logo" />

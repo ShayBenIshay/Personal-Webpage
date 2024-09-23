@@ -6,5 +6,5 @@ content:
 styling:
 [x] add hover over links
 [ ] (chapter 12) split skills container to 2 columns: Frontend Backend 
-[ ] (chapter 13) make the Subtitles (experience etc) position sticky
-[ ] (chapter 13) add Whatsapp/Email buttons with position fixed, top 30%, left:0
+[x] (chapter 13) make the Subtitles (experience etc) position sticky
+[x] (chapter 13) add a Slider Whatsapp/Email/Github/LinkedIn buttons
