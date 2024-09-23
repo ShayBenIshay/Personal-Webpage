@@ -4,9 +4,12 @@ const Experience = () => {
   const jobsArr = experienceData.jobs;
 
   return (
-    <div className="container experience">
-      <h1>Experience</h1>
-      <article>
+    <section className="experience">
+      <header>
+        <h1>Experience</h1>
+      </header>
+      {/* <h1>Experience</h1> */}
+      <article className="container">
         {jobsArr.map(
           ({
             title,
@@ -47,7 +50,7 @@ const Experience = () => {
           )
         )}
       </article>
-    </div>
+    </section>
   );
 };
 

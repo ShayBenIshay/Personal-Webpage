@@ -81,13 +81,13 @@ const Contact = () => {
               placeholder="Enter your name"
               required
             />
-            <label>Phone Number (optional)</label>
+            {/* <label>Phone Number (optional)</label>
             <input
               className="formInput"
               type="tel"
               name="phone"
               placeholder="Enter your mobile number"
-            />
+            /> */}
             <label>Write your messages here</label>
             <textarea
               className="formInput"

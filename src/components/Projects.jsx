@@ -4,8 +4,10 @@ import { projectsData } from "../data/projectsData";
 
 const Projects = () => {
   return (
-    <div className="container projects">
-      <h1>Projects</h1>
+    <section className="projects">
+      <header>
+        <h1>Projects</h1>
+      </header>
       <ul>
         {projectsData.map(
           (
@@ -20,7 +22,7 @@ const Projects = () => {
             },
             index
           ) => (
-            <article key={index}>
+            <article className="container" key={index}>
               <h2>
                 {title + " ("}
                 <a href={webpageUrl} target="_blank" rel="noopener noreferrer">
@@ -34,7 +36,7 @@ const Projects = () => {
               <p>{notes}</p>
               <h4>
                 <a
-                  className="sourcecode"
+                  // className="sourcecode"
                   href={githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -47,7 +49,7 @@ const Projects = () => {
           )
         )}
       </ul>
-    </div>
+    </section>
   );
 };
 

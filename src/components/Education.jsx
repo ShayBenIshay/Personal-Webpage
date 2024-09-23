@@ -1,4 +1,6 @@
 import { educationData } from "../data/educationData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Education = () => {
   const {
@@ -12,9 +14,11 @@ const Education = () => {
     finalProjectUrl,
   } = educationData;
   return (
-    <div className="container education">
-      <h1>Education</h1>
-      <article>
+    <section className="education">
+      <header>
+        <h1>Education</h1>
+      </header>
+      <article className="container">
         <div>
           <h3>{school}</h3>
           <h2>{degree}</h2>
@@ -31,12 +35,18 @@ const Education = () => {
             {": "}
           </h4>
           <p>{notes}</p>
-          <a href={finalProjectUrl} target="_blank" rel="noopener noreferrer">
-            Source code
+          <a
+            className="sourcecode"
+            href={finalProjectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+            {" Source code"}
           </a>
         </div>
       </article>
-    </div>
+    </section>
   );
 };
 

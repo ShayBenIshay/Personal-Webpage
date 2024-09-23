@@ -11,12 +11,14 @@
 }
 
 .page {
-  background: linear-gradient(#e5e5e5, #d6d6d6);
+  background: linear-gradient(wheat, #d6d6d6);
+  /* background: linear-gradient(#e5e5e5, #d6d6d6); */
 }
 
 .dark-nav {
-  background: #f97e63;
-  /* background: #f1f1f1; */
+  background: #a9a9a9;
+  /* background: rgb(123, 148, 159); */
+  /* background: #f97e63; */
   transition: 0.5s;
 }
 
@@ -34,7 +36,7 @@ html {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 10;
   background-color: #007bff;
   border-radius: 50%;
   width: 75px;
@@ -43,8 +45,8 @@ html {
 }
 
 h1 {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  /* padding-top: 40px;
+  padding-bottom: 20px; */
   color: #343a40;
   font-weight: 400;
   font-size: 80px;
@@ -79,13 +81,43 @@ a {
   cursor: pointer;
 }
 
+a:hover,
+a:focus {
+  /* filter: brightness(0.5); */
+  opacity: 0.8;
+}
+
+.social {
+  background-color: inherit;
+  color: white;
+  font-size: inherit;
+  /* padding: 1rem; */
+  margin-left: 1%;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 3%;
+  /* height: 20%; */
+  button {
+    border-radius: 50%;
+    border-top: 1px solid #333;
+    cursor: pointer;
+    display: block;
+    a img {
+      width: 80%;
+    }
+  }
+}
+
 article {
   max-width: 900px;
 }
 
 .navbar {
   width: 100%;
-  color: white;
   padding: 4px 0;
   position: fixed;
   top: 0;
@@ -111,12 +143,22 @@ nav ul li {
   /* font-size: 16px; */
 }
 
+header {
+  padding: 1% 5%;
+  width: 100%;
+  position: sticky;
+  top: 98px;
+  background-color: #d6d6d6;
+  z-index: 1;
+}
+
 .github {
   margin-right: 20px;
 }
 
 .hero {
   width: 100%;
+  height: 100vh;
   padding-left: 10px;
   min-height: 100vh;
   background-size: cover;
@@ -198,8 +240,8 @@ nav ul li {
 }
 
 .skills {
-  padding-left: 15px;
-  position: relative;
+  /* padding-left: 15px; */
+  /* position: relative; */
 }
 
 .skills-container {
@@ -355,6 +397,15 @@ footer {
 /* -------- media query ----------- */
 
 @media (max-width: 1200px) {
+  nav ul li {
+    font-size: 16px;
+    a {
+      font-size: 16px;
+    }
+  }
+  .github {
+    font-size: 16px;
+  }
   .container {
     padding-left: 5%;
     padding-right: 5%;
@@ -387,7 +438,6 @@ footer {
     right: 0px;
     bottom: 0;
     background: #ffae6d;
-    /* background: #f1f1f1; */
     z-index: -1;
     width: 150px;
     padding-top: 70px;

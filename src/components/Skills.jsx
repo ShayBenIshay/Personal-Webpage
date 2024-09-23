@@ -5,9 +5,11 @@ const formatCategoryName = (category) => {
 };
 
 const Skills = () => (
-  <div className="container skills">
-    <h1>Skills</h1>
-    <article className="skills-container">
+  <section className="skills">
+    <header>
+      <h1>Skills</h1>
+    </header>
+    <article className="container skills-container">
       {Object.keys(skillsData).map((category) => (
         <div className="skills-category" key={category}>
           <h2>{formatCategoryName(category)}</h2>
@@ -19,7 +21,7 @@ const Skills = () => (
         </div>
       ))}
     </article>
-  </div>
+  </section>
 );
 
 export default Skills;

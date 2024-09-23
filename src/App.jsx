@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Slider from "./components/Slider";
 
 const App = () => {
   useTitle("Shay's CV Webpage");
@@ -14,6 +15,7 @@ const App = () => {
 
   return (
     <div className="page">
+      <Slider />
       <Navbar />
       <Hero />
       <Experience />
