@@ -40,7 +40,7 @@ const Contact = () => {
       </div>
       <div className="contact-container">
         <div className="contact-col">
-          <h2>
+          <h2 className="nowrap">
             Send me a message <img src={msg_icon} alt="" />
           </h2>
           <p>
@@ -67,7 +67,7 @@ const Contact = () => {
             </li>
             <li>
               <img src={location_icon} alt="" />
-              Haifa, Israel
+              <address>Haifa, Israel</address>
             </li>
           </ul>
         </div>

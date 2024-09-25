@@ -12,7 +12,7 @@ const Skills = () => (
     <article className="container skills-container">
       {Object.keys(skillsData).map((category) => (
         <div className="skills-category" key={category}>
-          <h2>{formatCategoryName(category)}</h2>
+          <h2 className="nowrap">{formatCategoryName(category)}</h2>
           {/* <hr /> */}
           <ul>
             {skillsData[category].map((skill, index) => (

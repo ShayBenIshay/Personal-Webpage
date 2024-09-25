@@ -70,9 +70,9 @@ const Navbar = () => {
       className={"navbar dark-nav"}
       ref={navbar}
     >
-      <img src={logo} alt="" className="logo" />
+      {/* <img src={logo} alt="" className="logo" /> */}
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
-        <li>
+        <li className="nowrap">
           <Link to="hero" smooth={true} offset={0} duration={500}>
             About me
           </Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
             Skills
           </Link>
         </li>
-        <li>
+        <li className="nowrap">
           <Link
             to="contact"
             smooth={true}
@@ -113,12 +113,13 @@ const Navbar = () => {
             Contact me
           </Link>
         </li>
-        <li>
+        <li className="nowrap">
           <ExportPdf />
         </li>
       </ul>
-      <div className="github">
-        <p className="nowrap">More works:</p>
+      <div className="github nowrap">
+        {/* <p className="nowrap">More works:</p> */}
+        <p>More works:</p>
         <a
           href={contactsData.gitHub.href}
           target="_blank"

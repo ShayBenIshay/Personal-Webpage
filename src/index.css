@@ -76,15 +76,16 @@ h2 {
   color: #495057;
   font-weight: 300;
   font-size: 30px;
+  letter-spacing: 0.08em;
 }
 
 h2::after {
   content: "";
   display: block;
   width: 100%;
-  height: 1px; /* Adjust height to make it look like an <hr /> */
-  background-color: #000; /* Set the color of the line */
-  margin-top: 10px; /* Space between the h2 and the line */
+  height: 1px;
+  background-color: #000;
+  margin-top: 10px;
 }
 
 h3 {
@@ -111,9 +112,15 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus,
+.scroll-up:hover,
+.scroll-up:focus,
+.social button:hover,
+.social button:focus {
   /* filter: brightness(0.5); */
-  opacity: 0.8;
+  opacity: 0.7;
+  color: steelblue;
+  /* filter: brightness(1.8); */
 }
 
 .social {
@@ -135,6 +142,12 @@ a:focus {
     cursor: pointer;
     display: block;
     padding: 10px;
+    /* a {
+      margin: 0.7em;
+      background-color: white;
+      border: 1px none black;
+      border-radius: 50%;
+    } */
     a img {
       min-height: 40px;
       min-width: 40px;
@@ -142,6 +155,11 @@ a:focus {
     }
   }
 }
+
+/*Maybe color the buttons */
+/* .social button:first-child {
+  background-color: green;
+} */
 
 article {
   max-width: 900px;
@@ -154,13 +172,17 @@ article {
   top: 0;
   left: 0;
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 10;
+  border-bottom: 1px solid black;
 }
-
-.logo {
-  width: 90px;
+.navbar ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-icon {
@@ -178,26 +200,22 @@ header {
   padding: 1% 5%;
   width: 100%;
   position: sticky;
-  top: 98px;
+  top: 68px;
   background-color: #495057;
   z-index: 1;
   h1 {
-    font-size: 60px;
-    letter-spacing: 5px;
+    font-size: 3em;
+    letter-spacing: 0.1em;
     color: whitesmoke;
   }
 }
 
 .github {
-  /* display: flex;
-  flex-flow: row nowrap; */
-  align-items: center;
-  margin-right: 20px;
-
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
-  justify-content: center;
-  gap: 0.5em;
+  gap: 0em;
+  margin-left: 3em;
 }
 
 .github a {
@@ -205,12 +223,11 @@ header {
 
   position: relative;
   display: inline-block;
-  /* border: 2px solid black; */
 }
 
 .github a .fa-github {
   position: absolute;
-  animation: moveAround 4s linear infinite;
+  animation: moveAround 30s linear infinite;
 }
 
 @keyframes moveAround {
@@ -218,20 +235,40 @@ header {
     top: 0;
     left: 0;
   }
+  12.5% {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   25% {
     top: 0;
     left: 100%;
     transform: translateX(-100%);
+  }
+  37.5% {
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
   }
   50% {
     top: 100%;
     left: 100%;
     transform: translate(-100%, -100%);
   }
+  62.5% {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
   75% {
     top: 100%;
     left: 0;
     transform: translateY(-100%);
+  }
+  87.5% {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
   100% {
     top: 0;
@@ -268,7 +305,8 @@ header {
   font-weight: 600;
 }
 
-.hero-text h2::after {
+.hero-text h2::after,
+.contact-col h2::after {
   height: 0;
 }
 
@@ -332,12 +370,23 @@ header {
 }
 
 .skills-category {
-  flex: 1 1 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  /* align-items: stretch; */
+  align-items: flex-start;
+
+  /* flex: 1 1 200px; */
   width: 25%;
   margin: 5%;
+  max-width: 305px;
+  min-width: 305px;
   margin-right: 10px;
-  display: inline-block;
   word-wrap: break-word;
+  border-right: 1px solid #000;
+  h2 {
+    margin-right: 1em;
+  }
 }
 
 .container {
@@ -389,6 +438,7 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  letter-spacing: 0;
 }
 
 .contact-col h2 img {
@@ -409,6 +459,11 @@ header {
 .contact-col ul li img {
   width: 25px;
   margin-right: 10px;
+}
+
+.contact-col ul li a {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .contact-container form input,
@@ -500,9 +555,6 @@ footer {
   nav ul li {
     margin: 10px 15px;
   }
-  .logo {
-    width: 40px;
-  }
   .social button {
     padding: 5px;
   }
@@ -510,16 +562,24 @@ footer {
 
 @media (max-width: 935px) {
   header {
-    top: 56px;
+    top: 72px;
+    h1 {
+      font-size: 3em;
+    }
   }
   .hero-text h1 {
-    font-size: 40px;
+    font-size: 4em;
   }
 
-  nav {
+  .navbar {
     padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
   }
-  nav ul {
+  .navbar ul {
+    flex-flow: column nowrap;
+    border-left: 1px solid black;
+
     position: fixed;
     top: 0;
     right: 0px;
@@ -535,6 +595,9 @@ footer {
     display: block;
     margin: 20px 10px;
   }
+  .github {
+    margin-left: 40%;
+  }
 
   .menu-icon {
     display: block;
@@ -542,7 +605,7 @@ footer {
     margin-right: 2%;
     cursor: pointer;
   }
-  .hide-mobile-menu {
+  navbar ul:has(.hide-mobile-menu) {
     right: -200px;
   }
 
@@ -569,20 +632,17 @@ footer {
 }
 
 @media (max-width: 650px) {
-  /* * {
-    font-size: 16px;
-  } */
-  /* header {
-    top: 56px;
-  } */
-  h1 {
-    font-size: 50px;
+  header {
+    top: 78px;
+  }
+  header h1 {
+    font-size: 2em;
   }
   h2 {
-    font-size: 30px;
+    font-size: 1.2em;
   }
   h3 {
-    font-size: 20px;
+    font-size: 1em;
   }
 
   .hero-text h1 {
@@ -624,6 +684,6 @@ footer {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 1.5em;
   }
 }

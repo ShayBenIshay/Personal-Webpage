@@ -23,7 +23,7 @@ const Education = () => {
           <h3>{school}</h3>
           <h2>{degree}</h2>
           <div>
-            <p>{location}</p>
+            <address>{location}</address>
             <p>{graduated}</p>
           </div>
         </div>

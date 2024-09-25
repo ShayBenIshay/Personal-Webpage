@@ -1,5 +1,5 @@
 import headerData from "../data/headerData";
-import { aboutmeData } from "../data/aboutmeData";
+// import { aboutmeData } from "../data/aboutmeData";
 
 const Hero = () => (
   <div className="hero container">
@@ -10,7 +10,13 @@ const Hero = () => (
       </h1>
       <section className="about">
         <h2>About myself</h2>
-        <p>{aboutmeData.description}</p>
+        <p>
+          <em>Technion - Israel Institute of Technology</em> Alumnus, with B.Sc
+          in Computer Science field. Skilled software developer with great
+          algorithms and data structures knowledge and excellent problems
+          solving abilities. Passionate about developing awesome apps from
+          scratch. Loves a challenge and quick to adapt to new topics.
+        </p>
       </section>
     </div>
   </div>

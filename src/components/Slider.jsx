@@ -36,7 +36,7 @@ const Slider = () => {
       </button>
       <button>
         <a
-          href={contactsData.gitHub.href}
+          href={contactsData.linkedIn.href}
           target="_blank"
           rel="noopener noreferrer"
         >
