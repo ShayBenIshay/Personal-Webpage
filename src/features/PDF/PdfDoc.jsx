@@ -17,9 +17,9 @@ const PdfDoc = () => {
     <Document title="CV">
       <Page size="A4" style={styles.page1}>
         <PDFHeader />
-        <PDFProjects />
         <PDFExperience />
         <PDFEducation />
+        <PDFProjects />
         <PDFSkills />
       </Page>
     </Document>

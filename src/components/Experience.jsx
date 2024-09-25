@@ -8,7 +8,6 @@ const Experience = () => {
       <header>
         <h1>Experience</h1>
       </header>
-      {/* <h1>Experience</h1> */}
       <article className="container">
         {jobsArr.map(
           ({
@@ -26,6 +25,7 @@ const Experience = () => {
                 <h2>
                   {title} at {company}
                 </h2>
+                {/* <hr /> */}
                 <h3>
                   {date}, {type}
                 </h3>

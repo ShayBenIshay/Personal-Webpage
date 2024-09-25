@@ -3,8 +3,21 @@ functionality:
 content:
 [ ] add Portfolio with Runnning projects 
 [ ] divide the skills into 2 categories. Frontend & Backend
+[ ] add rounded profile picture like in chapter 16
+[ ] add background image to hero chapter 16
 styling:
 [x] add hover over links
 [ ] (chapter 12) split skills container to 2 columns: Frontend Backend 
-[x] (chapter 13) make the Subtitles (experience etc) position sticky
-[x] (chapter 13) add a Slider Whatsapp/Email/Github/LinkedIn buttons
+[x] make the Subtitles (experience etc) position sticky
+[x] add a Slider Whatsapp/Email/Github/LinkedIn buttons
+[ ] make the page as a grid (chapter 15)
+[ ] style the image (after adding it)
+[ ] style the hero background image chapter 16
+[ ] take the text-shadow from chapter 16
+[ ] (optional) Add the menu animation from chapter 22
+[ ] add Favicon icon (using CANVA or other generative AI?)
+[ ] add Logo icon (using CANVA or other generative AI?)
+
+PDF Styling:
+[ ] letter-space for the Headings
+[ ] change the url to explicit so they see the address

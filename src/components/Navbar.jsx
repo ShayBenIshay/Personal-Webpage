@@ -118,7 +118,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="github">
-        <p>More works:</p>
+        <p className="nowrap">More works:</p>
         <a
           href={contactsData.gitHub.href}
           target="_blank"
