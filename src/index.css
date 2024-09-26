@@ -605,7 +605,7 @@ footer {
     margin-right: 2%;
     cursor: pointer;
   }
-  navbar ul:has(.hide-mobile-menu) {
+  .navbar ul.hide-mobile-menu {
     right: -200px;
   }
 
