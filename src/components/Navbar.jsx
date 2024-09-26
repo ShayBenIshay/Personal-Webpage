@@ -18,24 +18,26 @@ const Navbar = () => {
   }, []);
 
   const isMobile = useScreenSize();
-  const pcOffset = {
-    experience: -120,
-    projects: -75,
-    education: -75,
-    skills: -70,
-    contact: -45,
-  };
-  const phoneOffset = {
-    experience: -50,
-    projects: -10,
-    education: -15,
-    skills: -15,
-    contact: +15,
-  };
+  const pcOffset = -(window.innerHeight * 0.08);
 
-  const { experience, projects, education, skills, contact } = isMobile
-    ? phoneOffset
-    : pcOffset;
+  // {
+  //   experience: -120,
+  //   projects: -75,
+  //   education: -75,
+  //   skills: -70,
+  //   contact: -45,
+  // };
+  const phoneOffset = -(window.innerHeight * 0.07);
+  // {
+  //   experience: -50,
+  //   projects: -10,
+  //   education: -15,
+  //   skills: -15,
+  //   contact: +15,
+  // };
+
+  // const { experience, projects, education, skills, contact } = isMobile
+  const offset = isMobile ? phoneOffset : pcOffset;
 
   const [mobileMenu, setMobileMenu] = useState(false);
   const toggleMenu = () => {
@@ -78,27 +80,22 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            to="experience"
-            smooth={true}
-            offset={experience}
-            duration={500}
-          >
+          <Link to="experience" smooth={true} offset={offset} duration={500}>
             Experience
           </Link>
         </li>
         <li>
-          <Link to="projects" smooth={true} offset={projects} duration={500}>
+          <Link to="projects" smooth={true} offset={offset} duration={500}>
             Projects
           </Link>
         </li>
         <li>
-          <Link to="education" smooth={true} offset={education} duration={500}>
+          <Link to="education" smooth={true} offset={offset} duration={500}>
             Education
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} offset={skills} duration={500}>
+          <Link to="skills" smooth={true} offset={offset} duration={500}>
             Skills
           </Link>
         </li>
@@ -106,7 +103,7 @@ const Navbar = () => {
           <Link
             to="contact"
             smooth={true}
-            offset={contact}
+            offset={offset}
             duration={500}
             className="btn"
           >

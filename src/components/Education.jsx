@@ -14,7 +14,7 @@ const Education = () => {
     finalProjectUrl,
   } = educationData;
   return (
-    <section className="education">
+    <section id="education" className="education">
       <header>
         <h1>Education</h1>
       </header>

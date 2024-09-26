@@ -33,77 +33,80 @@ const Contact = () => {
   };
 
   return (
-    <div className="container contact">
-      <div className="contact-title">
-        {/* <h3>CONTACT ME</h3> */}
-        <h1>Get in Touch</h1>
-      </div>
-      <div className="contact-container">
-        <div className="contact-col">
-          <h2 className="nowrap">
-            Send me a message <img src={msg_icon} alt="" />
-          </h2>
-          <p>
-            Feel free to reach out throught contact form or any of the contact
-            information below. collabarations, feedbacks and job opportunities
-            are more then welcome.
-          </p>
-
-          <ul>
-            <li>
-              <a href={contactsData.email.href}>
-                <img src={mail_icon} alt="" /> {contactsData.email.emailAddress}
-              </a>
-            </li>
-            <li>
-              <a
-                href={contactsData.phone.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={phone_icon} alt="" />
-                {contactsData.phone.phoneNumber}
-              </a>
-            </li>
-            <li>
-              <img src={location_icon} alt="" />
-              <address>Haifa, Israel</address>
-            </li>
-          </ul>
+    <section id="contact" className="contact">
+      <div className="container">
+        <div className="contact-title">
+          {/* <h3>CONTACT ME</h3> */}
+          <h1>Get in Touch</h1>
         </div>
-        <div className="contact-col">
-          <form onSubmit={onSubmit}>
-            <label>Your name</label>
-            <input
-              className="formInput"
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              required
-            />
-            {/* <label>Phone Number (optional)</label>
+        <div className="contact-container">
+          <div className="contact-col">
+            <h2 className="nowrap">
+              Send me a message <img src={msg_icon} alt="" />
+            </h2>
+            <p>
+              Feel free to reach out throught contact form or any of the contact
+              information below. collabarations, feedbacks and job opportunities
+              are more then welcome.
+            </p>
+
+            <ul>
+              <li>
+                <a href={contactsData.email.href}>
+                  <img src={mail_icon} alt="" />{" "}
+                  {contactsData.email.emailAddress}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={contactsData.phone.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={phone_icon} alt="" />
+                  {contactsData.phone.phoneNumber}
+                </a>
+              </li>
+              <li>
+                <img src={location_icon} alt="" />
+                <address>Haifa, Israel</address>
+              </li>
+            </ul>
+          </div>
+          <div className="contact-col">
+            <form onSubmit={onSubmit}>
+              <label>Your name</label>
+              <input
+                className="formInput"
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+              {/* <label>Phone Number (optional)</label>
             <input
               className="formInput"
               type="tel"
               name="phone"
               placeholder="Enter your mobile number"
             /> */}
-            <label>Write your messages here</label>
-            <textarea
-              className="formInput"
-              name="message"
-              rows="6"
-              placeholder="Enter your message"
-              required
-            ></textarea>
-            <button type="submit" className="btn dark-btn">
-              Submit now <img src={white_arrow} alt="" />
-            </button>
-          </form>
-          <span>{result}</span>
+              <label>Write your messages here</label>
+              <textarea
+                className="formInput"
+                name="message"
+                rows="6"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+              <button type="submit" className="btn dark-btn">
+                Submit now <img src={white_arrow} alt="" />
+              </button>
+            </form>
+            <span>{result}</span>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

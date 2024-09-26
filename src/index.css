@@ -177,6 +177,8 @@ article {
   justify-content: center;
   z-index: 10;
   border-bottom: 1px solid black;
+
+  height: 8vh;
 }
 .navbar ul {
   display: flex;
@@ -197,12 +199,16 @@ nav ul li {
 }
 
 header {
-  padding: 1% 5%;
+  padding-left: 5%;
   width: 100%;
   position: sticky;
-  top: 68px;
   background-color: #495057;
   z-index: 1;
+
+  top: 8vh;
+  height: 10vh;
+  display: flex;
+  align-items: center;
   h1 {
     font-size: 3em;
     letter-spacing: 0.1em;
@@ -214,7 +220,7 @@ header {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap: 0em;
+  gap: 0.5em;
   margin-left: 3em;
 }
 
@@ -283,6 +289,12 @@ header {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -550,7 +562,8 @@ footer {
 
 @media (max-width: 1030px) {
   header {
-    top: 72px;
+    top: 7vh;
+    height: 8vh;
   }
   nav ul li {
     margin: 10px 15px;
@@ -562,7 +575,6 @@ footer {
 
 @media (max-width: 935px) {
   header {
-    top: 72px;
     h1 {
       font-size: 3em;
     }
@@ -575,6 +587,8 @@ footer {
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
+
+    height: 7vh;
   }
   .navbar ul {
     flex-flow: column nowrap;
@@ -632,9 +646,6 @@ footer {
 }
 
 @media (max-width: 650px) {
-  header {
-    top: 78px;
-  }
   header h1 {
     font-size: 2em;
   }

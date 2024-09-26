@@ -5,7 +5,7 @@ const formatCategoryName = (category) => {
 };
 
 const Skills = () => (
-  <section className="skills">
+  <section id="skills" className="skills">
     <header>
       <h1>Skills</h1>
     </header>

@@ -4,7 +4,7 @@ const Experience = () => {
   const jobsArr = experienceData.jobs;
 
   return (
-    <section className="experience">
+    <section id="experience" className="experience">
       <header>
         <h1>Experience</h1>
       </header>
