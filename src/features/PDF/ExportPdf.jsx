@@ -4,13 +4,15 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 
 const ExportPdf = () => {
   return (
-    <div>
-      <PDFDownloadLink document={<PdfDoc />} fileName="ShayCV.pdf">
-        {({ blob, url, loading, error }) =>
-          loading ? "Loading document..." : "Export to Pdf!"
-        }
-      </PDFDownloadLink>
-    </div>
+    <PDFDownloadLink
+      className="navbar__a"
+      document={<PdfDoc />}
+      fileName="ShayCV.pdf"
+    >
+      {({ blob, url, loading, error }) =>
+        loading ? "Loading document..." : "Export to Pdf!"
+      }
+    </PDFDownloadLink>
   );
 };
 

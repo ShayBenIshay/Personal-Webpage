@@ -1,0 +1,30 @@
+.skills {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+}
+
+.skills__section {
+  gap: 1rem;
+  margin: 1.5em;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+  margin-top: var(--MARGIN);
+
+  display: flex;
+  align-items: flex-start;
+  padding: var(--PADDING-CONTAINER-TB) var(--PADDING-CONTAINER-SIDE);
+}
+
+.skills__dl {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  min-width: max(40%, 455px);
+  border-right: 1px solid #000;
+}
+
+.skills_dt {
+  padding-left: var(--PADDING-P-SIDE);
+}

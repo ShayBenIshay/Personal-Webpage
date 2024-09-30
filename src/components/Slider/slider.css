@@ -1,0 +1,29 @@
+.social {
+  background-color: inherit;
+  color: white;
+  font-size: inherit;
+  margin-right: 1%;
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  z-index: 1;
+}
+
+.social__button {
+  background-color: var(--SOCIAL-BUTTON-BG);
+  border-radius: 50%;
+  border: 1px solid #333;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+}
+
+.social__a {
+  min-height: 40px;
+  min-width: 40px;
+  width: 80%;
+}

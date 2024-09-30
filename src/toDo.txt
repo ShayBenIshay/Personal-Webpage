@@ -1,29 +1,30 @@
+content:
+[ ] add profile picture to my page
+[ ] add background image to hero chapter 16
+[x] add text aside of some Topic
+(dep) [ ] add Services section
+
 functionality:
 [ ] fix W3BFORMS access key
-content:
-[ ] add Portfolio with Runnning projects 
-[ ] divide the skills into 2 categories. Frontend & Backend
-[ ] add rounded profile picture like in chapter 16
-[ ] add background image to hero chapter 16
+
+Accessability:
+[x] Fix Navbar Links/a tag cause the navbar is not accessible
+[x] Submit buttons in Contact is not available using TAB
+[x] Social buttons in Slider is not available using TAB
+
 styling:
-[ ] make the page as a grid (chapter 15)
+[x] use variables
+[x] dark mode colors
+[ ] style the hero background image (chapter 16 css course)
+[ ] use the text-shadow from (chapter 16 css course)
+[ ] create Favicon icon for the personal page 
+[ ] create Logo icon?
+[ ] aside element for each small-container (chapter 7 html course)
+(dep) [ ] make the page as a grid? (chapter 15)
 [x] add hover over links
-[ ] (chapter 12) split skills container to 2 columns: Frontend Backend 
 [x] make the Subtitles (experience etc) position sticky
 [x] add a Slider Whatsapp/Email/Github/LinkedIn buttons
-[ ] style the image (after adding it)
-[ ] style the hero background image chapter 16
-[ ] take the text-shadow from chapter 16
 [x] (optional) Add the menu animation from chapter 22
-[ ] add Favicon icon (using CANVA or other generative AI?)
-[ ] add Logo icon (using CANVA or other generative AI?)
-[ ] add dark mode colors
-[ ] add variables
-
 PDF Styling:
 [ ] letter-space for the Headings
 [ ] change the url to explicit so they see the address
-
-Accessability:
-[ ] Submit buttons in Contact is not available using TAB
-[ ] Social buttons in Slider is not available using TAB

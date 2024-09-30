@@ -6,7 +6,7 @@ export const educationData = {
   description: `Studying Computer Engineering concepts, 4 years of learning Algorithms, Data Structures, Different Programming Languages, how to write, maintain and optimize code, and more. 
     Object Oriented Programming, Distributes Systems programming, AI and Machine Learning.`,
   notes:
-    "The code was written in Python using libraries such as Numpy and Torch.",
+    "The code was written in Python using libraries such as numpy and pytorch.",
   finalProjectName: "Kindergarten Violence Detector",
   finalProjectUrl:
     "https://github.com/DanielBenHayoun/kindergraten-violence-detector",

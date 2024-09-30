@@ -39,7 +39,10 @@ const PDFHeader = () => {
       <Text style={styles.subHeading}>{headerData.title}</Text>
       <PDFProfile />
       <View style={styles.contact}>
-        <Link style={styles.link} src={headerData.email.href}>
+        <Link
+          style={styles.link}
+          src={`mailto:${headerData.email.emailAddress}`}
+        >
           {headerData.email.emailAddress}
         </Link>
         <Link style={styles.link} src={headerData.gitHub.href}>

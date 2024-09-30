@@ -46,10 +46,7 @@ const PDFProjects = () => {
           </Link>
         </Text>
         <Text style={styles.description}>{projectsData[0].description}</Text>
-        <Text style={styles.notes}>
-          {/* <Link href={projectsData[0].githubUrl}>{projectsData[0].githubTitle}</Link> */}
-          {projectsData[0].notes}
-        </Text>
+        <Text style={styles.notes}>{projectsData[0].notes}</Text>
         <View key={projectsData[1].title}>
           <Text style={styles.projectTitle}>
             {projectsData[1].title} Check it out here:{" "}
@@ -57,19 +54,9 @@ const PDFProjects = () => {
               {projectsData[1].webpageTitle}
             </Link>
           </Text>
-          {/* <Text style={styles.projectSubtitle}>
-            {projectsData[1].subtitle} 
-          </Text> */}
           <Text style={styles.description}>{projectsData[1].description}</Text>
-          <Text style={styles.notes}>
-            {/* <Link href={projectsData[1].githubUrl}>{projectsData[1].githubTitle}</Link> */}
-            {projectsData[1].notes}
-          </Text>
+          <Text style={styles.notes}>{projectsData[1].notes}</Text>
         </View>
-
-        {/* {projectsData.map((project) => (
-        
-      ))} */}
       </View>
     </View>
   );
