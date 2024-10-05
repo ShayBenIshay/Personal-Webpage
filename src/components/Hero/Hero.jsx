@@ -7,7 +7,7 @@ const Hero = () => (
     <h1 className="hero__h1">
       Shay <span className="nowrap">Ben Ishay</span>
     </h1>
-    <section className="container about">
+    <section className="hero__section about">
       <h2 className="hero__h2">About myself</h2>
       <p className="hero__p">
         <em>Technion - Israel Institute of Technology</em> Alumnus, with B.Sc in

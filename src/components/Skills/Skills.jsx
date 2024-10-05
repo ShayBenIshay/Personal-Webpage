@@ -12,7 +12,7 @@ const Skills = () => (
       {Object.keys(skillsData).map((category) => (
         <dl className="skills__dl" key={category}>
           <dd>
-            <h2 className="nowrap">{formatCategoryName(category)}</h2>
+            <h2>{formatCategoryName(category)}</h2>
           </dd>
           <dt className="skills_dt">
             <ul>

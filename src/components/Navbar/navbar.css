@@ -2,37 +2,54 @@
   background-color: var(--NAV-BG);
   border-bottom: var(--BORDERS);
   font-weight: bold;
-  box-shadow: 0 6px 5px -5px var(--BORDER-COLOR);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  height: 4.5em;
+  height: 5.5em;
 }
 
 .navbar__h1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 0.3em;
 }
 
 .navbar__ul {
+  background-color: var(--NAV-BG);
   padding: var(--PADDING-TB) var(--PADDING-SIDE);
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .navbar__span {
   font-size: large;
-  position: absolute;
   padding: 1em;
-  right: 7%;
-  top: 0;
+  margin-left: auto;
 }
 
-.navbar__span a .fa-github {
+.navbar__a {
+  text-decoration: none;
+  font-weight: normal;
+  position: relative;
+}
+
+.navbar__a-animation {
+  padding: 1em;
+}
+
+.navbar__a:any-link {
+  color: var(--NAV-COLOR);
+}
+
+.navbar__a:hover,
+.navbar__a:focus-visible {
+  color: var(--NAV-HOVER);
+}
+
+.navbar__a:active {
+  color: var(--NAV-ACTIVE);
+}
+
+.fa-github-icon {
   position: absolute;
   animation: moveAround 30s linear infinite;
 }
@@ -49,22 +66,6 @@
   border-radius: 50%;
   border: 1px solid var(--BORDER-COLOR);
   padding: 15px;
-}
-.navbar__a {
-  text-decoration: none;
-  font-weight: normal;
-}
-.navbar__a:any-link {
-  color: var(--NAV-COLOR);
-}
-
-.navbar__a:hover,
-.navbar__a:focus-visible {
-  color: var(--NAV-HOVER);
-}
-
-.navbar__a:active {
-  color: var(--NAV-ACTIVE);
 }
 
 .menu-icon {
@@ -119,10 +120,9 @@
 
 /* || MEDIA QUERY */
 
-@media (max-width: 1500px) {
-  .redundent {
-    position: absolute;
-    top: -10000px;
+@media (max-width: 1200px) {
+  .span-redundent {
+    display: none;
   }
 }
 
@@ -137,6 +137,7 @@
 
   .navbar__ul {
     flex-flow: column nowrap;
+    justify-content: center;
     border-left: 1px solid black;
 
     position: fixed;
@@ -145,13 +146,15 @@
     bottom: 0;
     background: #a17f74;
     z-index: -1;
-    width: 150px;
     padding-top: 70px;
     transition: 0.5s;
   }
 
+  .navbar__ul {
+  }
+
   .hide-mobile-menu {
-    right: -200px;
+    display: none;
   }
 
   .menu-icon {
@@ -172,16 +175,30 @@
   .navbar__h1 {
     justify-content: flex-start;
   }
+  .span-redundent2 {
+    display: none;
+  }
+  .navbar__a {
+    margin-right: 0.5em;
+  }
 }
 
 @media (max-width: 550px) {
-  .navbar__h1 span:last-child {
-    position: relative;
-    top: -10000px;
+  .span-redundent3 {
+    display: none;
   }
 
   .scroll-up {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .span-redundent4 {
+    display: none;
+  }
+  .dev::after {
+    content: " dev.";
   }
 }

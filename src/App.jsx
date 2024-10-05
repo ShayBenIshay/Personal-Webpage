@@ -15,20 +15,20 @@ const App = () => {
 
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <Experience />
-        <Projects />
-        <Education />
-        <Skills />
-        <Contact />
-        <aside>
-          <h3 className="offscreen">Socials</h3>
-          <Slider />
-        </aside>
+      <Header className="block" />
+      <main className="main">
+        <Hero className="container block" />
+        <Experience className="container block" />
+        <Projects className="container block" />
+        <Education className="container block" />
+        <Skills className="container block" />
+        <Contact className="container block" />
       </main>
-      <Footer />
+      <Footer className="block" />
+      <aside className="aside">
+        <h3 className="offscreen">Socials</h3>
+        <Slider />
+      </aside>
     </>
   );
 };

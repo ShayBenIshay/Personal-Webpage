@@ -5,19 +5,15 @@
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
   margin: 3em;
 }
 
 .hero__h1 {
+  text-align: center;
   color: var(--HERO-COLOR);
   background-color: transparent;
-  text-shadow: var(--SHADOW);
   font-size: var(--FS-HERO-H1);
   text-shadow: 1px 1px 2px var(--BORDER-COLOR);
-
-  position: relative;
-  align-items: center;
 }
 
 .hero__h2 {
@@ -46,5 +42,8 @@
 @media (max-width: 550px) {
   .hero {
     margin: 3em 0;
+  }
+  .hero__h1 {
+    font-size: 1.5em;
   }
 }

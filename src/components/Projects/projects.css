@@ -1,3 +1,11 @@
 .projects__section {
-  padding: var(--PADDING-TB) 0;
+  /* padding: var(--PADDING-TB) 0; */
+  /* display: flex;
+  flex-flow: column; */
+}
+
+.projects__dt,
+.projects__dd {
+  /* display: flex;
+  flex-flow: column wrap; */
 }

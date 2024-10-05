@@ -15,16 +15,13 @@ Accessability:
 styling:
 [x] use variables
 [x] dark mode colors
-[ ] style the hero background image (chapter 16 css course)
-[ ] use the text-shadow from (chapter 16 css course)
-[ ] create Favicon icon for the personal page 
-[ ] create Logo icon?
-[ ] aside element for each small-container (chapter 7 html course)
-(dep) [ ] make the page as a grid? (chapter 15)
 [x] add hover over links
 [x] make the Subtitles (experience etc) position sticky
 [x] add a Slider Whatsapp/Email/Github/LinkedIn buttons
 [x] (optional) Add the menu animation from chapter 22
+[ ] use the text-shadow from (chapter 16 css course)
+[ ] style the hero background image (chapter 16 css course)
+[ ] create Favicon icon for the personal page 
 PDF Styling:
 [ ] letter-space for the Headings
 [ ] change the url to explicit so they see the address

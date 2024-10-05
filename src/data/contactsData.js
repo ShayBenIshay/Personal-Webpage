@@ -1,7 +1,7 @@
 const contactsData = {
   gitHub: {
     href: "https://github.com/ShayBenIshay",
-    label: "My GitHub",
+    // label: "My GitHub",
   },
   linkedIn: {
     href: "https://www.linkedin.com/in/shay-ben-ishay-46a18418b/",

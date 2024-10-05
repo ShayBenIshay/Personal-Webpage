@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import contactsData from "../../data/contactsData";
 import ExportPdf from "../../features/PDF/ExportPdf";
+
 import "./navbar.css";
 
 const Navbar = () => {
@@ -48,17 +49,21 @@ const Navbar = () => {
   return (
     <nav className="navbar" ref={navbar} id="navbar">
       <h1 className="navbar__h1">
-        <span class="nowrap ">Shay Ben Ishay </span>
-        <span class="nowrap redundent"> Personal Webpage</span>
-        <span className="navbar__span nowrap">
-          <span className="redundent">More works:</span>
+        <span>
+          <span className="dev">Shay</span>{" "}
+          <span className="span-redundent4">Ben Ishay</span>
+          <span className="span-redundent"> Personal Webpage</span>
+        </span>
+        <span className="navbar__span span-redundent3">
+          <span className="span-redundent2">More works:</span>
           <a
             className="navbar__a navbar__a-animation"
             href={contactsData.gitHub.href}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} /> {contactsData.gitHub.label}
+            <FontAwesomeIcon className="fa-github-icon" icon={faGithub} />
+            My Github
           </a>
         </span>
       </h1>
@@ -144,7 +149,7 @@ const Navbar = () => {
         className="menu-icon"
         onClick={toggleMenu}
         aria-label="Toggle navigation menu"
-        tabindex="0"
+        tabIndex="0"
       >
         <img src={menu_icon} alt="menu" />
       </button>

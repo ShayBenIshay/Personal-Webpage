@@ -17,12 +17,12 @@ const Education = () => {
   return (
     <article id="education" className="education">
       <h1 className="education__h1">Education</h1>
-      <section className="container fullpage education__details">
+      <section className="container fullpage">
         <h2>{degree}</h2>
         <h3>{school}</h3>
         <address className="second--indent">{location}</address>
         <p>
-          Graduated: <time datetime={graduated}>{graduated}</time>
+          Graduated: <time dateTime={graduated}>{graduated}</time>
         </p>
         <section className="education__description">
           <h3>Description</h3>

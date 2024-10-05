@@ -33,14 +33,13 @@ const Contact = () => {
     }
   };
 
-  // RESTRUCTURE OF HTML AND CSS CLASSES NEEDED
   return (
     <article id="contact" className="contact">
       <h1 className="contact__h1">Get in Touch</h1>
-      <p>I'd really like to hear from you!</p>
+
       <section className="smallpage contact__section">
-        <section className="section__section">
-          <h2 class="contact__h2 nowrap">My Contact Form</h2>
+        <section className="section__section l">
+          <h2 className="contact__h2">My Contact Form</h2>
           <p className="contact__p">
             Feel free to reach out throught this contact form or the other
             contact information below. <strong>collabarations</strong>,
@@ -49,38 +48,54 @@ const Contact = () => {
           </p>
 
           <ul className="contact__ul">
-            <li>
+            <li className="">
               <a
-                className="container__a"
+                className="contact__a"
                 href={`mailto:${contactsData.email.emailAddress}`}
               >
-                <img src={mail_icon} alt="Eamil Icon" width="64" height="48" />
+                {/* <img
+                  className="contact__li contact__img"
+                  src={mail_icon}
+                  alt="Eamil Icon"
+                  width="64"
+                  height="48"
+                /> */}
                 {contactsData.email.emailAddress}
               </a>
             </li>
-            <li>
+            <li className="">
               <a
-                className="container__a"
+                className="contact__a"
                 href={contactsData.phone.href}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={phone_icon} alt="" />
+                {/* <img
+                  className="contact__li contact__img"
+                  src={phone_icon}
+                  alt=""
+                /> */}
                 {contactsData.phone.phoneNumber}
               </a>
             </li>
-            <li>
-              <img src={location_icon} alt="" />
-              <address>Haifa, Israel</address>
+            <li className="">
+              {/* <img
+                className="contact__li contact__img"
+                src={location_icon}
+                alt="location pin"
+                width="48"
+                height="66"
+              /> */}
+              <address className="contact__address">Haifa, Israel</address>
             </li>
           </ul>
         </section>
 
-        <section className="section__section">
-          <h2 className="contact__h2 nowrap">
+        <section className="section__section r">
+          <h2 className="contact__h2 redundent">
             Send me a message{" "}
             <img
-              className="contact__img"
+              className="contact__img2"
               src={msg_icon}
               alt="Message Icon"
               width="99"
@@ -113,7 +128,7 @@ const Contact = () => {
               </p>
             </fieldset>
             <button type="submit" className="btn dark-btn">
-              Submit now
+              Submit
               <img src={white_arrow} alt="scroll up" width="46" height="45" />
             </button>
           </form>
