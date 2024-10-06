@@ -1,4 +1,5 @@
-.projects__section {
+.project__section {
+  margin: var(--MARGIN) 0;
   /* padding: var(--PADDING-TB) 0; */
   /* display: flex;
   flex-flow: column; */

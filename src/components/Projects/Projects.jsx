@@ -14,7 +14,7 @@ const Projects = () => {
               { title, subtitle, description, notes, githubUrl, webpageUrl },
               index
             ) => (
-              <section className="section__section" key={index}>
+              <section className="project__section" key={index}>
                 <dt>
                   <h2 className="">
                     {title + " ("}

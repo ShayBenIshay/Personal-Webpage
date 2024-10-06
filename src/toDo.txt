@@ -1,3 +1,5 @@
+[ ] On my PC screen the sticky header and navbar has margin in between - fix it with calc function?
+
 content:
 [ ] add profile picture to my page
 [ ] add background image to hero chapter 16
@@ -20,7 +22,6 @@ styling:
 [x] add a Slider Whatsapp/Email/Github/LinkedIn buttons
 [x] (optional) Add the menu animation from chapter 22
 [ ] use the text-shadow from (chapter 16 css course)
-[ ] style the hero background image (chapter 16 css course)
 [ ] create Favicon icon for the personal page 
 PDF Styling:
 [ ] letter-space for the Headings

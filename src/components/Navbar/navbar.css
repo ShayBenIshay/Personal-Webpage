@@ -2,7 +2,7 @@
   background-color: var(--NAV-BG);
   border-bottom: var(--BORDERS);
   font-weight: bold;
-  height: 5.5em;
+  height: 110px;
 }
 
 .navbar__h1 {
@@ -62,7 +62,7 @@
   height: 70px;
   cursor: pointer;
   z-index: -2;
-  background-color: var(--BUTTON-COLOR);
+  background-color: var(--DARK-BUTTON);
   border-radius: 50%;
   border: 1px solid var(--BORDER-COLOR);
   padding: 15px;
@@ -150,9 +150,6 @@
     transition: 0.5s;
   }
 
-  .navbar__ul {
-  }
-
   .hide-mobile-menu {
     display: none;
   }
@@ -178,16 +175,15 @@
   .span-redundent2 {
     display: none;
   }
+  .span-redundent3 {
+    display: none;
+  }
   .navbar__a {
     margin-right: 0.5em;
   }
 }
 
 @media (max-width: 550px) {
-  .span-redundent3 {
-    display: none;
-  }
-
   .scroll-up {
     width: 50px;
     height: 50px;

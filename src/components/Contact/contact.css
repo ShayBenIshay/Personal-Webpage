@@ -27,6 +27,11 @@
   margin-left: 10px;
 }
 
+.contact__a {
+  /* padding: 0 var(--PADDING-P-SIDE); */
+  /* margin-left: var(--MARGIN-P-SIDE); */
+}
+
 .contact__ul li {
   display: flex;
   align-items: center;
@@ -75,21 +80,20 @@
   border-radius: 50%;
 }
 
+.contact__ul {
+  padding: 0 var(--PADDING-P-SIDE);
+}
 .contact__li {
   background-color: var(--SOCIAL-BUTTON-BG);
   border-radius: 50%;
   border: 1px solid #333;
   cursor: pointer;
-  /* display: block; */
   padding: 10px;
 }
 
 /* || MEDIA QUERIES */
 
 @media (max-width: 750px) {
-  .contact-container {
-    /* display: block; */
-  }
   .contact-col {
     padding: 20px;
   }
