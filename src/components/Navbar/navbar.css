@@ -2,7 +2,7 @@
   background-color: var(--NAV-BG);
   border-bottom: var(--BORDERS);
   font-weight: bold;
-  height: 110px;
+  height: var(--NAV-HEIGHT);
 }
 
 .navbar__h1 {
@@ -130,9 +130,6 @@
   .hide-mobile-menu {
     position: relative;
     top: -10000px;
-  }
-  .navbar {
-    height: 6.5%;
   }
 
   .navbar__ul {

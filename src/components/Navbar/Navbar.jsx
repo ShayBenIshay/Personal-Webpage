@@ -70,14 +70,7 @@ const Navbar = () => {
 
       <ul className={mobileMenu ? "navbar__ul" : "navbar__ul hide-mobile-menu"}>
         <li className="nowrap">
-          <a
-            className="navbar__a"
-            href="#hero"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("hero");
-            }}
-          >
+          <a className="navbar__a" href="#">
             About me
           </a>
         </li>
@@ -155,7 +148,7 @@ const Navbar = () => {
       </button>
       {sticky && (
         <button className="scroll-up">
-          <a href="#hero">
+          <a href="#">
             <img src={up_icon} alt="Scroll Up" />
           </a>
         </button>
