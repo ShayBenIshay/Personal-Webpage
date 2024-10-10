@@ -1,8 +1,9 @@
-[ ] On my PC screen the sticky header and navbar has margin in between - fix it with calc function?
+[ ] index my webpage for Google Search using Google Search Console. 
 
 content:
 [ ] add profile picture to my page
 [ ] add background image to hero chapter 16
+[ ] add text to Personal Webpage project
 [x] add text aside of some Topic
 (dep) [ ] add Services section
 

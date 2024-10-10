@@ -16,7 +16,7 @@
 .social__button {
   background-color: var(--SOCIAL-BUTTON-BG);
   border-radius: 50%;
-  border: 1px solid #333;
+  border: 1px solid var(--FONT-COLOR);
   cursor: pointer;
   display: block;
   padding: 10px;

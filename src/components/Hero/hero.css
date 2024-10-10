@@ -37,7 +37,17 @@
   text-align: justify;
 }
 
+.hero__section {
+  width: 70%;
+}
+
 /* || MEDIA QUERIES */
+
+@media (max-width: 750px) {
+  .hero__section {
+    width: 90%;
+  }
+}
 
 @media (max-width: 550px) {
   .hero {
