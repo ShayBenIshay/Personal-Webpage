@@ -9,7 +9,7 @@ export const projectsData = [
     notes: `The frontend code was written with React using Redux and Express js,
       the Backend service is connected to MongoDB and written with Node js.`,
     githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
-    webpageUrl: "https://smart-investor.onrender.com/",
+    webpageUrl: "https://smart-investor-platform.onrender.com/",
     webpageTitle: "Smart Investor app",
   },
   {
