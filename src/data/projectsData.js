@@ -15,8 +15,9 @@ export const projectsData = [
   {
     title: "My Personal Webpage",
     subtitle: "Interactive way to tell about myself and show my works",
-    description: `a live and inline way to present my portfolio and share my CV.`,
-    notes: "This portfolio page was developed using React.",
+    description: `React Project. a live and inline way to show my portfolio and to share my CV.`,
+    notes:
+      "This portfolio page was developed using React and it is with Fully Responsive Design.",
     githubUrl: "https://github.com/ShayBenIshay/CV-Webpage",
     webpageUrl: "https://shay-full-stack-developer-cv.onrender.com/",
     webpageTitle: "Webpage!",

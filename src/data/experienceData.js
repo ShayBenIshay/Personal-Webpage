@@ -5,9 +5,10 @@ export const experienceData = {
       company: "Amdocs",
       date: "12/2021 - 09/2023",
       type: "Full-time",
-      description: `Investigating defects on several Micro-services Subdomains, 
-        Working with Java, Spring Boot, Micro-Services Architecture, 
-        using Red Hat OpenShift Container Platform. and Bitbucket for Version Control`,
+      description: `Maintain and enhance the core software product by working with existing code.
+      Address bug fixes, feature updates, and performance issues reported by customers or internal stakeholders.
+      Working with Java, Spring Boot, Micro-Services Architecture, 
+      using Red Hat OpenShift Container Platform. and Bitbucket for Version Control`,
       responsibilities:
         "Investigating and fixing core issues with business flows.",
       routinePdf:

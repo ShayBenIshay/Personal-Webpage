@@ -11,13 +11,15 @@ const Skills = () => (
     <section className="smallpage skills__section">
       {Object.keys(skillsData).map((category) => (
         <dl className="skills__dl" key={category}>
-          <dd>
+          <dd className="skills_dd">
             <h2>{formatCategoryName(category)}</h2>
           </dd>
           <dt className="skills_dt">
             <ul>
               {skillsData[category].map((skill, index) => (
-                <li key={index}>{skill}</li>
+                <li className="skills_li" key={index}>
+                  {skill}
+                </li>
               ))}
             </ul>
           </dt>

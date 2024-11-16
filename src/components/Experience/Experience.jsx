@@ -41,7 +41,7 @@ const Experience = () => {
               <h4>Work Routine:</h4>
               <ul className="job__ul">
                 {routine.map((task, index) => (
-                  <li key={index}>
+                  <li className="job__li" key={index}>
                     <span>{task}</span>
                   </li>
                 ))}

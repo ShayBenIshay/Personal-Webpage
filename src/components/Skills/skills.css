@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 20px;
+  padding: var(--PADDING-CONTAINER-TB) var(--PADDING-CONTAINER-SIDE);
   margin-bottom: var(--MARGIN);
 }
 
@@ -16,6 +16,14 @@
   border-right: 1px solid #000;
 }
 
+.skills_dd {
+  margin-bottom: 15px;
+}
+
 .skills_dt {
   padding-left: var(--PADDING-P-SIDE);
+}
+
+.skills_li {
+  margin-bottom: 10px;
 }

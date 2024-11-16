@@ -2,3 +2,7 @@
   list-style-position: inside;
   margin-left: var(--MARGIN-P-SIDE);
 }
+
+.job__li {
+  margin-bottom: 7px;
+}
