@@ -48,8 +48,9 @@ const PDFProjects = () => {
         <Text style={styles.description}>{projectsData[0].description}</Text>
         <Text style={styles.notes}>{projectsData[0].notes}</Text>
         <View key={projectsData[1].title}>
-          <Text style={styles.projectTitle}>
-            {projectsData[1].title} Check it out here:{" "}
+          <Text style={styles.projectTitle}>{projectsData[1].title}</Text>
+          <Text style={styles.projectSubtitle}>
+            {projectsData[1].subtitle} Check it out here:{" "}
             <Link href={projectsData[1].webpageUrl}>
               {projectsData[1].webpageTitle}
             </Link>

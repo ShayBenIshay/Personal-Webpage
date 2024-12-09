@@ -13,8 +13,8 @@ export const projectsData = [
     webpageTitle: "Smart Investor app",
   },
   {
-    title: "My Personal Webpage",
-    subtitle: "Interactive way to tell about myself and show my works",
+    title: "Personal Webpage",
+    subtitle: "My online CV",
     description: `React Project. a live and inline way to show my portfolio and to share my CV.`,
     notes:
       "This portfolio page was developed using React and it is with Fully Responsive Design.",

@@ -1,15 +1,19 @@
 export const skillsData = {
-  BackEnd: ["Node.js", "Express.js", "Java (Spring Framework)", "NextJS"],
+  BackEnd: [
+    "Node.js",
+    "feathersJS",
+    "MongoDB",
+    "NextJS",
+    "Express.js",
+    "Java (Spring Framework)",
+  ],
   FrontEnd: [
-    "React.js",
-    "Responsive Web Design",
+    "React",
+    "NextJS",
     "CSS",
     "HTML",
-    "NextJS",
-    "Redux.js",
+    "Responsive Web Design",
+    "Wordpress / Elementor",
   ],
   CodeManagement: ["Git", "Bitbucket"],
-  DataBase: ["MongoDB"],
-  // Tools: ["Jenkins", "OpenShift Container Platform (OCP)"],
-  //Unpolished skills: Python, Java, C, C++
 };
