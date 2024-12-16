@@ -10,7 +10,7 @@ const ExportPdf = () => {
       fileName="ShayCV.pdf"
     >
       {({ blob, url, loading, error }) =>
-        loading ? "Loading document..." : "Export to Pdf!"
+        loading ? "Loading document..." : "Export to Pdf"
       }
     </PDFDownloadLink>
   );

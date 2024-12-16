@@ -27,9 +27,9 @@ const App = () => {
       <Header className="block" />
       <main className="main">
         <Hero className="container block" />
+        <Education className="container block" />
         <Experience className="container block" />
         <Projects className="container block" />
-        <Education className="container block" />
         <Skills className="container block" />
         <Contact className="container block" />
       </main>

@@ -3,17 +3,17 @@ import { skillsData } from "../../data/skillsData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 16,
+    fontSize: 18,
     marginTop: 10,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
   description: {
-    fontSize: 10,
+    fontSize: 12,
     marginBottom: 5,
   },
   bullet: {
-    fontSize: 10,
+    fontSize: 12,
     marginLeft: 20,
     marginRight: 5,
   },

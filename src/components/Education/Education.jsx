@@ -44,9 +44,7 @@ const Education = () => {
                   {" Source code"}
                 </a>
               </h4>
-              <summary>
-                <em>more details</em>
-              </summary>
+              <summary></summary>
               <p>
                 a <strong>Machine Learning</strong> project. we started with a
                 model that detects Anomal Behaviour. We trained it over 2GB of

@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     color: "rgba(0, 20, 50, 0.9)",
   },
   description: {
-    fontSize: 10,
+    fontSize: 14,
     marginTop: 5,
     paddingHorizontal: 20,
     alignItems: "baseline",

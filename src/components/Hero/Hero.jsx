@@ -10,11 +10,10 @@ const Hero = () => (
     <section className="hero__section about">
       <h2 className="hero__h2">About myself</h2>
       <p className="hero__p">
-        <em>Technion - Israel Institute of Technology</em> Alumnus, with B.Sc in
-        Computer Science field. Skilled software developer with great algorithms
-        and data structures knowledge and excellent problems solving abilities.
-        Passionate about developing awesome apps from scratch. Loves a challenge
-        and quick to adapt to new topics.
+        <em>Technion - Israel Institute of Technology</em> Alumnus B.Sc in
+        Computer Science. Sharp software developer with excellent problem
+        solving skills and outstanding self learning abilities. Passionate about
+        new technologies and developing software from scratch. Loves a challenge
       </p>
     </section>
   </article>

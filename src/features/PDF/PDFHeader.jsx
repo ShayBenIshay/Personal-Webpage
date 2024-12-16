@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   link: {
-    fontSize: 10,
+    fontSize: 12,
     marginRight: 10,
     textDecoration: "none",
     color: "blue",

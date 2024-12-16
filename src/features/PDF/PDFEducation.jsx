@@ -1,31 +1,31 @@
-import { Link, StyleSheet, Text } from "@react-pdf/renderer";
+import { StyleSheet, Text } from "@react-pdf/renderer";
 import { educationData } from "../../data/educationData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 16,
+    fontSize: 18,
     marginTop: 10,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
   title: {
-    fontSize: 14,
+    fontSize: 16,
     marginBottom: 5,
     marginLeft: 10,
   },
   subtitle: {
-    fontSize: 12,
+    fontSize: 14,
     marginBottom: 5,
     marginLeft: 20,
     fontWeight: "bold",
   },
   description: {
-    fontSize: 10,
+    fontSize: 12,
     marginBottom: 5,
     marginLeft: 20,
   },
   notes: {
-    fontSize: 8,
+    fontSize: 10,
     marginBottom: 10,
     color: "#888888",
   },

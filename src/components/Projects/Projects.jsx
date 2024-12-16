@@ -18,7 +18,6 @@ const Projects = () => {
     description: description1,
     notes: notes1,
     githubUrl: githubUrl1,
-    webpageUrl: webpageUrl1,
   } = projectsData[1];
 
   return (
@@ -28,20 +27,7 @@ const Projects = () => {
         <dl className="projects__dl">
           <section className="project__section">
             <dt>
-              <h2 className="">
-                {title0 + " ("}
-                <span className="">
-                  <a
-                    className="container__a"
-                    href={webpageUrl0}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    app url
-                  </a>
-                  {")"}
-                </span>
-              </h2>
+              <h2>{title0}</h2>
             </dt>
             <dd>
               <h3>{subtitle0}</h3>
@@ -57,11 +43,18 @@ const Projects = () => {
                     <FontAwesomeIcon icon={faGithub} />
                     Source Code
                   </a>
+                  {"  "}
+                  <a
+                    className="container__a"
+                    href={webpageUrl0}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Try it out
+                  </a>
                 </h4>
                 <details>
-                  <summary className="aside__summary">
-                    <em>Notes</em>
-                  </summary>
+                  <summary className="aside__summary"></summary>
                   <p>{notes0}</p>
                 </details>
               </aside>
@@ -70,20 +63,7 @@ const Projects = () => {
 
           <section className="project__section">
             <dt>
-              <h2 className="">
-                {title1 + " ("}
-                <span className="">
-                  <a
-                    className="container__a"
-                    href={webpageUrl1}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    app url
-                  </a>
-                  {")"}
-                </span>
-              </h2>
+              <h2>{title1}</h2>
             </dt>
             <dd>
               <h3>{subtitle1}</h3>
@@ -101,9 +81,7 @@ const Projects = () => {
                   </a>
                 </h4>
                 <details>
-                  <summary className="aside__summary">
-                    <em>Notes</em>
-                  </summary>
+                  <summary className="aside__summary"></summary>
                   <p>{notes1}</p>
                 </details>
               </aside>

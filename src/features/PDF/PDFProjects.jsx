@@ -3,31 +3,31 @@ import { projectsData } from "../../data/projectsData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 16,
+    fontSize: 18,
     marginTop: 15,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
   projectTitle: {
-    fontSize: 14,
+    fontSize: 16,
     marginBottom: 5,
     marginLeft: 10,
     textDecoration: "underline",
   },
   projectSubtitle: {
-    fontSize: 12,
+    fontSize: 14,
     marginBottom: 5,
     marginLeft: 20,
     // color: "#888888",
     fontWeight: "bold",
   },
   description: {
-    fontSize: 10,
+    fontSize: 12,
     marginBottom: 5,
     marginLeft: 20,
   },
   notes: {
-    fontSize: 8,
+    fontSize: 10,
     marginBottom: 10,
     color: "#888888",
   },

@@ -3,30 +3,30 @@ import { experienceData } from "../../data/experienceData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 16,
+    fontSize: 18,
     marginTop: 10,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
   jobTitle: {
-    fontSize: 14,
+    fontSize: 16,
     marginBottom: 5,
     marginLeft: 10,
     textDecoration: "underline",
   },
   jobDates: {
-    fontSize: 12,
+    fontSize: 14,
     marginBottom: 5,
     marginLeft: 20,
     fontWeight: "bold",
   },
   description: {
-    fontSize: 10,
+    fontSize: 12,
     marginBottom: 5,
     marginLeft: 20,
   },
   notes: {
-    fontSize: 8,
+    fontSize: 10,
     marginBottom: 10,
     color: "#888888",
   },
@@ -46,9 +46,9 @@ const PDFExperience = () => {
         <Text style={styles.description}>
           {experienceData.jobs[0].description}
         </Text>
-        <Text style={styles.description}>
+        {/* <Text style={styles.description}>
           daily routine: {experienceData.jobs[0].routinePdf}
-        </Text>
+        </Text> */}
         <Text style={styles.notes}>{experienceData.jobs[0].notes}</Text>
       </View>
     </View>
