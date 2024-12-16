@@ -77,6 +77,18 @@ const Navbar = () => {
         <li>
           <a
             className="navbar__a"
+            href="#education"
+            onClick={(e) => {
+              e.preventDefault();
+              handleScroll("education");
+            }}
+          >
+            Education
+          </a>
+        </li>
+        <li>
+          <a
+            className="navbar__a"
             href="#experience"
             onClick={(e) => {
               e.preventDefault();
@@ -96,18 +108,6 @@ const Navbar = () => {
             }}
           >
             Projects
-          </a>
-        </li>
-        <li>
-          <a
-            className="navbar__a"
-            href="#education"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("education");
-            }}
-          >
-            Education
           </a>
         </li>
         <li>
