@@ -4,7 +4,7 @@ import { experienceData } from "../../data/experienceData";
 const styles = StyleSheet.create({
   heading: {
     fontSize: 18,
-    marginTop: 10,
+    marginTop: 25,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
   notes: {
     fontSize: 10,
     marginBottom: 10,
+    marginLeft: 10,
     color: "#888888",
   },
 });
@@ -44,7 +45,10 @@ const PDFExperience = () => {
           {experienceData.jobs[0].type}: {experienceData.jobs[0].date}
         </Text>
         <Text style={styles.description}>
-          {experienceData.jobs[0].description}
+          {experienceData.jobs[0].descriptionOne}
+        </Text>
+        <Text style={styles.description}>
+          {experienceData.jobs[0].descriptionTwo}
         </Text>
         {/* <Text style={styles.description}>
           daily routine: {experienceData.jobs[0].routinePdf}

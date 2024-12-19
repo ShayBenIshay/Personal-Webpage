@@ -7,7 +7,7 @@ export const skillsData = {
     "Express.js",
   ],
   FrontEnd: [
-    "NextJS",
+    "Next.js",
     "React",
     "CSS + SCSS",
     "HTML",
@@ -17,8 +17,8 @@ export const skillsData = {
   Tools: [
     "Git / Bitbucket",
     "Open Shift Cloud Platform",
-    "Maven",
     "Jenkins",
+    "Maven",
     "Jira",
   ],
 };

@@ -4,7 +4,7 @@ import { projectsData } from "../../data/projectsData";
 const styles = StyleSheet.create({
   heading: {
     fontSize: 18,
-    marginTop: 15,
+    marginTop: 25,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
@@ -40,7 +40,7 @@ const PDFProjects = () => {
       <View key={projectsData[0].title}>
         <Text style={styles.projectTitle}>{projectsData[0].title}</Text>
         <Text style={styles.projectSubtitle}>
-          {projectsData[0].subtitle} Check it out here:{" "}
+          {projectsData[0].subtitle}. Check it out here:{" "}
           <Link href={projectsData[0].webpageUrl}>
             {projectsData[0].webpageTitle}
           </Link>

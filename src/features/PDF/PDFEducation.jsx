@@ -4,7 +4,7 @@ import { educationData } from "../../data/educationData";
 const styles = StyleSheet.create({
   heading: {
     fontSize: 18,
-    marginTop: 10,
+    marginTop: 25,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
@@ -37,7 +37,7 @@ const PDFEducation = () => {
       <Text style={styles.heading}>Education</Text>
       <Text style={styles.title}>{educationData.degree}</Text>
       <Text style={styles.subtitle}>
-        {educationData.school}. graduated - {educationData.graduated}.
+        {educationData.school} {educationData.date}
       </Text>
       <Text style={styles.description}>{educationData.description}</Text>
       <Text style={styles.notes}>

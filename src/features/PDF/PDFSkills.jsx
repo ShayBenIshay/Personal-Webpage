@@ -4,7 +4,7 @@ import { skillsData } from "../../data/skillsData";
 const styles = StyleSheet.create({
   heading: {
     fontSize: 18,
-    marginTop: 10,
+    marginTop: 25,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },

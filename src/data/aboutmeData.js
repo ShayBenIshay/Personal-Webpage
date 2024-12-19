@@ -1,3 +1,3 @@
 export const aboutmeData = {
-  description: `Technion - Israel Institute of Technology Alumnus B.Sc in Computer Science. Sharp software developer with excellent problem solving skills and outstanding self learning abilities. Passionate about new technologies and developing software from scratch. Loves a challenge.`,
+  description: `Technion - Israel Institute of Technology Alumnus B.Sc in Computer Science. Proficient software developer with exceptional problem-solving skills and strong self-learning abilities. Passionate about new technologies and building software from the ground up, thriving on challenges.`,
 };

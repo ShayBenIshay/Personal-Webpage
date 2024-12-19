@@ -3,10 +3,10 @@ export const experienceData = {
     {
       title: "Back End Software Developer",
       company: "Amdocs",
-      date: "12/2021 - 09/2023",
+      date: "12 / 2021 - 09 / 2023",
       type: "Full-time",
-      description: `E-Commerce product, core team. Order Capture departement which is responsible of the process from creating the order(Shopping Cart) to the Submit order part.
-      Later on i was assigned to the Order Handle department, the second part of the product, which is from the submitted order to the delivery of the product. handling the order and assuring successful user experience.`,
+      descriptionOne: `Joined the core E-Commerce product team, the Order Capture department, responsible for the process from shopping cart creation to order submission.`,
+      descriptionTwo: `In addition to my role in Order Capture, I was also assigned responsibilities in the Order Handle department, managing the process from order submission to product delivery. This involved handling orders and ensuring a seamless and successful user experience.`,
       // delivering the product to the customers
       // oldDescription: `Maintain and enhance the core software product by working with existing code.
       // Address bug fixes, feature updates, and performance issues reported by customers.
@@ -26,7 +26,7 @@ export const experienceData = {
       //   "Rolling the fixes to higher/lower versions if needed.",
       // ],
       notes:
-        "Micro Services Architecture using Java Spring Framework with Maven.",
+        "Tools acquired: Architecture of Micro Services, Java Spring Framework.",
     },
   ],
 };
