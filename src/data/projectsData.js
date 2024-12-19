@@ -2,8 +2,8 @@ export const projectsData = [
   {
     title: "Smart Investor",
     subtitle: "Intelligent Investment Management Platform",
-    description: ` frontend: Next.js Javascript + Typescript, CSS + SCSS. 
-    backend: Services + Cache - FeathersJS, MongoDB.`,
+    description: ` Frontend: Next.js Javascript + Typescript, CSS + SCSS. 
+    Backend: Services + Cache - FeathersJS, MongoDB.`,
     // oldDescription: `MERN stack(MongoDB,Express,React,Nodejs).
     // this app is connected to Polygon finance API, fetching stock prices by date, to Create/Update a transaction.
     // It has Portfolio to show statistics about your transaction, compared to real time price.

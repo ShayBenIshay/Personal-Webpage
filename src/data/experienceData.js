@@ -26,7 +26,7 @@ export const experienceData = {
       //   "Rolling the fixes to higher/lower versions if needed.",
       // ],
       notes:
-        "Tools acquired: Architecture of Micro Services, Java Spring Framework.",
+        "Gained expertise in Microservices Architecture and Java Spring Framework.",
     },
   ],
 };
