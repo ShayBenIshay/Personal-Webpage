@@ -8,7 +8,8 @@ const Education = () => {
     degree,
     school,
     location,
-    graduated,
+    // graduated,
+    date,
     description,
     notes,
     finalProjectName,
@@ -22,7 +23,7 @@ const Education = () => {
         <h3>{school}</h3>
         <address className="second--indent">{location}</address>
         <p>
-          Graduated: <time dateTime={graduated}>{graduated}</time>
+          Graduated: <time dateTime={date}>{date}</time>
         </p>
         <section className="education__description">
           <h3>Description</h3>

@@ -32,7 +32,16 @@ const Projects = () => {
             <dd>
               <h3>{subtitle0}</h3>
               <p className="wrap">{description0}</p>
-              <aside className="aside">
+              <a
+                className="container__a sourcecode"
+                href={githubUrl0}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+                Source Code
+              </a>
+              {/* <aside className="aside">
                 <h4>
                   <a
                     className="container__a sourcecode"
@@ -57,7 +66,7 @@ const Projects = () => {
                   <summary className="aside__summary"></summary>
                   <p>{notes0}</p>
                 </details>
-              </aside>
+              </aside> */}
             </dd>
           </section>
 
@@ -68,7 +77,16 @@ const Projects = () => {
             <dd>
               <h3>{subtitle1}</h3>
               <p className="wrap">{description1}</p>
-              <aside className="aside">
+              <a
+                className="container__a sourcecode"
+                href={githubUrl1}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+                Source Code
+              </a>
+              {/* <aside className="aside">
                 <h4>
                   <a
                     className="container__a sourcecode"
@@ -84,7 +102,7 @@ const Projects = () => {
                   <summary className="aside__summary"></summary>
                   <p>{notes1}</p>
                 </details>
-              </aside>
+              </aside> */}
             </dd>
           </section>
         </dl>

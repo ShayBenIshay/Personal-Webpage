@@ -31,7 +31,7 @@ const PDFSkills = () => {
         <View key={category} style={{ flexDirection: "row" }}>
           <Text style={styles.bullet}>•</Text>
           <Text style={styles.description}>
-            {formatCategoryName(category)}: {skillsData[category].join(", ")}
+            {formatCategoryName(category)}: {skillsData[category].join(", ")}.
           </Text>
         </View>
       ))}

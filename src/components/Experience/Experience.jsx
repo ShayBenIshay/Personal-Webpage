@@ -14,8 +14,8 @@ const Experience = () => {
           date,
           type,
           responsibilities,
-          description,
-          // routine,
+          descriptionOne,
+          descriptionTwo,
           notes,
         }) => (
           <section
@@ -32,28 +32,17 @@ const Experience = () => {
 
               <div className="job__responsibilities">
                 <h4>Description</h4>
-                <p>{description}</p>
+                <p>{descriptionOne}</p>
+                <p>{descriptionTwo}</p>
                 <h4>Responsibilities:</h4>
                 <p>{responsibilities}</p>
               </div>
             </div>
             <div className="job__routine">
-              {/* <h4>Work Routine:</h4>
-              <ul className="job__ul">
-                {routine.map((task, index) => (
-                  <li className="job__li" key={index}>
-                    <span>{task}</span>
-                  </li>
-                ))}
-              </ul> */}
               <aside className="aside">
                 <details>
                   <summary></summary>
                   <p>{notes}</p>
-                  {/* <p>
-                    Tools &amp; Techs: Jenkins, OpenShift Cloud Platform,
-                    Bitbucket
-                  </p> */}
                 </details>
               </aside>
             </div>
