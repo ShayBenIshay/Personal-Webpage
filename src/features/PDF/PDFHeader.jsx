@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   contact: {
     flexDirection: "row",
     justifyContent: "space-around",
-    marginTop: 10,
+    marginTop: 9,
     width: "100%",
   },
   link: {

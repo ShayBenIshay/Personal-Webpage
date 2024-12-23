@@ -4,7 +4,7 @@ import { skillsData } from "../../data/skillsData";
 const styles = StyleSheet.create({
   heading: {
     fontSize: 18,
-    marginTop: 25,
+    marginTop: 22,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
   },
 });
 
-const formatCategoryName = (category) => {
-  return category.replace(/([A-Z])/g, " $1").trim();
-};
+// const formatCategoryName = (category) => {
+//   return category.replace(/([A-Z])/g, " $1").trim();
+// };
 
 const PDFSkills = () => {
   return (
@@ -31,7 +31,8 @@ const PDFSkills = () => {
         <View key={category} style={{ flexDirection: "row" }}>
           <Text style={styles.bullet}>•</Text>
           <Text style={styles.description}>
-            {formatCategoryName(category)}: {skillsData[category].join(", ")}.
+            {/* {formatCategoryName(category)}: {skillsData[category].join(", ")}. */}
+            {category}: {skillsData[category].join(", ")}.
           </Text>
         </View>
       ))}

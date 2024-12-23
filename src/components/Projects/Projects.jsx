@@ -8,7 +8,6 @@ const Projects = () => {
     title: title0,
     subtitle: subtitle0,
     description: description0,
-    notes: notes0,
     githubUrl: githubUrl0,
     webpageUrl: webpageUrl0,
   } = projectsData[0];
@@ -16,9 +15,15 @@ const Projects = () => {
     title: title1,
     subtitle: subtitle1,
     description: description1,
-    notes: notes1,
     githubUrl: githubUrl1,
+    webpageUrl: webpageUrl1,
   } = projectsData[1];
+  const {
+    title: title2,
+    subtitle: subtitle2,
+    description: description2,
+    githubUrl: githubUrl2,
+  } = projectsData[2];
 
   return (
     <article id="projects" className="projects">
@@ -41,32 +46,15 @@ const Projects = () => {
                 <FontAwesomeIcon icon={faGithub} />
                 Source Code
               </a>
-              {/* <aside className="aside">
-                <h4>
-                  <a
-                    className="container__a sourcecode"
-                    href={githubUrl0}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon icon={faGithub} />
-                    Source Code
-                  </a>
-                  {"  "}
-                  <a
-                    className="container__a"
-                    href={webpageUrl0}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Try it out
-                  </a>
-                </h4>
-                <details>
-                  <summary className="aside__summary"></summary>
-                  <p>{notes0}</p>
-                </details>
-              </aside> */}
+              {"  "}
+              <a
+                className="container__a"
+                href={webpageUrl0}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Try it out
+              </a>
             </dd>
           </section>
 
@@ -80,6 +68,34 @@ const Projects = () => {
               <a
                 className="container__a sourcecode"
                 href={githubUrl1}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+                Source Code
+              </a>
+              {"  "}
+              <a
+                className="container__a"
+                href={webpageUrl1}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Try it out
+              </a>
+            </dd>
+          </section>
+
+          <section className="project__section">
+            <dt>
+              <h2>{title2}</h2>
+            </dt>
+            <dd>
+              <h3>{subtitle2}</h3>
+              <p className="wrap">{description2}</p>
+              <a
+                className="container__a sourcecode"
+                href={githubUrl2}
                 target="_blank"
                 rel="noopener noreferrer"
               >

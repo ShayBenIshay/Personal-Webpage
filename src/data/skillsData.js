@@ -1,15 +1,13 @@
 export const skillsData = {
-  BackEnd: [
+  Backend: [
     "FeathersJS",
     "Flask",
-    "Python",
-    "MongoDB",
+    "MongoDB / mongoose",
     "Spring Framework",
-    "Java",
-    "Node.js",
     "Express.js",
+    "Node.js",
   ],
-  FrontEnd: [
+  Frontend: [
     "Next.js",
     "React",
     "CSS + SCSS",
@@ -18,10 +16,13 @@ export const skillsData = {
     "Responsive Web Design",
   ],
   Tools: [
+    "LLM / OpenAI",
     "Git / Bitbucket",
     "Open Shift Cloud Platform",
     "Jenkins",
     "Maven",
     "Jira",
+    "Python",
+    "Java",
   ],
 };

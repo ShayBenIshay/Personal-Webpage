@@ -4,7 +4,7 @@ import { projectsData } from "../../data/projectsData";
 const styles = StyleSheet.create({
   heading: {
     fontSize: 18,
-    marginTop: 25,
+    marginTop: 22,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
@@ -37,16 +37,18 @@ const PDFProjects = () => {
   return (
     <View>
       <Text style={styles.heading}>Projects</Text>
-      <View key={projectsData[0].title}>
-        <Text style={styles.projectTitle}>{projectsData[0].title}</Text>
-        <Text style={styles.projectSubtitle}>
-          {projectsData[0].subtitle}. Check it out here:{" "}
-          <Link href={projectsData[0].webpageUrl}>
-            {projectsData[0].webpageTitle}
-          </Link>
-        </Text>
-        <Text style={styles.description}>{projectsData[0].description}</Text>
-        <Text style={styles.notes}>{projectsData[0].notes}</Text>
+      <View>
+        <View key={projectsData[0].title}>
+          <Text style={styles.projectTitle}>{projectsData[0].title}</Text>
+          <Text style={styles.projectSubtitle}>
+            {projectsData[0].subtitle}. Check it out here:{" "}
+            <Link href={projectsData[0].webpageUrl}>
+              {projectsData[0].webpageTitle}
+            </Link>
+          </Text>
+          <Text style={styles.description}>{projectsData[0].description}</Text>
+          <Text style={styles.notes}>{projectsData[0].notes}</Text>
+        </View>
         <View key={projectsData[1].title}>
           <Text style={styles.projectTitle}>{projectsData[1].title}</Text>
           <Text style={styles.projectSubtitle}>

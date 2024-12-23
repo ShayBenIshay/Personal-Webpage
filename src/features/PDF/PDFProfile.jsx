@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 14,
-    marginTop: 5,
+    marginTop: 4,
     paddingHorizontal: 20,
     alignItems: "baseline",
     textAlign: "left",
