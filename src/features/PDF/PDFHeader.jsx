@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   contact: {
     flexDirection: "row",
     justifyContent: "space-around",
-    marginTop: 9,
+    marginTop: 7,
     width: "100%",
   },
   link: {
@@ -45,12 +45,12 @@ const PDFHeader = () => {
         >
           {headerData.email.emailAddress}
         </Link>
-        <Link style={styles.link} src={headerData.gitHub.href}>
-          {headerData.gitHub.label}
-        </Link>
         <Link style={styles.link} src={headerData.phone.href}>
           {headerData.phone.phoneNumber}
         </Link>
+        <Link style={styles.link} src={headerData.gitHub.href}>
+          {headerData.gitHub.label}
+        </Link>{" "}
       </View>
     </View>
   );

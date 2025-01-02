@@ -4,7 +4,7 @@ import { experienceData } from "../../data/experienceData";
 const styles = StyleSheet.create({
   heading: {
     fontSize: 16,
-    marginTop: 7,
+    marginTop: 4,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },

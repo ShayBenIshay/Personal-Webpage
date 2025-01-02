@@ -2,10 +2,10 @@ export const skillsData = {
   Backend: [
     "FeathersJS",
     "Flask",
-    "MongoDB / mongoose",
-    "Spring Framework",
-    "Express.js",
     "Node.js",
+    "MongoDB / mongoose",
+    "Express.js",
+    "Spring Framework",
   ],
   Frontend: [
     "Next.js",

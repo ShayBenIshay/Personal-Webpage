@@ -16,6 +16,12 @@ const Hero = () => (
         new technologies and building software from the ground up, thriving on
         challenges.
       </p>
+      <br></br>
+      <p className="hero__p">
+        Seeking a dynamic small team environment to build products from the
+        ground up. Eager to wear multiple hats and make meaningful contributions
+        that shape the product's direction and success.
+      </p>
     </section>
   </article>
 );

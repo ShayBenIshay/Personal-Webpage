@@ -10,8 +10,10 @@ export const projectsData = [
   },
   {
     title: "Matrix Agent",
-    subtitle: "AI Wall Street Market Smart Agent.",
-    description: `Flask, REST api, uses OpenAI api. This project is fully integrated to Smart Investor Platform project.`,
+    subtitle: "AI-Powered Financial Market Analysis Agent.",
+    description: ` Backend: Flask REST API, OpenAI integration.
+    Features: market analysis, AI-driven insights, seamless integration with Smart Investor Platform.
+    Technologies: Python, OpenAI API, RESTful architecture.`,
     githubUrl: "https://github.com/ShayBenIshay/Matrix-Agent",
     webpageUrl: "https://tweet-agent.onrender.com/",
     webpageTitle: "Matrix Agent Web Service",
