@@ -3,18 +3,18 @@ import { educationData } from "../../data/educationData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 18,
-    marginTop: 22,
+    fontSize: 16,
+    marginTop: 7,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
   title: {
-    fontSize: 16,
+    fontSize: 14,
     marginBottom: 5,
     marginLeft: 10,
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: 12,
     marginBottom: 5,
     marginLeft: 20,
     fontWeight: "bold",

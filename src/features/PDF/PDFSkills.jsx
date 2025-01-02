@@ -3,14 +3,13 @@ import { skillsData } from "../../data/skillsData";
 
 const styles = StyleSheet.create({
   heading: {
-    fontSize: 18,
-    marginTop: 22,
+    fontSize: 16,
+    marginTop: 7,
     marginBottom: 5,
     color: "hsla(210, 100%, 45%, 0.9)",
   },
   description: {
     fontSize: 12,
-    marginBottom: 5,
   },
   bullet: {
     fontSize: 12,
@@ -18,10 +17,6 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
 });
-
-// const formatCategoryName = (category) => {
-//   return category.replace(/([A-Z])/g, " $1").trim();
-// };
 
 const PDFSkills = () => {
   return (
@@ -31,7 +26,6 @@ const PDFSkills = () => {
         <View key={category} style={{ flexDirection: "row" }}>
           <Text style={styles.bullet}>•</Text>
           <Text style={styles.description}>
-            {/* {formatCategoryName(category)}: {skillsData[category].join(", ")}. */}
             {category}: {skillsData[category].join(", ")}.
           </Text>
         </View>

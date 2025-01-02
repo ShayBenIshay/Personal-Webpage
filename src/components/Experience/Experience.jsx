@@ -20,7 +20,7 @@ const Experience = () => {
         }) => (
           <section
             key={title + "-" + company}
-            className="container fullpage experience__job job"
+            className="container smallpage experience__job job"
           >
             <div className="job__details">
               <h2>

@@ -1,6 +1,18 @@
 export const experienceData = {
   jobs: [
     {
+      title: "Web Developer",
+      company: "Self-Employed",
+      date: "10/2024 - Present",
+      type: "Full-time",
+      descriptionOne: `Started my own business, specializing in creating custom web solutions for clients. Currently working on a project for a local business, creating an e-commerce website for a jewelry store and a custom website for a surgical clinic.`,
+      descriptionTwo: `Work directly with clients to understand their business needs, provide technical consultation, and deliver tailored web solutions that align with their goals and requirements.`,
+      responsibilities:
+        "Manage all aspects of web development projects including client communication, project planning, design, development, testing, deployment, and maintenance. Handle both front-end and back-end development using modern web technologies.",
+      notes:
+        "Websites are built using WordPress Elementor and custom HTML/CSS/JS code.",
+    },
+    {
       title: "Back End Software Developer",
       company: "Amdocs",
       date: "12/2021 - 09/2023",

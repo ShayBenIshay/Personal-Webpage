@@ -1,3 +1,11 @@
+.experience__job {
+  margin-bottom: 40px;
+}
+
+.job__details {
+  margin-bottom: 20px;
+}
+
 .job__ul {
   list-style-position: inside;
   margin-left: var(--MARGIN-P-SIDE);

@@ -3,8 +3,7 @@ export const projectsData = [
     title: "Smart Investor",
     subtitle: "Intelligent Investment Management Platform",
     description: ` Backend: FeathersJS, MongoDB.
-    Frontend: Next.js Javascript + Typescript, CSS + SCSS. 
-    `,
+    Frontend: Next.js Javascript + Typescript, CSS + SCSS.`,
     githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
     webpageUrl: "https://smart-investor.onrender.com/",
     webpageTitle: "Smart Investor app",
