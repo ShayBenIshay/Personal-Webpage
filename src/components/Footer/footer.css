@@ -1,8 +1,29 @@
 .footer {
+  background-color: var(--NAV-BG);
+  border-top: var(--BORDERS);
+  padding: var(--PADDING-TB) var(--PADDING-CONTAINER-SIDE);
+  color: var(--NAV-COLOR);
+  margin-top: auto;
+}
+
+.footer__content {
   display: flex;
   justify-content: center;
-  border-top: 1px solid #797979;
-  padding: 15px 0;
-  color: black;
-  font-size: 0.7em;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__text,
+.footer__copyright {
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+  color: var(--NAV-COLOR);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

@@ -28,29 +28,29 @@ textarea {
   --FS-HERO-H1: clamp(2em, 3.3em, 4em);
 
   /* COLORS */
-  --BGCOLOR-FADE: #d6d6d6;
-  --BGCOLOR: wheat;
+  --BGCOLOR-FADE: #e6e6e6;
+  --BGCOLOR: #f5f5f5;
   --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
-  --BUTTON-COLOR: #007bff;
+  --BUTTON-COLOR: #2b6cb0;
   /* --BUTTON-BGCOLOR: #fff; */
-  --FONT-COLOR: #000;
-  --UNDERLINE: #000;
-  --TEXT-COLOR: #2c2c2c;
-  --HERO-COLOR: #a17f74;
-  --HERO-H2-COLOR: #3d3420;
-  --H1-COLOR: #000;
-  --H1-BG: #495057;
-  --H2-COLOR: #495057;
-  --H3-COLOR: #6c757d;
-  --H4-COLOR: #4b6584;
-  --NAV-BG: #a17f74;
-  --NAV-COLOR: #333;
-  --HIGHLIGHT-COLOR: yellow;
-  --LINK-COLOR: blue;
-  --BORDER-COLOR: #000;
-  --SOCIAL-BUTTON-BG: #fff;
-  --SOCIAL-BUTTON-COLOR: #333;
-  --DARK-BUTTON: #212ea0;
+  --FONT-COLOR: #1a202c;
+  --UNDERLINE: #2d3748;
+  --TEXT-COLOR: #2d3748;
+  --HERO-COLOR: #3182ce;
+  --HERO-H2-COLOR: #2c5282;
+  --H1-COLOR: #f7fafc;
+  --H1-BG: #2d3748;
+  --H2-COLOR: #2d3748;
+  --H3-COLOR: #4a5568;
+  --H4-COLOR: #2c5282;
+  --NAV-BG: #4a5568;
+  --NAV-COLOR: #f7fafc;
+  --HIGHLIGHT-COLOR: #fbd38d;
+  --LINK-COLOR: #3182ce;
+  --BORDER-COLOR: #718096;
+  --SOCIAL-BUTTON-BG: #f7fafc;
+  --SOCIAL-BUTTON-COLOR: #2d3748;
+  --DARK-BUTTON: #2c5282;
 
   /* BORDERS */
   --BORDER-RADIUS: 30px;
@@ -62,17 +62,17 @@ textarea {
 
   /* STANDARD PADDING */
   --PADDING-TB: 0.25em;
-  --PADDING-SIDE: 2.5%;
-  --PADDING-CONTAINER-TB: 2em;
-  --PADDING-CONTAINER-SIDE: 5%;
-  --PADDING-P-SIDE: 2em;
-  --PADDING-H1: 2em;
+  --PADDING-SIDE: 1.5rem;
+  --PADDING-CONTAINER-TB: 1.5em;
+  --PADDING-CONTAINER-SIDE: 3%;
+  --PADDING-P-SIDE: 1.5rem;
+  --PADDING-H1: 1.5em;
 
   /* STANDARD MARGIN */
-  --MARGIN: clamp(1em, 2.5vh, 1.5em);
-  --MARGIN-P-SIDE: 2em;
+  --MARGIN: 1rem;
+  --MARGIN-P-SIDE: 1.5rem;
 
-  /* WIDTH & HIGH */
+  /* WIDTH & HEIGHT */
   --SMALL-CONTAINER-WIDTH: 70%;
   --BIG-CONTAINER-WIDTH: 100%;
   --MIN-HEIGHT: 90vh;
@@ -83,31 +83,31 @@ textarea {
 @media (prefers-color-scheme: dark) {
   :root {
     /* COLORS */
-    --BGCOLOR-FADE: darkslategray;
-    --BGCOLOR: #000;
+    --BGCOLOR-FADE: #1a202c;
+    --BGCOLOR: #171923;
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
-    --BUTTON-COLOR: navy;
-    --UNDERLINE: #fff;
-    --FONT-COLOR: #fff;
-    --TEXT-COLOR: bisque;
-    --HERO-COLOR: rgb(128, 240, 197);
-    --HERO-H2-COLOR: aliceblue;
+    --BUTTON-COLOR: #63b3ed;
+    --UNDERLINE: #e2e8f0;
+    --FONT-COLOR: #f7fafc;
+    --TEXT-COLOR: #e2e8f0;
+    --HERO-COLOR: #63b3ed;
+    --HERO-H2-COLOR: #90cdf4;
     --HEADER-COLOR: papayawhip;
     --HEADER-BG: #2c2c2c;
-    --H1-COLOR: whitesmoke;
-    --H2-COLOR: aliceblue;
-    --H3-COLOR: turquoise;
-    --H4-COLOR: azure;
-    --NAV-BG: dimgrey;
-    --NAV-COLOR: whitesmoke;
-    --NAV-HOVER: aquamarine;
-    --NAV-ACTIVE: lightcoral;
-    --SOCIAL-BUTTON-BG: #333;
-    --SOCIAL-BUTTON-COLOR: #fff;
-    --BORDER-COLOR: hsla(0, 0%, 100%, 0.5);
+    --H1-COLOR: #f7fafc;
+    --H2-COLOR: #e2e8f0;
+    --H3-COLOR: #90cdf4;
+    --H4-COLOR: #63b3ed;
+    --NAV-BG: #2d3748;
+    --NAV-COLOR: #f7fafc;
+    --NAV-HOVER: #4fd1c5;
+    --NAV-ACTIVE: #f56565;
+    --SOCIAL-BUTTON-BG: #2d3748;
+    --SOCIAL-BUTTON-COLOR: #f7fafc;
+    --BORDER-COLOR: rgba(247, 250, 252, 0.5);
 
     /* SHADOWS */
-    --SHADOW: 1px 1px 2px rgba(255, 255, 255, 0.9);
+    --SHADOW: 1px 1px 2px rgba(247, 250, 252, 0.9);
     --BOX-SHADOW: 0 1px 2px 1px var(--BORDER-COLOR);
   }
 }

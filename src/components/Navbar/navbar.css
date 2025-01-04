@@ -3,37 +3,74 @@
   border-bottom: var(--BORDERS);
   font-weight: bold;
   height: var(--NAV-HEIGHT);
+  padding: 0 var(--PADDING-CONTAINER-SIDE);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar__h1 {
   display: flex;
-  justify-content: space-around;
-  gap: 0.3em;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: calc(var(--PADDING-TB) * 2) 0 var(--PADDING-TB);
+  margin-bottom: 0;
+  height: 45%;
 }
 
 .navbar__ul {
   background-color: var(--NAV-BG);
-  padding: var(--PADDING-TB) var(--PADDING-SIDE);
+  padding: 0 0 calc(var(--PADDING-TB) * 0.5);
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+  height: 55%;
 }
 
 .navbar__span {
   font-size: large;
-  padding: 1em;
+  padding: 0.5em;
   margin-left: auto;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .navbar__a {
   text-decoration: none;
   font-weight: normal;
   position: relative;
+  transition: color 0.3s ease;
+  padding: 0.5em 0;
+}
+
+.navbar__a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--NAV-HOVER);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.navbar__a:hover::after,
+.navbar__a:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbar__a-animation {
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .navbar__a:any-link {
@@ -47,74 +84,111 @@
 
 .navbar__a:active {
   color: var(--NAV-ACTIVE);
+  transform: translateY(1px);
 }
 
 .fa-github-icon {
-  position: absolute;
-  animation: moveAround 30s linear infinite;
+  transition: transform 0.3s ease;
+  position: static;
+  animation: none;
+}
+
+.navbar__span .navbar__a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5em;
+}
+
+.navbar__span .navbar__a:hover .fa-github-icon {
+  transform: scale(1.2);
 }
 
 .scroll-up {
   position: fixed;
-  bottom: 5%;
-  right: 5%;
-  width: 70px;
-  height: 70px;
+  bottom: 3%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
-  z-index: -2;
+  z-index: 10;
   background-color: var(--DARK-BUTTON);
   border-radius: 50%;
   border: 1px solid var(--BORDER-COLOR);
-  padding: 15px;
+  padding: 13px;
+  transition: all 0.3s ease;
+}
+
+.scroll-up:hover {
+  transform: translateY(-3px);
+  background-color: var(--BUTTON-COLOR);
+  border-color: transparent;
+  opacity: 1;
+}
+
+.scroll-up img {
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.scroll-up:hover img {
+  transform: scale(1.1);
 }
 
 .menu-icon {
   display: none;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
 }
 
 @keyframes moveAround {
   0% {
     top: 0;
     left: 0;
+    transform: scale(1);
   }
   12.5% {
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1.1);
   }
   25% {
     top: 0;
     left: 100%;
-    transform: translateX(-100%);
+    transform: translateX(-100%) scale(1);
   }
   37.5% {
     top: 50%;
     left: 100%;
-    transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%) scale(1.1);
   }
   50% {
     top: 100%;
     left: 100%;
-    transform: translate(-100%, -100%);
+    transform: translate(-100%, -100%) scale(1);
   }
   62.5% {
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%) scale(1.1);
   }
   75% {
     top: 100%;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateY(-100%) scale(1);
   }
   87.5% {
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(1.1);
   }
   100% {
     top: 0;
     left: 0;
+    transform: scale(1);
   }
 }
 
@@ -135,20 +209,19 @@
   .navbar__ul {
     flex-flow: column nowrap;
     justify-content: center;
-    border-left: 1px solid black;
-
+    border-left: var(--BORDERS);
     position: fixed;
     top: 0;
-    right: 0px;
+    right: 0;
     bottom: 0;
-    background: #a17f74;
-    z-index: -1;
+    background-color: var(--NAV-BG);
+    z-index: 5;
     padding-top: 70px;
-    transition: 0.5s;
+    transition: transform 0.5s ease;
   }
 
   .hide-mobile-menu {
-    display: none;
+    transform: translateX(100%);
   }
 
   .menu-icon {
@@ -182,8 +255,9 @@
 
 @media (max-width: 550px) {
   .scroll-up {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    padding: 11px;
   }
 }
 

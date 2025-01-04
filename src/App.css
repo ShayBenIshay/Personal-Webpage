@@ -1,0 +1,28 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* We already have container widths and padding in index.css, so we'll only add what's missing */
+
+.main {
+  flex: 1;
+  width: 100%;
+}
+
+.aside {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

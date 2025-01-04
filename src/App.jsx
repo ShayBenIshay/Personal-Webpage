@@ -11,16 +11,6 @@ import Header from "./components/Header/Header";
 
 const App = () => {
   useTitle("Shay's CV Webpage");
-  // console.log(process.env.REACT_APP_WEB3FORMS_KEY);
-
-  // window.onload = () => {
-  //   const header = document.querySelector("header");
-  //   const headerHeight = header.offsetHeight;
-  //   document.documentElement.style.setProperty(
-  //     "--HEADER-HEIGHT",
-  //     `${headerHeight}px`
-  //   );
-  // };
 
   return (
     <>

@@ -10,7 +10,7 @@ export const experienceData = {
       responsibilities:
         "Manage all aspects of web development projects including client communication, project planning, design, development, testing, deployment, and maintenance. Handle both front-end and back-end development using modern web technologies.",
       notes:
-        "Websites are built using WordPress Elementor and custom HTML/CSS/JS code.",
+        "Websites are built using WordPress Elementor and custom HTML / CSS / JS code.",
     },
     {
       title: "Back End Software Developer",

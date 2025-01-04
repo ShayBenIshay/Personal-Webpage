@@ -1,28 +1,58 @@
 .social {
   background-color: inherit;
-  color: white;
+  color: var(--NAV-COLOR);
   font-size: inherit;
-  margin-right: 1%;
   position: fixed;
-  top: 40%;
+  top: 50%;
   right: 0;
-  z-index: 10;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.6em;
   z-index: 1;
+  padding: 0.4em;
 }
 
 .social__button {
   background-color: var(--SOCIAL-BUTTON-BG);
   border-radius: 50%;
-  border: 1px solid var(--FONT-COLOR);
+  border: 1px solid var(--BORDER-COLOR);
   cursor: pointer;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social__button:hover {
+  transform: translateX(-5px);
+  background-color: var(--BUTTON-COLOR);
+  border-color: transparent;
 }
 
 .social__a {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 35px;
+  min-width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--SOCIAL-BUTTON-COLOR);
+  transition: color 0.3s ease;
+}
+
+.social__button:hover .social__a {
+  color: var(--NAV-COLOR);
+}
+
+@media (max-width: 768px) {
+  .social {
+    padding: 0.25em;
+    gap: 0.4em;
+  }
+
+  .social__button {
+    padding: 8px;
+  }
 }
