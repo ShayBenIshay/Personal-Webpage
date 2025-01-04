@@ -23,9 +23,7 @@ const Education = () => {
         <h2>{degree}</h2>
         <h3>{school}</h3>
 
-        <p>
-          <address>{location}</address>
-        </p>
+        <address>{location}</address>
 
         <p>
           Graduated: <time dateTime={date}>{date}</time>

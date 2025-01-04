@@ -13,6 +13,10 @@
 
 .education address {
   margin-bottom: 1rem;
+  font-style: italic;
+  display: block;
+  line-height: inherit;
+  padding-left: 1.5rem;
 }
 
 .education section {
