@@ -46,8 +46,17 @@
   text-decoration: none;
   font-weight: normal;
   position: relative;
-  transition: color 0.3s ease;
-  padding: 0.5em 0;
+  transition: all 0.3s ease;
+  padding: 0.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  color: var(--NAV-COLOR);
+  font-family: inherit;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
 }
 
 .navbar__a::after {
@@ -63,8 +72,7 @@
   transition: transform 0.3s ease;
 }
 
-.navbar__a:hover::after,
-.navbar__a:focus-visible::after {
+.navbar__a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -80,6 +88,7 @@
 .navbar__a:hover,
 .navbar__a:focus-visible {
   color: var(--NAV-HOVER);
+  outline: none;
 }
 
 .navbar__a:active {
@@ -268,4 +277,49 @@
   .dev::after {
     content: " dev.";
   }
+}
+
+/* Remove underline from Export PDF */
+li.navbar__a {
+  padding: 0.5em;
+}
+
+li.navbar__a::after {
+  display: none;
+}
+
+/* Enhanced focus styles */
+.navbar__a:focus-visible {
+  outline: 2px solid var(--NAV-HOVER);
+  outline-offset: 4px;
+  border-radius: 4px;
+  color: var(--NAV-HOVER);
+}
+
+.navbar__a:hover {
+  color: var(--NAV-HOVER);
+}
+
+.navbar__a:active {
+  color: var(--NAV-ACTIVE);
+  transform: translateY(1px);
+}
+
+/* Underline animation (not for Export PDF) */
+button.navbar__a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--NAV-HOVER);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+button.navbar__a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

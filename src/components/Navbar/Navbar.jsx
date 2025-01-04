@@ -70,69 +70,46 @@ const Navbar = () => {
 
       <ul className={mobileMenu ? "navbar__ul" : "navbar__ul hide-mobile-menu"}>
         <li className="nowrap">
-          <a className="navbar__a" href="#">
+          <button
+            className="navbar__a"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             About me
-          </a>
+          </button>
         </li>
         <li>
-          <a
+          <button
             className="navbar__a"
-            href="#education"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("education");
-            }}
+            onClick={() => handleScroll("education")}
           >
             Education
-          </a>
+          </button>
         </li>
         <li>
-          <a
+          <button
             className="navbar__a"
-            href="#experience"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("experience");
-            }}
+            onClick={() => handleScroll("experience")}
           >
             Experience
-          </a>
+          </button>
         </li>
         <li>
-          <a
+          <button
             className="navbar__a"
-            href="#projects"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("projects");
-            }}
+            onClick={() => handleScroll("projects")}
           >
             Projects
-          </a>
+          </button>
         </li>
         <li>
-          <a
-            className="navbar__a"
-            href="#skills"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("skills");
-            }}
-          >
+          <button className="navbar__a" onClick={() => handleScroll("skills")}>
             Skills
-          </a>
+          </button>
         </li>
         <li className="nowrap">
-          <a
-            className="navbar__a"
-            href="#contact"
-            onClick={(e) => {
-              e.preventDefault();
-              handleScroll("contact");
-            }}
-          >
+          <button className="navbar__a" onClick={() => handleScroll("contact")}>
             Contact me
-          </a>
+          </button>
         </li>
         <li className="navbar__a nowrap">
           <ExportPdf />
@@ -147,10 +124,12 @@ const Navbar = () => {
         <img src={menu_icon} alt="menu" />
       </button>
       {sticky && (
-        <button className="scroll-up">
-          <a href="#">
-            <img src={up_icon} alt="Scroll Up" />
-          </a>
+        <button
+          className="scroll-up"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Scroll to top"
+        >
+          <img src={up_icon} alt="Scroll Up" />
         </button>
       )}
     </nav>
