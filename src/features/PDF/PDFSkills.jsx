@@ -1,20 +1,13 @@
 import { StyleSheet, Text, View } from "@react-pdf/renderer";
 import { skillsData } from "../../data/skillsData";
+import { commonStyles } from "./shared/PDFStyles";
 
 const styles = StyleSheet.create({
-  heading: {
-    fontSize: 16,
-    marginTop: 4,
-    marginBottom: 5,
-    color: "hsla(210, 100%, 45%, 0.9)",
-  },
-  description: {
-    fontSize: 12,
-  },
+  ...commonStyles,
   bullet: {
     fontSize: 12,
-    marginLeft: 20,
-    marginRight: 5,
+    marginLeft: 10,
+    marginRight: -5,
   },
 });
 

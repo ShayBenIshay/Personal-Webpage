@@ -1,35 +1,20 @@
 import { StyleSheet, Text, View } from "@react-pdf/renderer";
 import { experienceData } from "../../data/experienceData";
+import { commonStyles } from "./shared/PDFStyles";
 
 const styles = StyleSheet.create({
-  heading: {
-    fontSize: 16,
-    marginTop: 4,
-    marginBottom: 5,
-    color: "hsla(210, 100%, 45%, 0.9)",
-  },
+  ...commonStyles,
   jobTitle: {
-    fontSize: 14,
-    marginBottom: 5,
-    marginLeft: 10,
+    ...commonStyles.title,
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 2,
     textDecoration: "underline",
   },
-  jobDates: {
+  jobDetails: {
     fontSize: 12,
-    marginBottom: 5,
-    marginLeft: 20,
-    fontWeight: "bold",
-  },
-  description: {
-    fontSize: 12,
-    marginBottom: 5,
-    marginLeft: 20,
-  },
-  notes: {
-    fontSize: 10,
-    marginBottom: 10,
+    color: "#000",
     marginLeft: 10,
-    color: "#888888",
   },
 });
 
@@ -37,42 +22,16 @@ const PDFExperience = () => {
   return (
     <View>
       <Text style={styles.heading}>Experience</Text>
-      <View>
-        <Text style={styles.jobTitle}>
-          {experienceData.jobs[0].company} - {experienceData.jobs[0].title}
-        </Text>
-        <Text style={styles.jobDates}>
-          {experienceData.jobs[0].type}: {experienceData.jobs[0].date}
-        </Text>
-        <Text style={styles.description}>
-          {experienceData.jobs[0].descriptionOne}
-        </Text>
-        <Text style={styles.description}>
-          {experienceData.jobs[0].descriptionTwo}
-        </Text>
-        {/* <Text style={styles.description}>
-          daily routine: {experienceData.jobs[0].routinePdf}
-        </Text> */}
-        <Text style={styles.notes}>{experienceData.jobs[0].notes}</Text>
-      </View>
-      <View>
-        <Text style={styles.jobTitle}>
-          {experienceData.jobs[1].company} - {experienceData.jobs[1].title}
-        </Text>
-        <Text style={styles.jobDates}>
-          {experienceData.jobs[1].type}: {experienceData.jobs[1].date}
-        </Text>
-        <Text style={styles.description}>
-          {experienceData.jobs[1].descriptionOne}
-        </Text>
-        <Text style={styles.description}>
-          {experienceData.jobs[1].descriptionTwo}
-        </Text>
-        {/* <Text style={styles.description}>
-          daily routine: {experienceData.jobs[1].routinePdf}
-        </Text> */}
-        <Text style={styles.notes}>{experienceData.jobs[1].notes}</Text>
-      </View>
+      {experienceData.jobs.map((job, index) => (
+        <View key={index}>
+          <Text style={styles.title}>
+            {job.company} - {job.title}. {job.type}: {job.date}
+          </Text>
+          <Text style={styles.description}>{job.descriptionOne}</Text>
+          <Text style={styles.description}>{job.descriptionTwo}</Text>
+          <Text style={styles.notes}>{`(${job.notes})`}</Text>
+        </View>
+      ))}
     </View>
   );
 };

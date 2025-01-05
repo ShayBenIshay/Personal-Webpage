@@ -16,7 +16,7 @@ const Hero = () => (
           <em>Technion - Israel Institute of Technology</em> Alumnus B.Sc in
           Computer Science. Sharp software developer with excellent problem
           solving skills and outstanding self learning abilities. Passionate
-          about new technologies and building software from the ground up,
+          about new technologies and building software from the ground up and
           thriving on challenges.
         </p>
 

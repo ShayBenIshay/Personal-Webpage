@@ -14,8 +14,14 @@ const styles = StyleSheet.create({
 
 const PdfDoc = () => {
   return (
-    <Document title="CV">
-      <Page size="A4" style={styles.page1}>
+    <Document
+      title="Shay Ben Ishay - CV"
+      author="Shay Ben Ishay"
+      creator="Shay Ben Ishay"
+      producer="React PDF"
+      language="en"
+    >
+      <Page size="A4" style={styles.page1} wrap={false}>
         <PDFHeader />
         <PDFEducation />
         <PDFExperience />

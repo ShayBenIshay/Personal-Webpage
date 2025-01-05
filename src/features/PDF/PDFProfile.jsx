@@ -1,17 +1,12 @@
 import { View, StyleSheet, Text } from "@react-pdf/renderer";
 import { aboutmeData } from "../../data/aboutmeData";
+import { commonStyles } from "./shared/PDFStyles";
 
 const styles = StyleSheet.create({
-  heading: {
-    fontSize: 16,
-    marginBottom: 5,
-    color: "rgba(0, 20, 50, 0.9)",
-  },
+  ...commonStyles,
   description: {
-    fontSize: 12,
-    marginTop: 3,
+    ...commonStyles.description,
     paddingHorizontal: 20,
-    alignItems: "baseline",
     textAlign: "left",
   },
 });
