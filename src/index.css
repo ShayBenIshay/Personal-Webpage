@@ -74,7 +74,6 @@ textarea {
 
   /* WIDTH & HEIGHT */
   --SMALL-CONTAINER-WIDTH: 70%;
-  --BIG-CONTAINER-WIDTH: 100%;
   --MIN-HEIGHT: 90vh;
   --MIN-HEIGHT-SMALL: 55vh;
   --NAV-HEIGHT: 110px;
@@ -241,6 +240,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
+  color: var(--H3-COLOR);
 }
 
 h3 {
@@ -256,12 +256,8 @@ h2::after {
   display: block;
   padding: 0 var(--PADDING-CONTAINER-SIDE);
   height: 1px;
-  background-color: var(--UNDERLINE);
+  background-color: var(--H3-COLOR);
   margin-top: 0.2em;
-}
-
-h3 {
-  color: var(--H3-COLOR);
 }
 
 h4 {
@@ -301,9 +297,8 @@ aside {
 }
 
 .container {
-  max-width: min(var(--BIG-CONTAINER-WIDTH), 1200px);
+  padding-right: 7%;
 }
-
 .small-container {
   max-width: min(var(--SMALL-CONTAINER-WIDTH), 700px);
 }

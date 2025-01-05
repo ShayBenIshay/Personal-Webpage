@@ -32,7 +32,7 @@ const ExportPdf = () => {
             {loading ? (
               <span className="loading">Generating PDF...</span>
             ) : (
-              "Export to PDF"
+              "Download PDF"
             )}
           </>
         )}

@@ -53,10 +53,11 @@ const Projects = () => {
         <dl className="projects__dl">
           <section className="project__section">
             <dt>
-              <h2>{title0}</h2>
+              <h2>
+                {title0}, {subtitle0}.
+              </h2>
             </dt>
             <dd className="project__content">
-              <h3>{subtitle0}</h3>
               <div className="project__description">
                 {features0 && <div>{formatText(features0)}</div>}
                 {frontend0 && <div>{formatText(frontend0)}</div>}
@@ -86,10 +87,11 @@ const Projects = () => {
 
           <section className="project__section">
             <dt>
-              <h2>{title1}</h2>
+              <h2>
+                {title1}, {subtitle1}.
+              </h2>
             </dt>
             <dd className="project__content">
-              <h3>{subtitle1}</h3>
               <div className="project__description">
                 {features1 && <div>{formatText(features1)}</div>}
                 {frontend1 && <div>{formatText(frontend1)}</div>}
@@ -119,10 +121,11 @@ const Projects = () => {
 
           <section className="project__section">
             <dt>
-              <h2>{title2}</h2>
+              <h2>
+                {title2}, {subtitle2}.
+              </h2>
             </dt>
             <dd className="project__content">
-              <h3>{subtitle2}</h3>
               <div className="project__description">
                 {features2 && <div>{formatText(features2)}</div>}
                 {frontend2 && <div>{formatText(frontend2)}</div>}

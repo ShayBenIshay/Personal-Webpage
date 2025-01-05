@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     title: "Smart Investor Platform",
-    subtitle: "Intelligent Investment Management Platform",
+    subtitle: "Intelligent Portfolio Management Platform",
     features:
       "Features: Document trades, review portfolio, deposit / withdraw cash, create an AI Matrix agent. ",
     backend: `Backend: FeathersJS, MongoDB.`,
@@ -12,7 +12,7 @@ export const projectsData = [
   },
   {
     title: "Matrix Agent",
-    subtitle: "AI-Powered Financial Market Analysis Agent.",
+    subtitle: "AI-Powered Financial Market Analysis Agent",
     features:
       "Features: Build portfolio, make trade decisions, tweet about a decision, market analysis, AI-driven insights, seamless integration with Smart Investor Platform.",
     backend: `Backend: Flask REST API, OpenAI integration.`,
@@ -24,7 +24,7 @@ export const projectsData = [
   {
     title: "Personal Webpage",
     subtitle:
-      "My online CV - a live and inline way to share my CV and show my portfolio.",
+      "My online CV - a live and inline way to share my CV and show my portfolio",
     features:
       "Features: Download my CV, contact by email / whatsapp, see my portfolio.",
     frontend: `Frontend: React`,

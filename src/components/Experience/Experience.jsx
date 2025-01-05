@@ -25,18 +25,13 @@ const Experience = () => {
           >
             <div className="job__details">
               <h2>
-                {title} @ {company}
+                {title} @ {company}, {type},<time dateTime={date}> {date}</time>
               </h2>
-              <h3>
-                {date}, {type}
-              </h3>
 
               <div className="job__description">
-                <h4>Description</h4>
                 <p>{descriptionOne}</p>
                 {descriptionTwo && <p>{descriptionTwo}</p>}
 
-                <h4>Responsibilities:</h4>
                 <ul className="job__ul">
                   {responsibilities.split(". ").map((item, index) => (
                     <li key={index} className="job__li">

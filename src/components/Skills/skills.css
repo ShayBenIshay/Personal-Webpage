@@ -16,7 +16,7 @@
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  border-right: 1px solid var(--BORDER-COLOR);
+  border-right: 1px solid var(--H3-COLOR);
   padding: 0 var(--PADDING-CONTAINER-SIDE);
 }
 

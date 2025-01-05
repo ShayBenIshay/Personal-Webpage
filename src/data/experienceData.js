@@ -13,7 +13,7 @@ export const experienceData = {
         "Websites are built using WordPress Elementor and custom HTML / CSS / JS code.",
     },
     {
-      title: "Back End Software Developer",
+      title: "Backend Software Developer",
       company: "Amdocs",
       date: "12/2021 - 09/2023",
       type: "Full-time",
