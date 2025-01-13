@@ -3,7 +3,7 @@ export const projectsData = [
     title: "Smart Investor Platform",
     subtitle: "Intelligent Portfolio Management Platform",
     features:
-      "Features: Document trades, review portfolio, deposit / withdraw cash, create an AI Matrix agent. ",
+      "Features: Document trade history, portfolio review analysis, deposit / withdraw cash ",
     backend: `Backend: FeathersJS, MongoDB.`,
     frontend: `Frontend: Next.js, Javascript / Typescript, CSS / SCSS.`,
     githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
