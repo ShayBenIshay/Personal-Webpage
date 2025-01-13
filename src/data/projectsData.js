@@ -18,7 +18,7 @@ export const projectsData = [
     backend: `Backend: Flask Framework, Numpy, OpenAI integration.`,
     technologies: `Technologies: Python, LLM / OpenAI API, RESTful architecture.`,
     githubUrl: "https://github.com/ShayBenIshay/Matrix-Agent",
-    webpageUrl: "https://tweet-agent.onrender.com/",
+    webpageUrl: "https://matrix-agent.onrender.com/",
     webpageTitle: "Matrix Agent Web Service",
   },
   {
