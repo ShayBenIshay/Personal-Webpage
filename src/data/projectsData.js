@@ -14,8 +14,8 @@ export const projectsData = [
     title: "Matrix Agent",
     subtitle: "AI-Powered Financial Market Analysis Agent",
     features:
-      "Features: Build portfolio, make trade decisions, tweet about a decision, market analysis, AI-driven insights, seamless integration with Smart Investor Platform.",
-    backend: `Backend: Flask REST API, OpenAI integration.`,
+      "Features: Portfolio: Build, Review, Suggest diversification. Make trade decisions: Buy / Stop / Profit prices. Make a tweet about a decision or a trade. Seamless integration with Smart Investor Platform.",
+    backend: `Backend: Flask Framework, Numpy, OpenAI integration.`,
     technologies: `Technologies: Python, LLM / OpenAI API, RESTful architecture.`,
     githubUrl: "https://github.com/ShayBenIshay/Matrix-Agent",
     webpageUrl: "https://tweet-agent.onrender.com/",
@@ -24,7 +24,7 @@ export const projectsData = [
   {
     title: "Personal Webpage",
     subtitle:
-      "My online CV - a live and inline way to share my CV and show my portfolio",
+      "My online CV - a live and inline way to share my CV and to show my portfolio",
     features:
       "Features: Download my CV, contact by email / whatsapp, see my portfolio.",
     frontend: `Frontend: React`,

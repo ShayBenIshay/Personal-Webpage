@@ -13,17 +13,18 @@ const Hero = () => (
 
       <div className="hero__content animate-fade-in">
         <p className="hero__text">
-          <em>Technion - Israel Institute of Technology</em> Alumnus B.Sc in
-          Computer Science. Sharp software developer with excellent problem
-          solving skills and outstanding self learning abilities. Passionate
-          about new technologies and building software from the ground up and
-          thriving on challenges.
+          <em>Technion - Israel Institute of Technology</em> graduate with a
+          B.Sc in Computer Science. Sharp software developer combining strong
+          analytical thinking with exceptional self-learning capabilities. Quick
+          to master new technologies and frameworks while maintaining a deep
+          understanding of fundamentals.
         </p>
 
         <p className="hero__text">
-          Seeking a dynamic small team environment to build products from the
-          ground up. Eager to wear multiple hats and make meaningful
-          contributions that shape the product's direction and success.
+          Passionate about joining a startup environment where I can contribute
+          across the entire tech stack. Eager to work with diverse technologies
+          while building products from the ground up, and make meaningful
+          contributions that shape the product direction.
         </p>
       </div>
     </section>

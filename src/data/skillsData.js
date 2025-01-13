@@ -6,6 +6,7 @@ export const skillsData = {
     "MongoDB / mongoose",
     "Express.js",
     "Spring Framework",
+    "Numpy",
   ],
   Frontend: [
     "Next.js",
@@ -16,13 +17,10 @@ export const skillsData = {
     "Responsive Web Design",
   ],
   Tools: [
-    "LLM / OpenAI",
-    "Git / Bitbucket",
-    "Open Shift Cloud Platform",
-    "Jenkins",
-    "Maven",
-    "Jira",
-    "Python",
-    "Java",
+    "Python / Java / JavaScript / TypeScript ",
+    "Kubernetes / OpenShift Cloud Platform",
+    "LLM / OpenAI Developers API",
+    "Version Control / Git CLI",
+    "Dependency Management / Maven",
   ],
 };

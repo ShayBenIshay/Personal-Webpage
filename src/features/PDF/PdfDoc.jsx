@@ -4,11 +4,26 @@ import PDFProjects from "./PDFProjects";
 import PDFExperience from "./PDFExperience";
 import PDFEducation from "./PDFEducation";
 import PDFSkills from "./PDFSkills";
-import { Document, Page, StyleSheet } from "@react-pdf/renderer";
+import PDFFooter from "./PDFFooter";
+import { Document, Page, StyleSheet, View } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
   page1: {
     padding: 15,
+    flexDirection: "column",
+  },
+  contentContainer: {
+    flexDirection: "row",
+    flex: 1,
+  },
+  sidebar: {
+    width: "25%",
+    paddingRight: 10,
+    borderRight: "1px solid #ccc",
+  },
+  mainContent: {
+    width: "75%",
+    paddingLeft: 10,
   },
 });
 
@@ -27,6 +42,7 @@ const PdfDoc = () => {
         <PDFExperience />
         <PDFProjects />
         <PDFSkills />
+        <PDFFooter />
       </Page>
     </Document>
   );

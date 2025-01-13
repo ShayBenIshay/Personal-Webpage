@@ -55,6 +55,18 @@ const Projects = () => {
             <dt>
               <h2>
                 {title0}, {subtitle0}.
+                {webpageUrl0 && (
+                  <>
+                    {" - "}
+                    <a
+                      href={webpageUrl0}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Smart Investor
+                    </a>
+                  </>
+                )}
               </h2>
             </dt>
             <dd className="project__content">
@@ -73,14 +85,6 @@ const Projects = () => {
                   <FontAwesomeIcon icon={faGithub} />
                   <span> Source Code</span>
                 </a>
-                <a
-                  className="container__a"
-                  href={webpageUrl0}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Try it out
-                </a>
               </div>
             </dd>
           </section>
@@ -89,6 +93,18 @@ const Projects = () => {
             <dt>
               <h2>
                 {title1}, {subtitle1}.
+                {webpageUrl1 && (
+                  <>
+                    {" - "}
+                    <a
+                      href={webpageUrl1}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Matrix Agent Web Service
+                    </a>
+                  </>
+                )}
               </h2>
             </dt>
             <dd className="project__content">
@@ -106,14 +122,6 @@ const Projects = () => {
                 >
                   <FontAwesomeIcon icon={faGithub} />
                   <span> Source Code</span>
-                </a>
-                <a
-                  className="container__a"
-                  href={webpageUrl1}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Try it out
                 </a>
               </div>
             </dd>

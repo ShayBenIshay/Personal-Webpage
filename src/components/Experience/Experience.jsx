@@ -18,6 +18,7 @@ const Experience = () => {
           descriptionOne,
           descriptionTwo,
           notes,
+          additionalData,
         }) => (
           <section
             key={title + "-" + company}
@@ -26,6 +27,18 @@ const Experience = () => {
             <div className="job__details">
               <h2>
                 {title} @ {company}, {type},<time dateTime={date}> {date}</time>
+                {additionalData && (
+                  <>
+                    {" - "}
+                    <a
+                      href={additionalData}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Business Website
+                    </a>
+                  </>
+                )}
               </h2>
 
               <div className="job__description">

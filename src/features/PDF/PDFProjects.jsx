@@ -34,20 +34,6 @@ const PDFProjects = () => {
           )}
         </View>
       ))}
-      <View style={styles.flexContainer}>
-        <Text style={styles.description}>Review my projects here: </Text>
-        {projectsData.map((project, index) => (
-          <Link style={styles.link} key={index} href={project.webpageUrl}>
-            {project.webpageTitle}
-          </Link>
-        ))}
-      </View>
-      <View style={styles.flexContainer}>
-        <Text style={styles.description}>Or in my GitHub: </Text>
-        <Link style={styles.link} href={headerData.gitHub.href}>
-          {headerData.gitHub.href}
-        </Link>
-      </View>
     </View>
   );
 };
