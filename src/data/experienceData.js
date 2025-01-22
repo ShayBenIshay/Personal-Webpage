@@ -5,7 +5,7 @@ export const experienceData = {
       company: "Self-Employed",
       date: "10/2024 - Present",
       type: "Half-time",
-      descriptionOne: `Started my own business, Collaborate closely with clients to understand their business needs, provide technical consultation, and deliver tailored web solutions that align with their goals. Currently working on two projects: an e-commerce website for a jewelry business and a custom website for a surgical clinic.`,
+      descriptionOne: `Started my own business, Collaborate closely with clients to understand their business needs, provide technical consultation, and deliver tailored web solutions that align with their goals. Currently working on two projects: an e-commerce website for a jewelry business and a business website for a surgical clinic.`,
       descriptionTwo: `I handle the entire process from start to finish, including designing wireframes, drawing inspiration for visual and functional elements, creating graphic designs, and developing websites using WordPress Elementor and custom HTML/CSS/JavaScript.`,
       responsibilities:
         "Manage all aspects of web development projects including client communication, project planning, design, development, testing, deployment, and maintenance.",

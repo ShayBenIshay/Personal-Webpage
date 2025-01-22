@@ -3,8 +3,8 @@ export const projectsData = [
     title: "Smart Investor Platform",
     subtitle: "Intelligent Portfolio Management Platform",
     features:
-      "Features: Document trade history, portfolio review analysis, deposit / withdraw cash ",
-    backend: `Backend: FeathersJS, MongoDB.`,
+      "Features: Real-time updates, document trades, manage portfolio, review portfolio analysis.",
+    backend: `Backend: FeathersJS Services, Flask Services, MongoDB.`,
     frontend: `Frontend: Next.js, Javascript / Typescript, CSS / SCSS.`,
     githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
     webpageUrl: "https://smart-investor.onrender.com",
@@ -14,11 +14,10 @@ export const projectsData = [
     title: "Matrix Agent",
     subtitle: "AI-Powered Financial Market Analysis Agent",
     features:
-      "Features: Portfolio: Build, Review, Suggest diversification. Make trade decisions: Buy / Stop / Profit prices. Make a tweet about a decision or a trade. Seamless integration with Smart Investor Platform.",
+      "Features: Make trade decisions, Make a tweet about a decision or a trade, build / review / suggest diversification of a portfolio. Seamless integration with Smart Investor Platform.",
     backend: `Backend: Flask Framework, Numpy, OpenAI integration.`,
     technologies: `Technologies: Python, LLM / OpenAI API, RESTful architecture.`,
     githubUrl: "https://github.com/ShayBenIshay/Matrix-Agent",
-    webpageUrl: "https://matrix-agent.onrender.com",
     webpageTitle: "Matrix Agent Web Service",
   },
   {
@@ -26,9 +25,9 @@ export const projectsData = [
     subtitle:
       "My online CV - a live and inline way to share my CV and to show my portfolio",
     features:
-      "Features: Download my CV, contact by email / whatsapp, see my portfolio.",
+      "Features: Present my portfolio, download / preview my CV as PDF, share contact information.",
     frontend: `Frontend: React`,
-    githubUrl: "https://github.comShayBenIshay/CV-Webpage",
+    githubUrl: "https://github.com/Sh ayBenIshay/CV-Webpage",
     webpageUrl: "https://shay-full-stack-developer-cv.onrender.com",
     webpageTitle: "My CV Webpage",
   },

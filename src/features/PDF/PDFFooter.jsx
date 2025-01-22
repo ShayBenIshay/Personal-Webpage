@@ -37,7 +37,7 @@ const PDFFooter = () => {
         <Text style={styles.description}>Review my projects here: </Text>
         {projectsData.map((project, index) => (
           <Link style={styles.link} key={index} href={project.webpageUrl}>
-            {project.webpageTitle}
+            {project.webpageUrl}
           </Link>
         ))}
       </View>

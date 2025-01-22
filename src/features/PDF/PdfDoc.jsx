@@ -5,15 +5,17 @@ import PDFExperience from "./PDFExperience";
 import PDFEducation from "./PDFEducation";
 import PDFSkills from "./PDFSkills";
 import PDFFooter from "./PDFFooter";
-import { Document, Page, StyleSheet } from "@react-pdf/renderer";
+import { Document, Page, StyleSheet, View } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
-  page1: {
-    padding: 15,
+  page: {
+    paddingTop: 15,
+    paddingBottom: 5,
+    display: "flex",
     flexDirection: "column",
+    justifyContent: "space-between",
   },
-  contentContainer: {
-    flexDirection: "row",
+  content: {
     flex: 1,
   },
 });
@@ -27,12 +29,14 @@ const PdfDoc = () => {
       producer="React PDF"
       language="en"
     >
-      <Page size="A4" style={styles.page1} wrap={false}>
-        <PDFHeader />
-        <PDFEducation />
-        <PDFExperience />
-        <PDFProjects />
-        <PDFSkills />
+      <Page size="A4" style={styles.page} wrap={false}>
+        <View style={styles.content}>
+          <PDFHeader />
+          <PDFEducation />
+          <PDFExperience />
+          <PDFProjects />
+          <PDFSkills />
+        </View>
         <PDFFooter />
       </Page>
     </Document>

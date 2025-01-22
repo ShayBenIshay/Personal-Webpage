@@ -1,14 +1,9 @@
-import { Link, StyleSheet, Text, View } from "@react-pdf/renderer";
+import { StyleSheet, Text, View } from "@react-pdf/renderer";
 import { projectsData } from "../../data/projectsData";
 import { commonStyles } from "./shared/PDFStyles";
-import headerData from "../../data/headerData";
 
 const styles = StyleSheet.create({
   ...commonStyles,
-  link: {
-    ...commonStyles.link,
-    textDecoration: "underline",
-  },
   flexContainer: {
     display: "flex",
     flexDirection: "row",
