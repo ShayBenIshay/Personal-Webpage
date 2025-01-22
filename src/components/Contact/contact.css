@@ -224,16 +224,30 @@ button:disabled {
 
 .btn.dark-btn {
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .btn.dark-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  background-color: var(--NAV-HOVER);
+  border-color: transparent;
 }
 
 .btn.dark-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
+  background-color: var(--NAV-ACTIVE);
+}
+
+.btn.dark-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+  background-color: var(--DARK-BUTTON);
 }
 
 .contact__p {

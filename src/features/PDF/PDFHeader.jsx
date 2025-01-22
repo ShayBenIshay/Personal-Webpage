@@ -7,22 +7,28 @@ const styles = StyleSheet.create({
   header: {
     ...commonStyles.section,
     alignItems: "center",
-    borderBottom: "2px solid black",
+    borderBottom: "1px solid black",
+    paddingBottom: 4,
   },
-  heading: {
-    ...commonStyles.headerTitle,
-    fontSize: 32,
-    marginBottom: 5,
+  titleContainer: {
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 2,
+  },
+  name: {
+    fontSize: 22,
     color: "rgba(0, 20, 50, 0.9)",
+    marginBottom: 2,
   },
-  subHeading: {
-    ...commonStyles.subtitle,
-    fontSize: 18,
+  jobTitle: {
+    fontSize: 14,
+    color: "rgba(0, 20, 50, 0.9)",
   },
   contact: {
     flexDirection: "row",
     justifyContent: "space-around",
-    marginTop: 7,
+    marginTop: 2,
     width: "100%",
   },
   link: {
@@ -33,8 +39,10 @@ const styles = StyleSheet.create({
 const PDFHeader = () => {
   return (
     <View style={styles.header}>
-      <Text style={styles.heading}>{headerData.name}</Text>
-      <Text style={styles.subHeading}>{headerData.title}</Text>
+      <View style={styles.titleContainer}>
+        <Text style={styles.name}>{headerData.name}</Text>
+        <Text style={styles.jobTitle}>{headerData.title}</Text>
+      </View>
       <PDFProfile />
       <View style={styles.contact}>
         <Text style={styles.link}>Haifa, Israel.</Text>

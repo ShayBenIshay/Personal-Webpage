@@ -327,7 +327,6 @@ aside {
 }
 
 .btn.dark-btn {
-  margin: var(--MARGIN);
   background-color: var(--DARK-BUTTON);
   color: white;
   cursor: pointer;
@@ -367,4 +366,45 @@ aside {
   .btn {
     padding: 0.3em;
   }
+}
+
+/* || LINK ANIMATIONS */
+.animated-link {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  color: var(--NAV-COLOR);
+  display: inline-block;
+}
+
+.animated-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--NAV-HOVER);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.animated-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.animated-link:hover {
+  color: var(--NAV-HOVER);
+}
+
+.animated-link:active {
+  color: var(--NAV-ACTIVE);
+  transform: translateY(1px);
 }

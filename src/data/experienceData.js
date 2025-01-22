@@ -4,14 +4,28 @@ export const experienceData = {
       title: "Web Developer",
       company: "Self-Employed",
       date: "10/2024 - Present",
-      type: "Full-time",
-      descriptionOne: `Started my own business, specializing in creating custom web solutions for clients. Currently working on a project for a local business, creating an e-commerce website for a jewelry store and a custom website for a surgical clinic.`,
-      descriptionTwo: `Work directly with clients to understand their business needs, provide technical consultation, and deliver tailored web solutions that align with their goals and requirements.`,
+      type: "Half-time",
+      descriptionOne: `Started my own business, Collaborate closely with clients to understand their business needs, provide technical consultation, and deliver tailored web solutions that align with their goals. Currently working on two projects: an e-commerce website for a jewelry business and a custom website for a surgical clinic.`,
+      descriptionTwo: `I handle the entire process from start to finish, including designing wireframes, drawing inspiration for visual and functional elements, creating graphic designs, and developing websites using WordPress Elementor and custom HTML/CSS/JavaScript.`,
       responsibilities:
-        "Manage all aspects of web development projects including client communication, project planning, design, development, testing, deployment, and maintenance. Handle both front-end and back-end development using modern web technologies.",
-      notes:
-        "Websites are built using WordPress Elementor and custom HTML / CSS / JS code.",
-      additionalData: "https://shaytechsolutions.com/",
+        "Manage all aspects of web development projects including client communication, project planning, design, development, testing, deployment, and maintenance.",
+      additionalData: "https://shaytechsolutions.com",
+      websites: [
+        {
+          url: "https://offirsurg.shaytechsolutions.com",
+          title: "Surgical Clinic",
+          description: "A modern website for a surgical Oncology surgery.",
+          tech: "WordPress, Elementor, Custom HTML / CSS / JS",
+        },
+        {
+          url: "https://jewelry.example.com",
+          title: "Jewelry E-commerce - In Progress",
+          description:
+            "Full-featured online store with product catalog and secure checkout.",
+          tech: "WooCommerce, Elementor, Custom HTML / CSS / JS",
+        },
+        // Add more websites as needed
+      ],
     },
     {
       title: "Backend Software Developer",

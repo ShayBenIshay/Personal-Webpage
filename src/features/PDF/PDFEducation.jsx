@@ -13,17 +13,8 @@ const PDFEducation = () => {
       <Text style={styles.title}>
         {educationData.degree}. {educationData.school} {educationData.date}
       </Text>
-      {/* <Text style={styles.title}>
-        {educationData.school} {educationData.date}
-      </Text> */}
       <Text style={styles.description}>{educationData.description}</Text>
-      <Text style={styles.notes}>
-        {/* <Link href={educationData.finalProjectUrl}>
-          {educationData.finalProjectName}
-        </Link>
-        {": "} */}
-        {/* {educationData.notes} */}
-      </Text>
+      <Text style={styles.notes}></Text>
     </div>
   );
 };

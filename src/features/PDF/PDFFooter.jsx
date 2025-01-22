@@ -6,23 +6,26 @@ import { commonStyles } from "./shared/PDFStyles";
 const styles = StyleSheet.create({
   footer: {
     ...commonStyles.section,
-    borderTop: "2px solid black",
-    paddingTop: 10,
-    marginBottom: "auto",
+    borderTop: "1px solid black",
+    paddingTop: 4,
+    marginBottom: 1,
     width: "100%",
   },
   flexContainer: {
     flexDirection: "row",
     justifyContent: "center",
-    marginBottom: 5,
+    marginBottom: 2,
   },
   description: {
     ...commonStyles.description,
+    fontSize: 8,
     marginLeft: 0,
     marginBottom: 0,
   },
   link: {
     ...commonStyles.link,
+    fontSize: 8,
+    marginRight: 4,
     textDecoration: "underline",
   },
 });

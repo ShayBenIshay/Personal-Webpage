@@ -19,6 +19,8 @@ const Experience = () => {
           descriptionTwo,
           notes,
           additionalData,
+          websiteOne,
+          websites,
         }) => (
           <section
             key={title + "-" + company}
@@ -34,6 +36,7 @@ const Experience = () => {
                       href={additionalData}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="animated-link"
                     >
                       Business Website
                     </a>
@@ -65,6 +68,21 @@ const Experience = () => {
                     <p>{notes}</p>
                   </details>
                 </aside>
+              </div>
+            )}
+
+            {/* Websites/Projects Container */}
+            {websites && websites.length > 0 && (
+              <div className="job__websites-container">
+                {websites.map(({ url, title, description, tech }, index) => (
+                  <article key={index} className="job__website">
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      <h3>{title}</h3>
+                      <p>{description}</p>
+                      <small>{tech}</small>
+                    </a>
+                  </article>
+                ))}
               </div>
             )}
           </section>

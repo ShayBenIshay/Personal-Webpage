@@ -62,6 +62,7 @@ const Projects = () => {
                       href={webpageUrl0}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="animated-link"
                     >
                       Smart Investor
                     </a>
@@ -75,7 +76,7 @@ const Projects = () => {
                 {frontend0 && <div>{formatText(frontend0)}</div>}
                 {backend0 && <div>{formatText(backend0)}</div>}
               </div>
-              <div className="project__links">
+              <div className="project__links animated-link">
                 <a
                   className="container__a sourcecode"
                   href={githubUrl0}
@@ -100,6 +101,7 @@ const Projects = () => {
                       href={webpageUrl1}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="animated-link"
                     >
                       Matrix Agent Web Service
                     </a>
@@ -113,7 +115,7 @@ const Projects = () => {
                 {frontend1 && <div>{formatText(frontend1)}</div>}
                 {backend1 && <div>{formatText(backend1)}</div>}
               </div>
-              <div className="project__links">
+              <div className="project__links animated-link">
                 <a
                   className="container__a sourcecode"
                   href={githubUrl1}
@@ -121,7 +123,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faGithub} />
-                  <span> Source Code</span>
+                  <span className=""> Source Code</span>
                 </a>
               </div>
             </dd>
@@ -139,7 +141,7 @@ const Projects = () => {
                 {frontend2 && <div>{formatText(frontend2)}</div>}
                 {backend2 && <div>{formatText(backend2)}</div>}
               </div>
-              <div className="project__links">
+              <div className="project__links animated-link">
                 <a
                   className="container__a sourcecode"
                   href={githubUrl2}

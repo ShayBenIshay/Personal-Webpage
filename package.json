@@ -2,7 +2,7 @@
   "name": "personal-webpage",
   "version": "1.1.0",
   "private": true,
-  "homepage": "https://shay-full-stack-developer-cv.onrender.com/",
+  "homepage": "https://shay-full-stack-developer-cv.onrender.com",
   "type": "module",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.2",

@@ -16,8 +16,18 @@
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  border-right: 1px solid var(--H3-COLOR);
-  padding: 0 var(--PADDING-CONTAINER-SIDE);
+  padding: 1rem var(--PADDING-CONTAINER-SIDE);
+  border: 1px solid var(--H3-COLOR);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+/* Hover effect */
+.skills__dl:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: var(--NAV-HOVER);
 }
 
 .skills__dd {
@@ -45,7 +55,6 @@
 
 @media (max-width: 768px) {
   .skills__dl {
-    border-right: none;
     border-bottom: 1px solid var(--BORDER-COLOR);
     padding-bottom: 1rem;
   }

@@ -32,7 +32,7 @@
   display: flex;
   gap: 1.5rem;
   margin-top: 1.5rem;
-  padding-left: var(--PADDING-P-SIDE);
+  margin-left: var(--PADDING-P-SIDE);
 }
 
 .project__links a {

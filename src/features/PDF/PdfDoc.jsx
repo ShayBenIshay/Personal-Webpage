@@ -5,7 +5,7 @@ import PDFExperience from "./PDFExperience";
 import PDFEducation from "./PDFEducation";
 import PDFSkills from "./PDFSkills";
 import PDFFooter from "./PDFFooter";
-import { Document, Page, StyleSheet, View } from "@react-pdf/renderer";
+import { Document, Page, StyleSheet } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
   page1: {
@@ -15,15 +15,6 @@ const styles = StyleSheet.create({
   contentContainer: {
     flexDirection: "row",
     flex: 1,
-  },
-  sidebar: {
-    width: "25%",
-    paddingRight: 10,
-    borderRight: "1px solid #ccc",
-  },
-  mainContent: {
-    width: "75%",
-    paddingLeft: 10,
   },
 });
 

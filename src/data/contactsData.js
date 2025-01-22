@@ -4,7 +4,7 @@ const contactsData = {
     // label: "My GitHub",
   },
   linkedIn: {
-    href: "https://www.linkedin.com/in/shay-ben-ishay-46a18418b/",
+    href: "https://www.linkedin.com/in/shay-ben-ishay-46a18418b",
     label: "My LinkedIn",
   },
   phone: {
