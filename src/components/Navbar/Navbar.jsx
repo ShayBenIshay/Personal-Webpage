@@ -49,12 +49,17 @@ const Navbar = () => {
 
   return (
     <nav className="navbar" ref={navbar} id="navbar">
-      <h1 className="navbar__h1">
-        <span>
-          <span className="dev">Shay</span>{" "}
-          <span className="span-redundent4">Ben Ishay</span>
-          <span className="span-redundent"> Personal Webpage</span>
-        </span>
+      <span className="navbar__span">
+        <button
+          className="navbar__logo"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <h1 className="navbar__h1">
+            <span className="dev">Shay</span>{" "}
+            <span className="span-redundent4">Ben Ishay</span>
+            <span className="span-redundent"> Personal Webpage</span>
+          </h1>
+        </button>
         <span className="navbar__span span-redundent3">
           <span className="span-redundent2">More works:</span>
           <a
@@ -67,8 +72,7 @@ const Navbar = () => {
             My Github
           </a>
         </span>
-      </h1>
-
+      </span>
       <ul className={mobileMenu ? "navbar__ul" : "navbar__ul hide-mobile-menu"}>
         <li className="nowrap">
           <button

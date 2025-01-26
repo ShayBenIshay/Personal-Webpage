@@ -11,6 +11,19 @@
   flex-direction: column;
 }
 
+.navbar__logo {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  color: var(--NAV-COLOR);
+  font-family: inherit;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  margin: 0 25px;
+}
+
 .navbar__h1 {
   display: flex;
   justify-content: space-between;
@@ -35,7 +48,7 @@
 .navbar__span {
   font-size: large;
   padding: 0.5em;
-  margin-left: auto;
+  margin: auto;
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
@@ -213,6 +226,10 @@
   .hide-mobile-menu {
     position: relative;
     top: -10000px;
+  }
+
+  .navbar {
+    height: var(--NAV-MOBILE-HEIGHT);
   }
 
   .navbar__ul {
