@@ -11,6 +11,8 @@ const styles = StyleSheet.create({
   page: {
     paddingTop: 15,
     paddingBottom: 5,
+    paddingLeft: 15,
+    paddingRight: 20,
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",

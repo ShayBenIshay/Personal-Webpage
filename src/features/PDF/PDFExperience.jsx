@@ -64,7 +64,9 @@ const PDFExperience = () => {
           </Text>
           <Text style={styles.description}>{job.descriptionOne}</Text>
           <Text style={styles.description}>{job.descriptionTwo}</Text>
-          {job.notes && <Text style={styles.notes}>{`(${job.notes})`}</Text>}
+          {job.notes && (
+            <Text style={styles.description}>{`${job.notes}`}</Text>
+          )}
 
           {job.websites && job.websites.length > 0 && (
             <View style={styles.websitesContainer}>

@@ -49,11 +49,12 @@ const Experience = () => {
                 {descriptionTwo && <p>{descriptionTwo}</p>}
 
                 <ul className="job__ul">
-                  {responsibilities.split(". ").map((item, index) => (
-                    <li key={index} className="job__li">
-                      {item}
-                    </li>
-                  ))}
+                  {responsibilities &&
+                    responsibilities.split(". ").map((item, index) => (
+                      <li key={index} className="job__li">
+                        {item}
+                      </li>
+                    ))}
                 </ul>
               </div>
             </div>
