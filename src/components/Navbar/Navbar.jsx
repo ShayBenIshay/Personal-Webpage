@@ -5,6 +5,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import contactsData from "../../data/contactsData";
 import ExportPdf from "../../features/PDF/ExportPdf";
 import ContactModal from "../ContactModal/ContactModal";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import PdfDoc from "../../features/PDF/PdfDoc";
 
 import "./navbar.css";
 
@@ -16,6 +18,11 @@ const Navbar = () => {
     });
   }, []);
 
+  const [showPdfViewer, setShowPdfViewer] = useState(false);
+  const handleClose = () => {
+    console.log("close");
+    setShowPdfViewer(false);
+  };
   const [mobileMenu, setMobileMenu] = useState(false);
   const toggleMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -116,10 +123,40 @@ const Navbar = () => {
             Contact me
           </button>
         </li>
+        <li className="nowrap">
+          <button className="navbar__a" onClick={() => handleScroll("contact")}>
+            Contact me
+          </button>
+        </li>
         <li className="navbar__a nowrap">
-          <ExportPdf />
+          <button
+            className="navbar__a"
+            onClick={() => setShowPdfViewer(true)}
+            style={{ marginRight: "1rem" }}
+          >
+            Preview PDF
+          </button>
+        </li>
+        <li className="navbar__a nowrap">
+          <PDFDownloadLink
+            className="navbar__a"
+            document={<PdfDoc />}
+            fileName="ShayCV.pdf"
+          >
+            {({ loading, error }) => (
+              <>
+                {error && <span className="error">Error generating PDF</span>}
+                {loading ? (
+                  <span className="loading">Generating PDF...</span>
+                ) : (
+                  "Download PDF"
+                )}
+              </>
+            )}
+          </PDFDownloadLink>
         </li>
       </ul>
+
       <button
         className="menu-icon"
         onClick={toggleMenu}

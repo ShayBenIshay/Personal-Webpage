@@ -72,7 +72,6 @@ const Experience = () => {
               </div>
             )}
 
-            {/* Websites/Projects Container */}
             {websites && websites.length > 0 && (
               <div className="job__websites-container">
                 {websites.map(({ url, title, description, tech }, index) => (

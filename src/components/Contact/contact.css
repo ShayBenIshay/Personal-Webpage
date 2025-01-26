@@ -6,11 +6,6 @@
   text-align: center;
 }
 
-.contact__h1::after {
-  content: " I'd really like to hear from you!";
-  font-size: 0.9rem;
-}
-
 .contact__section {
   margin: var(--MARGIN);
 }

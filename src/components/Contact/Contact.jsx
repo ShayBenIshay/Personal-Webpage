@@ -2,7 +2,6 @@ import msg_icon from "../../assets/msg-icon.png";
 import mail_icon from "../../assets/mail-icon.png";
 import phone_icon from "../../assets/phone-icon.png";
 import location_icon from "../../assets/location-icon.png";
-import white_arrow from "../../assets/white-arrow.png";
 import contactsData from "../../data/contactsData";
 import ContactForm from "../ContactForm/ContactForm";
 import "./contact.css";
@@ -17,7 +16,16 @@ const Contact = () => {
           className="section__section l"
           aria-label="Contact Information"
         >
-          <h2 className="contact__h2">My Contact Form</h2>
+          <h2 className="contact__h2">
+            I'd really like to hear from you!
+            <img
+              className="contact__img2"
+              src={msg_icon}
+              alt="Message Icon"
+              width="35"
+              height="35"
+            />
+          </h2>
           <p className="contact__p">
             Feel free to reach out through this contact form or the other
             contact information below. <strong>collaborations</strong>,{" "}
@@ -74,16 +82,6 @@ const Contact = () => {
         </section>
 
         <section className="section__section r" aria-label="Contact Form">
-          <h2 className="contact__h2">
-            Send me a message{" "}
-            <img
-              className="contact__img2"
-              src={msg_icon}
-              alt="Message Icon"
-              width="35"
-              height="35"
-            />
-          </h2>
           <ContactForm />
         </section>
       </section>

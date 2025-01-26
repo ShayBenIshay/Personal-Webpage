@@ -230,7 +230,8 @@ h4 {
   letter-spacing: 0.1em;
 }
 
-p {
+p,
+small {
   padding: 0 var(--PADDING-P-SIDE);
   line-height: 1.5;
 }

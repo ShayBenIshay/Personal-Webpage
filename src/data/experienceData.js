@@ -5,10 +5,13 @@ export const experienceData = {
       company: "Self-Employed",
       date: "10/2024 - Present",
       type: "Half-time",
-      descriptionOne: `Started my own business "ShayTech Solutions" where i offer my clients to design and develop a full customable responsive website suitable for all media screens, a custom web services for their business needs or AI solutions to improve and automate their business processes.`,
+      descriptionOne: `Started my own business "ShayTech Solutions" where i offer my clients a variety of services such as:
+      -Design and develop a full customable responsive website suitable for all media screens 
+      -Custom web services
+      -AI solutions to improve and automate business processes.`,
       descriptionTwo: `Currently i am working on two projects:
-      1. e-commerce website for a jewelry business. 
-      2. business website for a surgical clinic.
+      1.e-commerce website for a jewelry business. 
+      2.business website for a surgical clinic.
       I am designing the wireframes, creating the moodboard, choosing the palette and typography and developing the website. My tools include React, HTML, CSS, JavaScript, Figma, WordPress, and more.`,
 
       additionalData: "https://shaytechsolutions.com",
