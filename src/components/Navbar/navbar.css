@@ -217,16 +217,19 @@
 
   .navbar__ul {
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     border-left: var(--BORDERS);
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
+    height: 100vh;
     background-color: var(--NAV-BG);
     z-index: 5;
-    padding-top: 70px;
+    padding: 70px 0 70px 0;
     transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
   }
 
   .hide-mobile-menu {

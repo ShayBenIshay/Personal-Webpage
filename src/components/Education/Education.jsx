@@ -31,37 +31,35 @@ const Education = () => {
             </span>
           </h2>
         </div>
-        <section>
-          <p>{description}</p>
-          <aside>
-            <details>
-              <summary className="aside__summary">
-                Final Project: {finalProjectName}
-              </summary>
+        <p>{description}</p>
+        <aside>
+          <details>
+            <summary className="aside__summary">
+              Final Project: {finalProjectName}
+            </summary>
 
-              <div>
-                <p>
-                  A machine learning project focused on anomaly detection. The
-                  model was trained on 2GB of security camera data using
-                  pose-estimation to enhance focus on human subjects. The final
-                  model achieved 80% accuracy, showing potential for even better
-                  results with additional data and tuning.
-                </p>
-                <a
-                  className="container__a"
-                  href={finalProjectUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`View source code for ${finalProjectName} on GitHub`}
-                >
-                  <FontAwesomeIcon icon={faGithub} />
-                  <span> Source code</span>
-                </a>
-                {notes && <p>{notes}</p>}
-              </div>
-            </details>
-          </aside>
-        </section>
+            <div>
+              <p>
+                A machine learning project focused on anomaly detection. The
+                model was trained on 2GB of security camera data using
+                pose-estimation to enhance focus on human subjects. The final
+                model achieved 80% accuracy, showing potential for even better
+                results with additional data and tuning.
+              </p>
+              <a
+                className="container__a"
+                href={finalProjectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View source code for ${finalProjectName} on GitHub`}
+              >
+                <FontAwesomeIcon icon={faGithub} />
+                <span> Source code</span>
+              </a>
+              {notes && <p>{notes}</p>}
+            </div>
+          </details>
+        </aside>
       </section>
     </article>
   );

@@ -1,12 +1,10 @@
 import { useEffect, useState, useRef } from "react";
 import menu_icon from "../../assets/menu-icon.png";
-import up_icon from "../../assets/up-icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import contactsData from "../../data/contactsData";
 import ExportPdf from "../../features/PDF/ExportPdf";
 import ContactModal from "../ContactModal/ContactModal";
-import contact_icon from "../../assets/contact.svg";
 
 import "./navbar.css";
 
@@ -139,13 +137,6 @@ const Navbar = () => {
               <rect height="2" width="7" x="10" y="15" />
             </svg>
           </button>
-          {/* <button
-            className="scroll-up"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            aria-label="Scroll to top"
-          >
-            <img src={up_icon} alt="Scroll Up" />
-          </button> */}
         </>
       )}
 

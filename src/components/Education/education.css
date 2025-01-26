@@ -56,13 +56,6 @@
   line-height: inherit;
 }
 
-.education__details h2 {
-  width: 100%;
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
-  /* text-overflow: ellipsis; */
-}
-
 .education__details h2 address,
 .education__details h2 time {
   display: inline;

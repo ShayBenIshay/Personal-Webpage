@@ -297,7 +297,7 @@ aside {
 }
 
 .container {
-  padding-right: 7%;
+  max-width: 75%;
 }
 .small-container {
   max-width: min(var(--SMALL-CONTAINER-WIDTH), 700px);
@@ -338,6 +338,9 @@ aside {
   :root {
     --NAV-HEIGHT: 75px;
   }
+  .container {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -347,6 +350,9 @@ aside {
   .section__section {
     width: 100%;
   }
+  .container {
+    max-width: 85%;
+  }
 }
 
 @media (max-width: 550px) {
@@ -354,6 +360,7 @@ aside {
     --NAV-HEIGHT: 56px;
   }
   .container {
+    max-width: 95%;
     padding: 1em;
   }
 
