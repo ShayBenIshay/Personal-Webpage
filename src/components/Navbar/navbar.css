@@ -343,11 +343,8 @@ button.navbar__a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
+.export-to-pdf-button,
 .contact-button {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -363,18 +360,32 @@ button.navbar__a:hover::after {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.contact-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
+
+.export-to-pdf-button {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+}
+
+.export-to-pdf-button:hover,
 .contact-button:hover {
   background-color: var(--NAV-HOVER);
   transform: scale(1.12);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
+.export-to-pdf-button img,
 .contact-button img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
+.export-icon,
 .contact-icon {
   width: 100%;
   height: 100%;
@@ -382,6 +393,7 @@ button.navbar__a:hover::after {
   transition: fill 0.3s ease;
 }
 
+.export-to-pdf-button:hover .export-icon,
 .contact-button:hover .contact-icon {
   fill: var(--NAV-COLOR);
 }
