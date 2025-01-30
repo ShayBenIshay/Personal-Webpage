@@ -126,37 +126,6 @@
   transform: scale(1.2);
 }
 
-.scroll-up {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  z-index: 10;
-  background-color: var(--DARK-BUTTON);
-  border-radius: 50%;
-  border: 1px solid var(--BORDER-COLOR);
-  padding: 13px;
-  transition: all 0.3s ease;
-}
-
-.scroll-up:hover {
-  transform: translateY(-3px);
-  background-color: var(--BUTTON-COLOR);
-  border-color: transparent;
-  opacity: 1;
-}
-
-.scroll-up img {
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.scroll-up:hover img {
-  transform: scale(1.1);
-}
-
 .menu-icon {
   display: none;
   transition: transform 0.3s ease;
@@ -282,14 +251,6 @@
   }
 }
 
-@media (max-width: 550px) {
-  .scroll-up {
-    width: 45px;
-    height: 45px;
-    padding: 11px;
-  }
-}
-
 @media (max-width: 400px) {
   .span-redundent4 {
     display: none;
@@ -396,4 +357,27 @@ button.navbar__a:hover::after {
 .export-to-pdf-button:hover .export-icon,
 .contact-button:hover .contact-icon {
   fill: var(--NAV-COLOR);
+}
+
+.export-to-pdf-button:hover,
+.contact-button:hover {
+  width: 125px;
+  height: 125px;
+  z-index: 10;
+}
+
+.export-to-pdf-button:hover::before {
+  content: "Export PDF";
+  color: white;
+  margin-right: 10px;
+  text-decoration: underline white;
+  font-size: 14px;
+}
+
+.contact-button:hover::before {
+  content: "Contact Me";
+  color: white;
+  margin-right: 10px;
+  text-decoration: underline white;
+  font-size: 14px;
 }
