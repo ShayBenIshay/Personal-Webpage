@@ -15,7 +15,7 @@ const Hero = () => (
         <p className="hero__text">
           <em>Technion - Israel Institute of Technology</em> graduate with a
           B.Sc in Computer Science. Sharp software developer combining strong
-          analytical thinking with exceptional self-learning capabilities. Quick
+          analytical thinking with outstanding self-learning capabilities. Quick
           to master new technologies and frameworks while maintaining a deep
           understanding of fundamentals.
         </p>

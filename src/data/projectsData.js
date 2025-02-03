@@ -3,9 +3,9 @@ export const projectsData = [
     title: "Smart Investor Platform",
     subtitle: "Intelligent Portfolio Management Platform",
     features:
-      "Features: Real-time updates, document trades, manage portfolio, review portfolio analysis.",
-    backend: `Backend: FeathersJS Services, Flask Services, MongoDB.`,
-    frontend: `Frontend: Next.js, Javascript / Typescript, CSS / SCSS.`,
+      "Features: Portfolio management, AI trading agent, trades documentation, portfolio analysis.",
+    backend: `Backend: Node.js, FeathersJS Services, Flask Services, MongoDB, Javascript / Typescript.`,
+    frontend: `Frontend: Next.js, CSS / SCSS.`,
     githubUrl: "https://github.com/ShayBenIshay/Smart-Investor",
     webpageUrl: "https://smart-investor.onrender.com",
     webpageTitle: "Smart Investor Platform",
@@ -14,8 +14,8 @@ export const projectsData = [
     title: "Matrix Agent",
     subtitle: "AI-Powered Financial Market Analysis Agent",
     features:
-      "Features: Make trade decisions, Make a tweet about a decision or a trade, build / review / suggest diversification of a portfolio. Seamless integration with Smart Investor Platform.",
-    backend: `Backend: Flask Framework, Numpy, OpenAI integration.`,
+      "Features: Create portfolio, manage portfolio, set future buy/sell orders with seamless integration to Smart Investor Platform.",
+    backend: `Backend: Flask Framework, Numpy, OpenAI.`,
     technologies: `Technologies: Python, LLM / OpenAI API, RESTful architecture.`,
     githubUrl: "https://github.com/ShayBenIshay/Matrix-Agent",
     webpageTitle: "Matrix Agent Web Service",
@@ -23,12 +23,12 @@ export const projectsData = [
   {
     title: "Personal Webpage",
     subtitle:
-      "My online CV - a live and inline way to share my CV and to show my portfolio",
+      "My online CV - a responsive webpage that holds all the information regarding my career. links, portfolio, experience, and more.",
     features:
-      "Features: Present my portfolio, download / preview my CV as PDF, share contact information.",
+      "Features: Download cv, navigate through sections, check social links, check other works or applications.",
     frontend: `Frontend: React`,
     githubUrl: "https://github.com/Sh ayBenIshay/CV-Webpage",
-    webpageUrl: "https://shay-full-stack-developer-cv.onrender.com",
+    webpageUrl: "https://cv.shaytechsolutions.com",
     webpageTitle: "My CV Webpage",
   },
 ];

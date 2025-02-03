@@ -117,11 +117,6 @@ const Navbar = () => {
             Contact me
           </button>
         </li>
-        <li className="nowrap">
-          <button className="navbar__a" onClick={() => handleScroll("contact")}>
-            Contact me
-          </button>
-        </li>
       </ul>
 
       <button

@@ -1,26 +1,23 @@
 export const skillsData = {
   Backend: [
-    "RESTful API / Flask / FeathersJS",
-
     "Node.js",
+    "FeathersJS",
+    "Flask",
+    "OpenAI Developer API",
     "MongoDB",
     "Express.js",
-    "Python / Numpy",
     "Spring Framework",
+    "Architecture Design: Lucidchart",
+    "Git CLI",
   ],
   Frontend: [
     "Next.js",
     "React",
-    "Wordpress / Elementor",
     "Responsive Web Design",
     "CSS + SCSS",
     "HTML",
+    "Web Design: Figma",
+    "Wordpress / Elementor",
   ],
-  Tools: [
-    "Languages: Python / Java / JavaScript / TypeScript ",
-    "Design: Figma / Lucidchart",
-    "LLM: OpenAI API / Midjourney",
-    "Version Control: Git CLI",
-    "Dependency Management: Maven",
-  ],
+  Languages: ["Python", "Java", "JavaScript", "TypeScript"],
 };

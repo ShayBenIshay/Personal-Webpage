@@ -308,7 +308,7 @@ button.navbar__a:hover::after {
 .contact-button {
   width: 55px;
   height: 55px;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: var(--DARK-BUTTON);
   border: none;
   cursor: pointer;
@@ -361,8 +361,8 @@ button.navbar__a:hover::after {
 
 .export-to-pdf-button:hover,
 .contact-button:hover {
-  width: 125px;
-  height: 125px;
+  width: 135px;
+  /* height: 125px; */
   z-index: 10;
 }
 
