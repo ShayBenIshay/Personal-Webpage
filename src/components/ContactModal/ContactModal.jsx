@@ -11,7 +11,7 @@ const ContactModal = ({ isOpen, onClose }) => {
         <button className="modal-close" onClick={onClose}>
           ×
         </button>
-        <h2>Send me a message</h2>
+        <h2>Contact Me</h2>
         <ContactForm onClose={onClose} />
       </div>
     </div>
