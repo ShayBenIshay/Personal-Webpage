@@ -19,9 +19,11 @@ const Projects = () => {
   const {
     title: title0,
     subtitle: subtitle0,
+    description: description0,
     features: features0,
     frontend: frontend0,
     backend: backend0,
+
     githubUrl: githubUrl0,
     webpageUrl: webpageUrl0,
   } = projectsData[0];
@@ -29,6 +31,7 @@ const Projects = () => {
   const {
     title: title1,
     subtitle: subtitle1,
+    description: description1,
     features: features1,
     frontend: frontend1,
     backend: backend1,
@@ -39,6 +42,7 @@ const Projects = () => {
   const {
     title: title2,
     subtitle: subtitle2,
+    description: description2,
     features: features2,
     frontend: frontend2,
     backend: backend2,
@@ -72,6 +76,7 @@ const Projects = () => {
             </dt>
             <dd className="project__content">
               <div className="project__description">
+                {description0 && <div>{formatText(description0)}</div>}
                 {features0 && <div>{formatText(features0)}</div>}
                 {frontend0 && <div>{formatText(frontend0)}</div>}
                 {backend0 && <div>{formatText(backend0)}</div>}
@@ -111,6 +116,7 @@ const Projects = () => {
             </dt>
             <dd className="project__content">
               <div className="project__description">
+                {description1 && <div>{formatText(description1)}</div>}
                 {features1 && <div>{formatText(features1)}</div>}
                 {frontend1 && <div>{formatText(frontend1)}</div>}
                 {backend1 && <div>{formatText(backend1)}</div>}
@@ -137,6 +143,7 @@ const Projects = () => {
             </dt>
             <dd className="project__content">
               <div className="project__description">
+                {description2 && <div>{formatText(description2)}</div>}
                 {features2 && <div>{formatText(features2)}</div>}
                 {frontend2 && <div>{formatText(frontend2)}</div>}
                 {backend2 && <div>{formatText(backend2)}</div>}

@@ -23,7 +23,10 @@ const Navbar = () => {
   };
 
   const handleClickOutside = (event) => {
-    if (navbar.current && !navbar.current.contains(event.target)) {
+    if (
+      navbar_mobile.current &&
+      !navbar_mobile.current.contains(event.target)
+    ) {
       setMobileMenu(false);
     }
   };
@@ -45,11 +48,11 @@ const Navbar = () => {
     });
   };
 
-  const navbar = useRef();
+  const navbar_mobile = useRef();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <nav className="navbar" ref={navbar} id="navbar">
+    <nav className="navbar" id="navbar">
       <span className="navbar__span">
         <button
           className="navbar__logo"
@@ -74,7 +77,10 @@ const Navbar = () => {
           </a>
         </span>
       </span>
-      <ul className={mobileMenu ? "navbar__ul" : "navbar__ul hide-mobile-menu"}>
+      <ul
+        className={mobileMenu ? "navbar__ul" : "navbar__ul hide-mobile-menu"}
+        ref={navbar_mobile}
+      >
         <li className="nowrap">
           <button
             className="navbar__a"
